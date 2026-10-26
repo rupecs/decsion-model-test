@@ -1,0 +1,55 @@
+project: {name: financial_advice_decision_model, seed: 3407, model_version: financial-advice-v1}
+platform: local
+compute_profile: a40_48gb
+model:
+  architecture: gemma-4-E4B-it
+  source: local
+  local_path: models/gemma-4-E4B-it
+  s3_uri: null
+  cache_dir: .cache/models
+  dtype: bfloat16
+  compile: false
+  max_seq_length: 2048
+  local_files_only: true
+  full_finetuning: false
+  load_in_4bit: false
+  load_in_8bit: false
+decision_head: {architecture: clef, initialization: random, dtype: float32}
+lora:
+  rank: 16
+  alpha: 16
+  dropout: 0.0
+  gradient_checkpointing: true
+  target_modules: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+training:
+  head_only: false
+  learning_rate: 0.0002
+  head_learning_rate: null
+  epochs: 2
+  batch_size: 1
+  gradient_accumulation_steps: 8
+  warmup_steps: 0
+  weight_decay: 0.01
+  logging_steps: 1
+  checkpoint_interval: 100
+  max_steps: -1
+  dataloader_workers: 0
+  require_smoke: true
+paths: {output_dir: outputs/latest, report_dir: outputs/reports}
+storage: {region: null, bucket: null}
+dataset:
+  path: data/samples/financial_advice_samples.jsonl
+  files: {}
+  version: unused_legacy_default
+  labels: [factual, general_advice, personal_advice, other_financial_guidance, uncertain]
+  descriptions:
+    factual: Factual financial information
+    general_advice: General financial product advice
+    personal_advice: Personal financial product advice
+    other_financial_guidance: Other financial guidance
+    uncertain: Insufficient information to classify reliably
+  multi_question: false
+  splits: {train: 0.75, validation: 0.1, calibration: 0.075, test: 0.075}
+evaluation: {bins: 10, bootstrap_samples: 0, cohort: development, include_text: false}
+policy: {path: config/policy.yaml}
+logging: {level: INFO, report_to: none}

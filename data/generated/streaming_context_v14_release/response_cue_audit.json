@@ -1,0 +1,116 @@
+[
+  {
+    "phrase": "separately from the",
+    "support": 178,
+    "dominant_class": "factual_information",
+    "precision": 1.0
+  },
+  {
+    "phrase": "we can leave",
+    "support": 152,
+    "dominant_class": "other",
+    "precision": 1.0
+  },
+  {
+    "phrase": "we can leave the",
+    "support": 144,
+    "dominant_class": "other",
+    "precision": 1.0
+  },
+  {
+    "phrase": "is preferable to an",
+    "support": 136,
+    "dominant_class": "general_advice",
+    "precision": 1.0
+  },
+  {
+    "phrase": "preferable to an",
+    "support": 136,
+    "dominant_class": "general_advice",
+    "precision": 1.0
+  },
+  {
+    "phrase": "bank can",
+    "support": 123,
+    "dominant_class": "factual_information",
+    "precision": 1.0
+  },
+  {
+    "phrase": "the bank can",
+    "support": 123,
+    "dominant_class": "factual_information",
+    "precision": 1.0
+  },
+  {
+    "phrase": "is preferable to a",
+    "support": 120,
+    "dominant_class": "personal_advice",
+    "precision": 1.0
+  },
+  {
+    "phrase": "matters more than a",
+    "support": 120,
+    "dominant_class": "personal_advice",
+    "precision": 1.0
+  },
+  {
+    "phrase": "preferable to a",
+    "support": 120,
+    "dominant_class": "personal_advice",
+    "precision": 1.0
+  },
+  {
+    "phrase": "separate from",
+    "support": 116,
+    "dominant_class": "factual_information",
+    "precision": 1.0
+  },
+  {
+    "phrase": "a weak",
+    "support": 112,
+    "dominant_class": "general_advice",
+    "precision": 1.0
+  },
+  {
+    "phrase": "is a weak",
+    "support": 112,
+    "dominant_class": "general_advice",
+    "precision": 1.0
+  },
+  {
+    "phrase": "weak",
+    "support": 112,
+    "dominant_class": "general_advice",
+    "precision": 1.0
+  },
+  {
+    "phrase": "out of",
+    "support": 100,
+    "dominant_class": "other",
+    "precision": 1.0
+  },
+  {
+    "phrase": "should be",
+    "support": 100,
+    "dominant_class": "factual_information",
+    "precision": 1.0
+  },
+  {
+    "phrase": "we can use",
+    "support": 100,
+    "dominant_class": "other",
+    "precision": 1.0
+  },
+  {
+    "phrase": "separately from",
+    "support": 341,
+    "dominant_class": "factual_information",
+    "precision": 0.9765395894428153
+  },
+  {
+    "phrase": "more than a",
+    "support": 225,
+    "dominant_class": "personal_advice",
+    "precision": 0.96
+  }
+]

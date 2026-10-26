@@ -1,0 +1,5 @@
+compute_profile: l4_24gb
+compute: {gpu_name: L4, nominal_vram_gb: 24, minimum_free_gb: 20, warning: "BF16 fit must be measured; no automatic quantisation or precision fallback."}
+model: {max_seq_length: 512}
+training: {batch_size: 1, gradient_accumulation_steps: 8, dataloader_workers: 0}
+lora: {gradient_checkpointing: true}

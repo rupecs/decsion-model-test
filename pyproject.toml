@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "decision-guardrail-v14"
+version = "0.14.0"
+description = "Reproducible synthetic v14 D1-D7 dataset and native Clef development workflow"
+requires-python = ">=3.11"
+dependencies = ["PyYAML>=6.0.3,<7", "boto3>=1.43.114,<2", "packaging>=24,<27"]
+
+[project.optional-dependencies]
+dev = ["pytest==8.4.2"]
+gpu = ["unsloth==2026.10.6"]
+
+[project.scripts]
+decision-guardrail = "decision_guardrail.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+markers = ["gpu: requires a separately authorised actual GPU smoke"]

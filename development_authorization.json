@@ -1,0 +1,19 @@
+{
+  "scope": "Exact frozen v14 synthetic DEVELOPMENT replay only",
+  "independently_approved_records": 0,
+  "production_ready": false,
+  "operator_opt_in_required": true,
+  "max_optimizer_steps": 2972,
+  "epochs_configuration": 2,
+  "max_smoke_steps": 3,
+  "native_encoding_required": true,
+  "fresh_actual_GPU_smoke_required": true,
+  "no_resume_or_automatic_restarts": true,
+  "known_limits": [
+    "A01 short-context grounding limitation",
+    "Residual lexical cues and unsolicited suitability controls",
+    "Model-review exposure after publication; historical release reports are not fresh independent approval",
+    "Reference inference factual probe D5/D7 disagreement",
+    "AWS execution is unvalidated until the receiving operator runs smoke/reload"
+  ]
+}

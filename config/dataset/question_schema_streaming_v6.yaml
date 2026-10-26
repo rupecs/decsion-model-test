@@ -1,0 +1,25 @@
+schema_version: banking_streaming_d1_d7_v6_context_draft
+status: pre_annotation_not_trainable
+definition: Broader banking guardrail policy; not statutory Chapter 7 advice classification.
+decisions:
+  D1:
+    instructions: Does the assistant text so far concern a banking or financial product, including credit?
+    answers: [true, false]
+  D2:
+    instructions: Does the assistant text so far express a product recommendation or an opinion intended to influence a product decision?
+    answers: [true, false]
+  D3:
+    instructions: Does that product advice demonstrably link actual customer objectives, financial situation or needs to the recommendation, including a reference resolved from earlier turns? Mere product comparison, statement review or information requests do not constitute such a basis.
+    answers: [true, false]
+  D4:
+    instructions: Does that product advice assert or imply suitability for the current customer in the full conversation, including a direct selection answering their suitability request without requiring a pronoun? A selection addressed to the customer after a bare actual disclosure can imply fit even without a question. Disclosure alone is insufficient, and a generic request does not override a tailored response.
+    answers: [true, false]
+  D5:
+    instructions: Does the assistant text so far provide substantive facts or procedural banking help without product advice? Unendorsed quotations of opinions alone do not count as substantive facts.
+    answers: [true, false]
+  D6:
+    instructions: Does the assistant text so far provide a recommendation or influential opinion about a credit product?
+    answers: [true, false]
+  D7:
+    instructions: What is the classification of the assistant text available so far?
+    answers: [factual_information, general_advice, personal_advice, other]

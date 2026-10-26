@@ -1,0 +1,41 @@
+experiment: smoke_test
+project:
+  model_version: banking-streaming-context-v14-SYNTHETIC-DEVELOPMENT
+training:
+  epochs: 1
+  evaluation_interval: 1
+  logging_steps: 1
+  checkpoint_interval: 3
+  max_steps: 3
+  validation_selection:
+    enabled: true
+    patience: 3
+    min_delta: 0.001
+    restore_best: true
+  fixture_smoke: v14_d1_d7_integration_20261026
+dataset:
+  schema: banking_streaming_d1_d7_v6_context_draft
+  path: null
+  version: v14-d1-d7-hash-pinned-integration-v1
+  labels:
+  - factual_information
+  - general_advice
+  - personal_advice
+  - other
+  multi_question: false
+  files:
+    train: data/samples/v14_development_smoke/construction_clef/train.jsonl
+    validation: data/samples/v14_development_smoke/construction_clef/validation.jsonl
+    calibration: data/samples/v14_development_smoke/construction_clef/calibration.jsonl
+    test: data/samples/v14_development_smoke/construction_clef/test.jsonl
+  expected_total: 20
+  splits:
+    train: 5
+    validation: 5
+    calibration: 5
+    test: 5
+  export_mode: construction_review_only
+  manifest_path: data/samples/v14_development_smoke/manifest.json
+  manifest_sha256: 21294ec22efd4783e2470a0126e13535b2da2562d09fb8328ed68a7fdd16ef6e
+  provenance_path: data/samples/v14_development_smoke/records.jsonl
+  provenance_sha256: 4d8331e9c31e666912943b866a49944f85cdd4ce6b5fdb242f052b1ab2c4b8af

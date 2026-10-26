@@ -1,0 +1,2688 @@
+{
+  "PRODUCTS": [
+    {
+      "key": "garden_cash",
+      "split": "train",
+      "domain": "deposit",
+      "call": "C08",
+      "goals": [
+        "I collect small cash payments at a community garden stall every Saturday. Getting them into an account is taking too long.",
+        "Our repair cafe takes coins and notes at each session. I am the volunteer who has to deposit them afterwards."
+      ],
+      "probe": "Are these physical cash takings rather than transfers?",
+      "answer": "Yes, mostly notes with a bag of coins.",
+      "operations": [
+        "There is a cash-deposit symbol beside this account. I am reading the account page.",
+        "I have the branch and online account descriptions open."
+      ],
+      "op_probe": "Are you looking at how cash is accepted?",
+      "op_answer": "Yes, the deposit arrangements, rather than the interest rate.",
+      "explanation": "A branch counter and an electronic transfer are separate ways of funding an account.",
+      "followup": "Does a listed branch mean every counter accepts coins?",
+      "followup_answer": "Coin handling can differ by location; a branch listing does not specify that service.",
+      "closing": "Can we stay with the cash-deposit options?",
+      "fact": [
+        "Cash-deposit facilities",
+        "may differ between account providers and locations."
+      ],
+      "procedure": "Open the cash-deposit instructions and check whether coins need sorting or packaging.",
+      "extra_fact": "A branch can explain its coin-packaging requirements for you before a cash deposit.",
+      "general": [
+        "Straightforward counter access",
+        "Straightforward counter access makes an account more attractive for handling cash."
+      ],
+      "basis": [
+        "With those regular cash takings,",
+        "With those regular cash takings, convenient counter deposits matter more than a polished transfer screen."
+      ],
+      "choice": [
+        "The account with a nearby cash counter",
+        "The account with a nearby cash counter is the better fit here."
+      ],
+      "question": "Would a list of the cash-handling locations help?",
+      "other": [
+        "Which of the two account pages are we looking at?",
+        "There is no rush to make a decision during this call."
+      ],
+      "other_scopes": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": "foster_reimbursements",
+      "split": "train",
+      "domain": "deposit",
+      "call": "C01",
+      "goals": [
+        "I pay expenses for foster animals and receive reimbursements later. I need to distinguish those payments from my household spending.",
+        "Our wildlife rescue reimburses me from receipts, but the money is getting mixed up with my grocery transactions."
+      ],
+      "probe": "Is the difficulty identifying the reimbursable transactions?",
+      "answer": "Exactly; I can afford the payments, but I lose track of which receipts were repaid.",
+      "operations": [
+        "I am looking at a separate transaction account brochure.",
+        "I have an example account activity screen in front of me."
+      ],
+      "op_probe": "Are you asking about transaction descriptions?",
+      "op_answer": "Yes, what gets shown on the account history.",
+      "explanation": "A payment reference is different from the name assigned to an account.",
+      "followup": "Will changing the account nickname change old payment references?",
+      "followup_answer": "A nickname labels the account view; it does not rewrite the original payment instructions.",
+      "closing": "Let us discuss keeping the payments distinct.",
+      "fact": [
+        "Transaction histories",
+        "can show payment references alongside amounts and dates."
+      ],
+      "procedure": "Find the reference field on a completed transaction and compare it with the receipt number.",
+      "extra_fact": "You can give an account a nickname without changing its account number.",
+      "general": [
+        "An account that makes receipts easy to trace",
+        "An account that makes receipts easy to trace is preferable to one that hides references behind extra screens."
+      ],
+      "basis": [
+        "For sorting those rescue reimbursements,",
+        "For sorting those rescue reimbursements, useful transaction descriptions beat a decorative budgeting display."
+      ],
+      "choice": [
+        "Keeping these payments in the household spending account",
+        "Keeping these payments in the household spending account is not the right arrangement for this reconciliation need."
+      ],
+      "question": "Would it help to walk through a redacted example?",
+      "other": [
+        "Are we talking about the incoming reimbursement or the original payment?",
+        "You can take your time; we can take one receipt at a time."
+      ],
+      "other_scopes": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": "rent_bond_buffer",
+      "split": "train",
+      "domain": "deposit",
+      "call": "C08",
+      "goals": [
+        "My next rental bond is due before the old agent returns the previous bond. I want to keep the short overlap money accessible.",
+        "Two leases overlap for a fortnight. The second bond has to be paid while the first is still being processed."
+      ],
+      "probe": "Could the old bond arrive after the new one must be paid?",
+      "answer": "Yes. I cannot rely on the refund arriving first.",
+      "operations": [
+        "I am reading about an instant-access savings account.",
+        "There are two savings options on this comparison screen."
+      ],
+      "op_probe": "Are you asking about access rather than the advertised rate?",
+      "op_answer": "Yes, how withdrawals work.",
+      "explanation": "A withdrawal instruction and money arriving at another institution are separate events.",
+      "followup": "Does instant access promise an immediate external transfer?",
+      "followup_answer": "It describes account access; receiving-bank timing is a different part of the transfer.",
+      "closing": "Please explain the access difference.",
+      "fact": [
+        "Savings withdrawal rules",
+        "can specify when money can leave the account."
+      ],
+      "procedure": "We can find the notice period in the savings access terms before interpreting the transfer timetable.",
+      "extra_fact": "The provider can identify the withdrawal notice clause for you in the account terms.",
+      "general": [
+        "Locking short-gap money away",
+        "Locking short-gap money away for a bonus rate is an unattractive trade-off."
+      ],
+      "basis": [
+        "Because the two bond dates may overlap,",
+        "Because the two bond dates may overlap, unrestricted withdrawals are more valuable than a temporary rate bonus."
+      ],
+      "choice": [
+        "The unrestricted savings account",
+        "The unrestricted savings account is the sensible choice for this gap."
+      ],
+      "question": "Shall we look at transfer cut-off times as well?",
+      "other": [
+        "Which savings account has the notice period?",
+        "Keep the bond paperwork handy while we go through this."
+      ],
+      "other_scopes": [
+        true,
+        false
+      ]
+    },
+    {
+      "key": "prize_money_hold",
+      "split": "train",
+      "domain": "deposit",
+      "call": "C08",
+      "goals": [
+        "My daughter won prize money that must stay untouched until her course starts in September. We know the date and want a fixed end point.",
+        "Our scholarship money is set aside for a single tuition invoice next spring. It will not be needed beforehand."
+      ],
+      "probe": "Is the payment date fixed, with no planned withdrawals before it?",
+      "answer": "Yes, there is one known invoice date.",
+      "operations": [
+        "The term-deposit page lists a maturity date.",
+        "I am reading a maturity instruction form."
+      ],
+      "op_probe": "Are you asking what happens at the end of the term?",
+      "op_answer": "Yes, the end date and the available instructions.",
+      "explanation": "The investment term ends at maturity; the instruction tells the provider what to do next.",
+      "followup": "Does doing nothing always send the money to a bank account?",
+      "followup_answer": "The default action depends on the deposit terms and the recorded maturity instruction.",
+      "closing": "Can we compare a fixed term with leaving it open?",
+      "fact": [
+        "A term-deposit maturity instruction",
+        "can direct the proceeds after the term ends."
+      ],
+      "procedure": "We can find the destination field in the maturity instruction and distinguish it from the maturity date.",
+      "extra_fact": "A provider representative can locate the recorded maturity instruction for you.",
+      "general": [
+        "A clearly stated maturity instruction",
+        "A clearly stated maturity instruction is a useful feature of a term deposit."
+      ],
+      "basis": [
+        "The known tuition invoice date",
+        "The known tuition invoice date makes a matching maturity more attractive than unused withdrawal features."
+      ],
+      "choice": [
+        "The deposit maturing before the tuition invoice",
+        "The deposit maturing before the tuition invoice fits this plan."
+      ],
+      "question": "Would you like to see where the destination account is recorded?",
+      "other": [
+        "Is that date the deposit maturity or the invoice deadline?",
+        "Let us leave the application screen open for the moment."
+      ],
+      "other_scopes": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": "cashback_conditions",
+      "split": "train",
+      "domain": "deposit",
+      "call": "C05",
+      "goals": [
+        "I get paid monthly and make only two card purchases from my spending account. A cashback offer asks for many more transactions.",
+        "Most of my bills are direct debits. I rarely use the debit card, so I would have to buy extra things to reach that cashback count."
+      ],
+      "probe": "Would the required card purchases be extra spending?",
+      "answer": "Yes, they are not purchases I normally make.",
+      "operations": [
+        "There is a cashback headline on this everyday account.",
+        "I am reading the list of transactions that qualify for an account reward."
+      ],
+      "op_probe": "Are you asking whether direct debits count?",
+      "op_answer": "Yes, the difference between the listed transaction types.",
+      "explanation": "A direct debit is initiated through an authority; it is not the same instruction as a debit-card purchase.",
+      "followup": "Would a merchant refund count as a new purchase?",
+      "followup_answer": "The reward rules determine eligible transactions and may distinguish purchases from reversals.",
+      "closing": "Please go over the reward conditions.",
+      "fact": [
+        "Account reward conditions",
+        "can require specified eligible transactions within a period."
+      ],
+      "procedure": "Count eligible transactions from the offer rules rather than counting every account entry.",
+      "extra_fact": "Your statement can contain transactions that do not qualify for a reward.",
+      "general": [
+        "Spending more to earn an account perk",
+        "Spending more to earn an account perk is a poor bargain."
+      ],
+      "basis": [
+        "When the purchase count means extra spending,",
+        "When the purchase count means extra spending, a simple account without that hurdle is more appealing than the cashback headline."
+      ],
+      "choice": [
+        "The account requiring extra purchases",
+        "The account requiring extra purchases is unsuitable for this spending pattern."
+      ],
+      "question": "Can we separate the ordinary payments from the extra purchases?",
+      "other": [
+        "Which reward rule is the confusing one?",
+        "You can take your time; we can put the cashback headline aside while we talk."
+      ],
+      "other_scopes": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": "apprentice_tools",
+      "split": "train",
+      "domain": "credit",
+      "call": "C10",
+      "goals": [
+        "My apprenticeship starts next week. I need a fixed tool kit now and can repay a set amount from each pay, rather than borrow repeatedly.",
+        "The workshop requires me to buy the full tool set upfront. It is one purchase, and I want the debt to have an end date."
+      ],
+      "probe": "Is this one known purchase rather than changing purchases over time?",
+      "answer": "Yes, the kit and its price are already listed.",
+      "operations": [
+        "I have a personal-loan example with scheduled repayments.",
+        "There is a loan term and a repayment amount in this illustration."
+      ],
+      "op_probe": "Are you looking at how the repayments are scheduled?",
+      "op_answer": "Yes, what the schedule represents.",
+      "explanation": "An example schedule describes assumed payments; an actual agreement sets the contractual ones.",
+      "followup": "Does a small weekly repayment establish the total borrowing cost?",
+      "followup_answer": "The number of repayments and the charges also affect the total paid.",
+      "closing": "Please compare the fixed schedule with revolving debt.",
+      "fact": [
+        "A personal-loan repayment schedule",
+        "can show repayment dates over the agreed term."
+      ],
+      "procedure": "Add the scheduled repayments and relevant fees when checking the total amount payable.",
+      "extra_fact": "The lender can set out the scheduled total repayments for you without starting an application.",
+      "general": [
+        "An understandable repayment schedule",
+        "An understandable repayment schedule is a strength of a fixed-term loan."
+      ],
+      "basis": [
+        "For one tool purchase with a planned end date,",
+        "For one tool purchase with a planned end date, scheduled repayments are preferable to leaving the debt revolving indefinitely."
+      ],
+      "choice": [
+        "The fixed-term tool loan",
+        "The fixed-term tool loan is appropriate for this one-off purchase."
+      ],
+      "question": "Would you like the total repaid shown beside the weekly amount?",
+      "other": [
+        "Which figure is the tool price and which is the borrowing amount?",
+        "We can pause before any application is started."
+      ],
+      "other_scopes": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": "irregular_penalty",
+      "split": "train",
+      "domain": "credit",
+      "call": "C10",
+      "goals": [
+        "I sometimes get a large commission and want to use it to reduce my loan immediately. The timing is unpredictable.",
+        "My casual work has occasional big weeks. I want to pay extra into the loan when that happens, without being charged for each extra payment."
+      ],
+      "probe": "Would those extra repayments be irregular?",
+      "answer": "Yes, there is no reliable date or amount.",
+      "operations": [
+        "This loan brochure mentions an extra-repayment limit.",
+        "I am reading the section about paying ahead of schedule."
+      ],
+      "op_probe": "Are you asking whether an extra payment is treated differently?",
+      "op_answer": "Yes, how it differs from the scheduled payment.",
+      "explanation": "A scheduled repayment and an additional payment can be handled under different clauses.",
+      "followup": "Does a redraw feature mean extra repayments are unlimited?",
+      "followup_answer": "Redraw access and restrictions on extra repayments are separate loan conditions.",
+      "closing": "Let us compare the extra-payment terms.",
+      "fact": [
+        "Extra-repayment conditions",
+        "can limit additional payments or specify applicable charges."
+      ],
+      "procedure": "We can find the extra-repayment limit in the additional-payment clause rather than infer it from redraw access.",
+      "extra_fact": "You can read the repayment restrictions without assuming that redraw is available.",
+      "general": [
+        "Charging for every extra repayment",
+        "Charging for every extra repayment makes a loan less attractive than its headline rate suggests."
+      ],
+      "basis": [
+        "With unpredictable extra income available for the debt,",
+        "With unpredictable extra income available for the debt, a penalty-heavy repayment feature is a poor trade-off for a small rate discount."
+      ],
+      "choice": [
+        "The loan penalising irregular extra repayments",
+        "The loan penalising irregular extra repayments is the wrong choice for this income pattern."
+      ],
+      "question": "Which limit should we ask the lender to explain first?",
+      "other": [
+        "Is that limit per payment or across the whole year?",
+        "We can keep the repayment amounts out of the application for now."
+      ],
+      "other_scopes": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": "season_ticket",
+      "split": "train",
+      "domain": "credit",
+      "call": "C05",
+      "goals": [
+        "My employer reimburses an annual transport pass after the receipt is processed. I can clear the card when the reimbursement arrives.",
+        "The annual rail pass has to be bought first, and payroll pays me back later that month. I do not plan to carry the balance beyond that."
+      ],
+      "probe": "Is the repayment expected before the payment due date?",
+      "answer": "Yes, but I still want to understand what happens if payroll is late.",
+      "operations": [
+        "I am reading a credit-card purchase example.",
+        "There is an interest-free period description on this card page."
+      ],
+      "op_probe": "Are you asking about purchases rather than cash withdrawals?",
+      "op_answer": "Yes, an ordinary card purchase.",
+      "explanation": "Purchase transactions and cash withdrawals can have different interest treatment.",
+      "followup": "Does an interest-free headline cover a cash withdrawal too?",
+      "followup_answer": "The cash-advance clause must be read separately from the purchase offer.",
+      "closing": "Can we stay with the purchase and repayment terms?",
+      "fact": [
+        "Credit-card purchase conditions",
+        "can specify when interest-free treatment applies."
+      ],
+      "procedure": "Find the full-payment requirement and due date in the card conditions.",
+      "extra_fact": "A purchase offer does not establish the cost of a cash advance.",
+      "general": [
+        "A low-fee purchase card",
+        "A low-fee purchase card is preferable to an expensive rewards card for ordinary purchases."
+      ],
+      "basis": [
+        "With reimbursement expected before the due date,",
+        "With reimbursement expected before the due date, the purchase grace period matters more than points on a single ticket."
+      ],
+      "choice": [
+        "The low-fee purchase card",
+        "The low-fee purchase card is the suitable option for this planned purchase."
+      ],
+      "question": "Would it help to look at a late-reimbursement example?",
+      "other": [
+        "Are we discussing the annual pass or a cash advance?",
+        "Let us finish the explanation before entering a card application."
+      ],
+      "other_scopes": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": "surgery_instalments",
+      "split": "train",
+      "domain": "credit",
+      "call": "C10",
+      "goals": [
+        "The vet offers two ways to pay for my dog surgery. One is a short instalment plan, but missing a payment adds a large fee.",
+        "I am comparing a pet-treatment payment plan with paying on my existing credit line. Some weeks my earnings arrive late."
+      ],
+      "probe": "Could a scheduled instalment fall before the income arrives?",
+      "answer": "Yes, that is the part I am worried about.",
+      "operations": [
+        "The clinic handed me an instalment-finance sheet.",
+        "I have the payment-plan fee table on the screen."
+      ],
+      "op_probe": "Are you asking about missed-payment charges?",
+      "op_answer": "Yes, where those charges are stated.",
+      "explanation": "The clinic invoice and the finance agreement are separate documents.",
+      "followup": "Is a late-payment charge necessarily included in the treatment price?",
+      "followup_answer": "The finance fee schedule can list charges separately from the clinic price.",
+      "closing": "Please explain the payment-plan comparison.",
+      "fact": [
+        "An instalment-finance agreement",
+        "can set payment dates and charges for missed payments."
+      ],
+      "procedure": "Read the missed-payment row in the finance fee schedule.",
+      "extra_fact": "You can compare the finance terms without changing the treatment booking.",
+      "general": [
+        "Calling finance interest-free",
+        "Calling finance interest-free does not make large missed-payment charges attractive."
+      ],
+      "basis": [
+        "When earnings can arrive after an instalment,",
+        "When earnings can arrive after an instalment, a forgiving payment schedule is preferable to a fee-heavy short plan."
+      ],
+      "choice": [
+        "The fee-heavy short instalment plan",
+        "The fee-heavy short instalment plan is not suitable for this payment timing."
+      ],
+      "question": "Can we put the payment dates next to the expected income dates?",
+      "other": [
+        "Which charge applies when a payment is late?",
+        "We can discuss the payment options without choosing the treatment."
+      ],
+      "other_scopes": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": "car_ownership_end",
+      "split": "train",
+      "domain": "credit",
+      "call": "C09",
+      "goals": [
+        "At the end of the car agreement I want to own the car outright. I am comparing a balloon loan with a loan paid off in full.",
+        "I keep cars for years and do not want a large final payment hanging over the purchase."
+      ],
+      "probe": "Would a substantial final amount be a problem?",
+      "answer": "Yes, I am trying to avoid that final lump sum.",
+      "operations": [
+        "A car-loan example shows a residual amount.",
+        "I am reading the final-payment section of a vehicle finance quote."
+      ],
+      "op_probe": "Are you asking what the final amount means?",
+      "op_answer": "Yes, how it relates to the regular repayments.",
+      "explanation": "A balloon payment is a remaining amount due under the agreement, not a discount on the vehicle.",
+      "followup": "Do smaller regular repayments mean the car costs less overall?",
+      "followup_answer": "Regular repayment size alone does not show all payments and charges over the agreement.",
+      "closing": "Let us compare the final payment as well.",
+      "fact": [
+        "A vehicle loan with a balloon",
+        "can leave an amount payable at the end of the term."
+      ],
+      "procedure": "Include the final amount when totalling the quoted repayments.",
+      "extra_fact": "The important point about a balloon is that it remains an amount due under the agreement.",
+      "general": [
+        "A loan that clearly shows its final payment",
+        "A loan that clearly shows its final payment is a better offer than one hiding it in a footnote."
+      ],
+      "basis": [
+        "Since a final lump sum is the concern,",
+        "Since a final lump sum is the concern, fully amortising repayments are more appealing than a large balloon."
+      ],
+      "choice": [
+        "The loan paid off through its scheduled repayments",
+        "The loan paid off through its scheduled repayments matches the ownership plan."
+      ],
+      "question": "Would you like the final amount highlighted separately?",
+      "other": [
+        "Is the amount at the bottom the balloon or the deposit?",
+        "We can compare the figures without contacting the dealer."
+      ],
+      "other_scopes": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": "equipment_return",
+      "split": "train",
+      "domain": "credit",
+      "call": "C19",
+      "goals": [
+        "Our photography business replaces studio lights every two years and returns the old units. We are comparing hire payments with buying outright.",
+        "The business upgrades its demonstration equipment frequently rather than keeping it until it wears out."
+      ],
+      "probe": "Is returning or replacing the equipment part of the plan?",
+      "answer": "Yes, keeping the same equipment for many years is not the aim.",
+      "operations": [
+        "I have an equipment-hire finance quote.",
+        "The hire and purchase options use different end-of-term wording."
+      ],
+      "op_probe": "Are you asking about the end-of-term choices?",
+      "op_answer": "Yes, what happens to the equipment afterwards.",
+      "explanation": "An end-of-term purchase option is different from automatic ownership.",
+      "followup": "Does making every hire payment guarantee ownership?",
+      "followup_answer": "The agreement needs to specify any ownership transfer or purchase option.",
+      "closing": "Can we compare the end-of-term arrangements?",
+      "fact": [
+        "Equipment return rights and end-of-term ownership",
+        "are different provisions in a hire agreement."
+      ],
+      "procedure": "Locate the return and purchase clauses rather than assuming that a final payment transfers ownership.",
+      "extra_fact": "You can compare the full payment schedule with the quoted cash price.",
+      "general": [
+        "An appealing periodic payment",
+        "An appealing periodic payment is a poor substitute for clear end-of-term rights."
+      ],
+      "basis": [
+        "For equipment replaced every few years,",
+        "For equipment replaced every few years, an agreement with no practical return option is a poor substitute for genuine hire flexibility."
+      ],
+      "choice": [
+        "The purchase-only agreement",
+        "The purchase-only agreement is not the right option for this replacement cycle."
+      ],
+      "question": "Shall we identify any return-condition charges too?",
+      "other": [
+        "Which clause describes the condition on return?",
+        "There is time to review the agreement away from this call."
+      ],
+      "other_scopes": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": "freezer_stock",
+      "split": "train",
+      "domain": "insurance",
+      "call": "C15",
+      "goals": [
+        "Our bakery keeps several days of ingredients in a freezer. Spoiled stock would be expensive, even if the building was undamaged.",
+        "The cafe cold room holds most of our fresh stock. A refrigeration failure is a separate worry from damage to the premises."
+      ],
+      "probe": "Is the concern spoiled contents rather than repairing the building?",
+      "answer": "Yes, replacing the food is the problem.",
+      "operations": [
+        "I have a business stock-cover booklet.",
+        "The insurance schedule has a refrigeration section."
+      ],
+      "op_probe": "Are you asking what the stock section describes?",
+      "op_answer": "Yes, the distinction between stock and premises.",
+      "explanation": "A premises benefit and a stock benefit cover different insured interests.",
+      "followup": "Does a large building sum establish the stock limit?",
+      "followup_answer": "The stock section and any sublimit need to be identified separately.",
+      "closing": "Let us keep stock loss separate from the building.",
+      "fact": [
+        "A stock-deterioration benefit",
+        "may specify covered causes and limits for spoiled stock."
+      ],
+      "procedure": "Find the refrigeration exclusions and any stock sublimit in the wording.",
+      "extra_fact": "The insurer can point out the stock sublimit for you in the schedule.",
+      "general": [
+        "Clear stock-loss definitions",
+        "Clear stock-loss definitions are a valuable part of business property cover."
+      ],
+      "basis": [
+        "When ingredients are stored chilled,",
+        "When ingredients are stored chilled, building-only cover is a poor substitute for a meaningful stock benefit."
+      ],
+      "choice": [
+        "The policy including the relevant spoilage benefit",
+        "The policy including the relevant spoilage benefit is the appropriate cover for this stock exposure."
+      ],
+      "question": "Would the stock subsection be a useful place to continue?",
+      "other": [
+        "Which stock limit is listed on that schedule?",
+        "We can keep the bakery name out of the example."
+      ],
+      "other_scopes": [
+        true,
+        false
+      ]
+    },
+    {
+      "key": "wheelchair_transit",
+      "split": "train",
+      "domain": "insurance",
+      "call": "C15",
+      "goals": [
+        "I travel with a powered wheelchair that costs much more than the standard baggage limit. I am comparing travel policies.",
+        "The mobility device I take overseas has to be specially repaired if damaged. An ordinary suitcase limit is nowhere near its value."
+      ],
+      "probe": "Is the device value above the standard single-item limit?",
+      "answer": "Yes, considerably above it.",
+      "operations": [
+        "I am reading the mobility-equipment section of a travel policy.",
+        "The baggage table lists a single-item amount."
+      ],
+      "op_probe": "Are you asking about a separate equipment limit?",
+      "op_answer": "Yes, how that differs from ordinary baggage.",
+      "explanation": "A total baggage amount can coexist with smaller limits for individual items.",
+      "followup": "Would increasing the total baggage sum necessarily raise every item limit?",
+      "followup_answer": "An individual limit or endorsement needs to be read on its own terms.",
+      "closing": "Please distinguish the equipment benefit from baggage.",
+      "fact": [
+        "Travel-policy item limits",
+        "can restrict payment for a single item independently of the total."
+      ],
+      "procedure": "Locate the mobility-equipment endorsement and any valuation requirements.",
+      "extra_fact": "A provider can identify the equipment endorsement for you without assessing a claim.",
+      "general": [
+        "A cheap travel premium",
+        "A cheap travel premium is a weak advantage if essential equipment remains subject to a small item limit."
+      ],
+      "basis": [
+        "For high-value mobility equipment,",
+        "For high-value mobility equipment, a realistic item limit matters more than complimentary lounge access."
+      ],
+      "choice": [
+        "The policy limited to the ordinary baggage amount",
+        "The policy limited to the ordinary baggage amount is inadequate for this device."
+      ],
+      "question": "Shall we look at repair and replacement wording next?",
+      "other": [
+        "Are we comparing the total limit or the limit for one device?",
+        "We can leave the travel dates unentered while discussing the wording."
+      ],
+      "other_scopes": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": "weekend_market",
+      "split": "train",
+      "domain": "insurance",
+      "call": "C19",
+      "goals": [
+        "I sell handmade soaps at changing weekend markets. Each organiser asks for evidence of public liability cover for that venue.",
+        "Our craft stall moves between local events. I need the liability cover to include those temporary trading locations."
+      ],
+      "probe": "Do the trading locations change between events?",
+      "answer": "Yes, there is no permanent shopfront.",
+      "operations": [
+        "I have a public-liability proposal for a market stall.",
+        "The liability certificate mentions business activities and locations."
+      ],
+      "op_probe": "Are you asking about the activity description?",
+      "op_answer": "Yes, what the description refers to.",
+      "explanation": "A certificate summarises cover; the policy wording supplies the detailed terms.",
+      "followup": "Does possessing a certificate establish cover for every activity?",
+      "followup_answer": "The declared activity, locations and policy exclusions still matter.",
+      "closing": "Can we focus on temporary trading locations?",
+      "fact": [
+        "A liability policy schedule",
+        "can identify declared business activities and locations."
+      ],
+      "procedure": "Compare the activity shown on the certificate with the policy schedule.",
+      "extra_fact": "A venue request and the insurer policy conditions are separate requirements.",
+      "general": [
+        "A liability policy with a precise activity description",
+        "A liability policy with a precise activity description is more useful than a vague certificate."
+      ],
+      "basis": [
+        "For temporary market trading,",
+        "For temporary market trading, a shopfront-only extension is a poor substitute for clear mobile-location cover."
+      ],
+      "choice": [
+        "The liability policy covering the mobile stall activity",
+        "The liability policy covering the mobile stall activity fits the way this business trades."
+      ],
+      "question": "Would you like the activity description read back?",
+      "other": [
+        "Which activity name appears on that certificate?",
+        "We can discuss the wording before contacting any organiser."
+      ],
+      "other_scopes": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": "camera_borrow",
+      "split": "train",
+      "domain": "insurance",
+      "call": "C15",
+      "goals": [
+        "I rent camera lenses for paid shoots and sign for their full value. My own camera cover may not include hired equipment.",
+        "The production company lends me expensive sound equipment for freelance jobs. I am responsible for returning it undamaged."
+      ],
+      "probe": "Is the equipment owned by someone else?",
+      "answer": "Yes, it is temporarily in my care.",
+      "operations": [
+        "I am reading an equipment policy with a hired-property clause.",
+        "There are separate owned and hired equipment amounts on this quote."
+      ],
+      "op_probe": "Are you asking about property ownership?",
+      "op_answer": "Yes, the distinction between owned and borrowed items.",
+      "explanation": "Ownership of an item and responsibility for it can be different.",
+      "followup": "Does naming my own equipment automatically list borrowed items?",
+      "followup_answer": "The policy needs to say how hired or borrowed property is treated.",
+      "closing": "Please explain the hired-property provision.",
+      "fact": [
+        "Equipment insurance",
+        "can distinguish owned property from hired or borrowed property."
+      ],
+      "procedure": "Check the hired-property clause and any requirement to declare individual items.",
+      "extra_fact": "The policy clauses describing owned and hired property need reading separately; an item list alone does not establish both.",
+      "general": [
+        "A policy covering only owned equipment",
+        "A policy covering only owned equipment is a poor substitute for properly defined hired-property cover."
+      ],
+      "basis": [
+        "When responsibility extends to borrowed equipment,",
+        "When responsibility extends to borrowed equipment, hired-property cover is more valuable than a discount confined to owned items."
+      ],
+      "choice": [
+        "The owned-items-only policy",
+        "The owned-items-only policy is unsuitable for equipment temporarily in this business care."
+      ],
+      "question": "Would checking the declaration requirement help?",
+      "other": [
+        "Is the item owned outright or temporarily hired?",
+        "There is no need to name the equipment owner in this example."
+      ],
+      "other_scopes": [
+        true,
+        false
+      ]
+    },
+    {
+      "key": "gig_injury",
+      "split": "train",
+      "domain": "insurance",
+      "call": "C09",
+      "goals": [
+        "I earn through short performance bookings. A hand injury could stop all the paid work, but the bookings are not regular wages.",
+        "My freelance work comes in separate contracts rather than a salary. I am comparing income cover that uses different earnings definitions."
+      ],
+      "probe": "Does the income vary between contracts?",
+      "answer": "Yes, some months are much higher than others.",
+      "operations": [
+        "I have the earnings-definition page of an income policy.",
+        "This income-cover example uses an averaging period."
+      ],
+      "op_probe": "Are you asking how the earnings definition is described?",
+      "op_answer": "Yes, the definition rather than a claim estimate.",
+      "explanation": "An earnings definition and a benefit waiting period address different parts of the cover.",
+      "followup": "Does a stated maximum benefit mean every applicant earns that amount?",
+      "followup_answer": "A maximum is a limit; the applicable earnings and benefit calculation must still be established.",
+      "closing": "Let us compare the earnings definitions.",
+      "fact": [
+        "Income-cover wording",
+        "can define the earnings used in a benefit calculation."
+      ],
+      "procedure": "The earnings-definition clause is the relevant place to identify which income sources are included.",
+      "extra_fact": "A distinction in benefit wording is that a maximum is a limit, not a promise of that payment.",
+      "general": [
+        "An income policy that explains its earnings definition",
+        "An income policy that explains its earnings definition is preferable to an impressive benefit headline alone."
+      ],
+      "basis": [
+        "An inclusive earnings definition",
+        "An inclusive earnings definition is more useful for these varying bookings than one based only on a regular salary."
+      ],
+      "choice": [
+        "The policy whose earnings definition includes the contract income",
+        "The policy whose earnings definition includes the contract income fits this work pattern."
+      ],
+      "question": "Would you like the averaging period explained separately?",
+      "other": [
+        "Which income source is that definition referring to?",
+        "We can discuss the definitions without estimating a claim."
+      ],
+      "other_scopes": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": "fund_distribution_cash",
+      "split": "train",
+      "domain": "investment",
+      "call": "C09",
+      "goals": [
+        "I use investment distributions to pay a quarterly household bill. I do not want them automatically reinvested.",
+        "Our club uses fund distributions for its annual venue payment. We need the cash paid out rather than more units."
+      ],
+      "probe": "Are distributions needed as cash rather than additional units?",
+      "answer": "Yes, the cash payment is what we use.",
+      "operations": [
+        "The fund form lists cash and reinvestment instructions.",
+        "I have a distribution election section open."
+      ],
+      "op_probe": "Are you asking about the instruction choices?",
+      "op_answer": "Yes, what each election means.",
+      "explanation": "A distribution election directs the form of payment; it does not promise the distribution amount.",
+      "followup": "Does selecting cash guarantee an income on a fixed date?",
+      "followup_answer": "The election is separate from whether and when the fund makes a distribution.",
+      "closing": "Please explain the payout choices.",
+      "fact": [
+        "A distribution election",
+        "can direct a fund payment to cash or reinvestment where offered."
+      ],
+      "procedure": "Find the current distribution election before changing the nominated bank details.",
+      "extra_fact": "The fund service team can identify the current distribution election for you.",
+      "general": [
+        "A fund with clear distribution elections",
+        "A fund with clear distribution elections is easier to recommend than one with obscure payout instructions."
+      ],
+      "basis": [
+        "When distributions pay an upcoming bill,",
+        "When distributions pay an upcoming bill, a cash election is more useful than accumulating extra units."
+      ],
+      "choice": [
+        "The cash-distribution instruction",
+        "The cash-distribution instruction is the appropriate election for this use of the proceeds."
+      ],
+      "question": "Would you like to locate the election on the form?",
+      "other": [
+        "Are we looking at a bank-detail field or the distribution election?",
+        "You can take your time; we can leave the current election unchanged during the explanation."
+      ],
+      "other_scopes": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": "employee_share_concentration",
+      "split": "train",
+      "domain": "investment",
+      "call": "C09",
+      "goals": [
+        "Most of my savings and my employer share plan depend on the same company. I am considering where new savings should go.",
+        "Our family already owns a large parcel of the company that pays my salary. Another investment in the same company would increase that dependence."
+      ],
+      "probe": "Are employment income and a large investment tied to the same business?",
+      "answer": "Yes, both depend heavily on that company.",
+      "operations": [
+        "I am reading a fund factsheet with several holdings.",
+        "There is a comparison between a company share and a diversified fund."
+      ],
+      "op_probe": "Are you asking what diversification describes?",
+      "op_answer": "Yes, the difference in how holdings are spread.",
+      "explanation": "A fund holding many securities can still have concentrations by issuer or sector.",
+      "followup": "Does a large number of holdings establish equal exposure to each?",
+      "followup_answer": "The weights matter as well as the count.",
+      "closing": "Can we discuss the concentration difference?",
+      "fact": [
+        "A portfolio holdings report",
+        "can show the weights of its listed investments."
+      ],
+      "procedure": "Read the largest holding weights rather than relying only on the number of names.",
+      "extra_fact": "Diversification does not remove all investment losses.",
+      "general": [
+        "Adding another holding in the same employer",
+        "Adding another holding in the same employer is a weak form of diversification."
+      ],
+      "basis": [
+        "With salary and savings dependent on one company,",
+        "With salary and savings dependent on one company, spreading new investment exposure is preferable to increasing that single-company stake."
+      ],
+      "choice": [
+        "Another investment in the employer company",
+        "Another investment in the employer company is not appropriate for this concentration problem."
+      ],
+      "question": "Shall we look at issuer weights on the factsheet?",
+      "other": [
+        "Is that percentage an issuer weight or a sector weight?",
+        "We can use percentages without discussing the employer name."
+      ],
+      "other_scopes": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": "fund_exit_gate",
+      "split": "train",
+      "domain": "investment",
+      "call": "C09",
+      "goals": [
+        "A house repair may need funding at short notice. I am comparing funds, and one can suspend withdrawals during difficult markets.",
+        "I keep a reserve for urgent accessibility repairs. I cannot assume a fund withdrawal will be available exactly when a contractor needs payment."
+      ],
+      "probe": "Could the money be required with little warning?",
+      "answer": "Yes, I cannot schedule the repair in advance.",
+      "operations": [
+        "The fund booklet includes a withdrawal-gating clause.",
+        "I am reading the redemption section rather than the return chart."
+      ],
+      "op_probe": "Are you asking what a withdrawal gate means?",
+      "op_answer": "Yes, the process described by that clause.",
+      "explanation": "A withdrawal request and its acceptance can be separate stages under a fund constitution.",
+      "followup": "Does an ordinary settlement target remove suspension powers?",
+      "followup_answer": "A usual processing period does not cancel a separate suspension clause.",
+      "closing": "Please compare the access provisions.",
+      "fact": [
+        "Fund redemption terms",
+        "can permit delayed or suspended withdrawals in specified circumstances."
+      ],
+      "procedure": "Locate any suspension clause alongside the ordinary withdrawal timetable.",
+      "extra_fact": "A usual processing timetable does not provide a guarantee that suspension powers will never be used.",
+      "general": [
+        "Transparent redemption conditions",
+        "Transparent redemption conditions are a positive feature of a fund."
+      ],
+      "basis": [
+        "For a reserve that may be called on suddenly,",
+        "For a reserve that may be called on suddenly, dependable access matters more than a small historical return advantage."
+      ],
+      "choice": [
+        "The option without the fund withdrawal restriction",
+        "The option without the fund withdrawal restriction is the suitable place for this urgent reserve."
+      ],
+      "question": "Would the suspension paragraph be helpful to read next?",
+      "other": [
+        "Which page contains the suspension provision?",
+        "We can keep the repair estimate out of the discussion."
+      ],
+      "other_scopes": [
+        true,
+        false
+      ]
+    },
+    {
+      "key": "bond_currency_expense",
+      "split": "train",
+      "domain": "investment",
+      "call": "C09",
+      "goals": [
+        "My course fees will be paid in the same foreign currency as a bond I am considering. The exchange exposure is different from my local-currency savings.",
+        "We expect a foreign-currency education bill. I am comparing a local-currency bond with one denominated in the bill currency."
+      ],
+      "probe": "Is the future bill in the bond currency?",
+      "answer": "Yes, that is the currency the school invoices in.",
+      "operations": [
+        "I am reading the currency line on a bond term sheet.",
+        "There are local- and foreign-currency bond examples here."
+      ],
+      "op_probe": "Are you asking what the denomination means?",
+      "op_answer": "Yes, which currency the document specifies.",
+      "explanation": "The denomination identifies a contractual currency; it does not establish the issuer ability to pay.",
+      "followup": "Does matching currencies remove default risk?",
+      "followup_answer": "Currency alignment and issuer credit risk are different exposures.",
+      "closing": "Please distinguish the currency and issuer risks.",
+      "fact": [
+        "A bond term sheet",
+        "can specify the currency of its contractual payments."
+      ],
+      "procedure": "Identify the payment currency before converting the displayed amount.",
+      "extra_fact": "The currency and issuer clauses need reading separately because they describe different exposures.",
+      "general": [
+        "A matching currency",
+        "A matching currency is useful, but it is a poor excuse to ignore issuer risk."
+      ],
+      "basis": [
+        "With a bill in that foreign currency,",
+        "With a bill in that foreign currency, matching payment denomination has more relevance than a local-currency headline yield alone."
+      ],
+      "choice": [
+        "The local-currency bond",
+        "The local-currency bond is not the right choice for this currency-matching objective."
+      ],
+      "question": "Would you like issuer risk discussed separately?",
+      "other": [
+        "Is that figure the face amount or its converted display value?",
+        "We can leave the school details out of the example."
+      ],
+      "other_scopes": [
+        true,
+        false
+      ]
+    },
+    {
+      "key": "ethical_screen",
+      "split": "train",
+      "domain": "investment",
+      "call": "C09",
+      "goals": [
+        "Our association rules exclude tobacco producers. I am comparing two share funds, and one has a published exclusion screen.",
+        "The endowment deed prevents direct exposure to tobacco manufacturers. I need to understand how a fund implements its screen."
+      ],
+      "probe": "Is that exclusion a requirement rather than a preference?",
+      "answer": "Yes, the governing rules require it.",
+      "operations": [
+        "I have an ethical-screening methodology on the screen.",
+        "The fund description mentions exclusions and revenue thresholds."
+      ],
+      "op_probe": "Are you asking about how the screen is documented?",
+      "op_answer": "Yes, the methodology rather than a sustainability slogan.",
+      "explanation": "A screening methodology can use definitions and revenue thresholds that differ between funds.",
+      "followup": "Does a sustainability label establish the same exclusions everywhere?",
+      "followup_answer": "The methodology needs reading; the label alone does not specify the screen.",
+      "closing": "Can we compare the written exclusions?",
+      "fact": [
+        "A fund exclusion methodology",
+        "can define the activities and thresholds used by its screen."
+      ],
+      "procedure": "Read the producer definition and revenue threshold in the published methodology.",
+      "extra_fact": "A sustainability label does not provide a complete list of exclusions or holdings.",
+      "general": [
+        "An auditable exclusion methodology",
+        "An auditable exclusion methodology is more convincing than an unexplained ethical badge."
+      ],
+      "basis": [
+        "Because the governing rules exclude those producers,",
+        "Because the governing rules exclude those producers, an explicit producer screen has more value than an unqualified ethical label."
+      ],
+      "choice": [
+        "The fund with the required producer exclusion",
+        "The fund with the required producer exclusion is appropriate under these association rules."
+      ],
+      "question": "Shall we identify how exceptions are reported?",
+      "other": [
+        "Which definition is used for a tobacco producer?",
+        "We can work from the rule wording without naming the association."
+      ],
+      "other_scopes": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": "overseas_small_supplier",
+      "split": "train",
+      "domain": "payment",
+      "call": "C16",
+      "goals": [
+        "I pay a small overseas supplier every week. A flat transfer fee takes a large share of each payment.",
+        "Our club sends modest regular payments abroad for materials. The fixed fee is more noticeable than the rate difference on these amounts."
+      ],
+      "probe": "Are the payments small and repeated?",
+      "answer": "Yes, rather than one large transfer.",
+      "operations": [
+        "I have two international-transfer fee examples.",
+        "The remittance page shows a fixed fee and an exchange rate."
+      ],
+      "op_probe": "Are you asking how the two price components differ?",
+      "op_answer": "Yes, the fee compared with the rate.",
+      "explanation": "A transfer fee and the conversion rate are separate parts of the quoted cost.",
+      "followup": "Does a zero-fee headline establish the recipient amount?",
+      "followup_answer": "The conversion rate and any other stated charges still affect the amount received.",
+      "closing": "Can we compare the cost for a small payment?",
+      "fact": [
+        "An international-transfer quote",
+        "can show the sent amount, conversion rate and stated fee."
+      ],
+      "procedure": "For this type of remittance, compare the same sent amount before reading the recipient amounts.",
+      "extra_fact": "A service can produce an indicative recipient-amount quote for you before payment authorisation.",
+      "general": [
+        "A zero-fee transfer headline",
+        "A zero-fee transfer headline is a poor comparison if the recipient receives less."
+      ],
+      "basis": [
+        "For repeated small supplier payments,",
+        "For repeated small supplier payments, a low fixed charge is more useful than a tiny rate improvement that the fee overwhelms."
+      ],
+      "choice": [
+        "The service with the lower total cost at this payment size",
+        "The service with the lower total cost at this payment size fits these regular payments."
+      ],
+      "question": "Would a like-for-like quote amount help?",
+      "other": [
+        "Which amount is being sent before conversion?",
+        "We can compare prices without entering the supplier details."
+      ],
+      "other_scopes": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": "recipient_local_fee",
+      "split": "train",
+      "domain": "payment",
+      "call": "C05",
+      "goals": [
+        "My parent needs the exact tuition amount to arrive overseas. The receiving bank sometimes deducts a charge.",
+        "A college abroad rejects short payments. I need to understand who pays intermediary and receiving-bank charges."
+      ],
+      "probe": "Does the recipient need a specified net amount?",
+      "answer": "Yes, a short payment would leave the bill unpaid.",
+      "operations": [
+        "The transfer form lists different charge options.",
+        "I am reading the remittance fee allocation section."
+      ],
+      "op_probe": "Are you asking who bears the transfer charges?",
+      "op_answer": "Yes, what each charging option describes.",
+      "explanation": "A sending-bank fee and a receiving-bank deduction can be different charges.",
+      "followup": "Does paying the sending fee necessarily cover every deduction?",
+      "followup_answer": "The charging arrangement needs to say what it includes; the sending fee alone is not that statement.",
+      "closing": "Please explain the charge allocation.",
+      "fact": [
+        "Remittance charge options",
+        "can allocate stated transfer charges between sender and recipient."
+      ],
+      "procedure": "Read which charges are included in the selected charging option.",
+      "extra_fact": "A sending-fee receipt does not provide confirmation that every receiving-bank deduction has been covered.",
+      "general": [
+        "A clear charge allocation",
+        "A clear charge allocation is a valuable part of a remittance service."
+      ],
+      "basis": [
+        "When the invoice must arrive in full,",
+        "When the invoice must arrive in full, a clear net-receipt arrangement is more valuable than the cheapest displayed sending fee."
+      ],
+      "choice": [
+        "The transfer option covering the required net receipt",
+        "The transfer option covering the required net receipt is appropriate for this invoice."
+      ],
+      "question": "Shall we identify any deductions that remain outside the quote?",
+      "other": [
+        "Is that charge taken from the sender or the recipient amount?",
+        "We can leave the payment unconfirmed while reviewing the choices."
+      ],
+      "other_scopes": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": "festival_terminal",
+      "split": "train",
+      "domain": "payment",
+      "call": "C19",
+      "goals": [
+        "We sell drinks at outdoor festivals with patchy mobile reception. Our current card terminal loses its connection in the busiest periods.",
+        "The food van serves events away from reliable wifi. We need to compare terminal connectivity rather than counter space."
+      ],
+      "probe": "Is unreliable connectivity the issue at the event sites?",
+      "answer": "Yes, the queue builds when the terminal disconnects.",
+      "operations": [
+        "I have a merchant-terminal connectivity sheet.",
+        "The terminal proposal mentions mobile and wifi connections."
+      ],
+      "op_probe": "Are you asking about the available connection types?",
+      "op_answer": "Yes, what the device supports.",
+      "explanation": "A device connection type and the availability of network coverage are different things.",
+      "followup": "Does mobile support guarantee reception at every event?",
+      "followup_answer": "Network availability at the location still matters.",
+      "closing": "Let us keep the connection question separate from settlement.",
+      "fact": [
+        "A merchant-terminal specification",
+        "can list supported connectivity methods."
+      ],
+      "procedure": "For this type of merchant terminal, distinguish the supported connection methods from actual venue coverage.",
+      "extra_fact": "A terminal service specification describes one offering, not whether it is the only service with those connection options.",
+      "general": [
+        "A compact terminal case",
+        "A compact terminal case is a poor reason to overlook unreliable payment connectivity."
+      ],
+      "basis": [
+        "At sites with patchy reception,",
+        "At sites with patchy reception, resilient connection options matter more than a smaller terminal footprint."
+      ],
+      "choice": [
+        "The wifi-only terminal",
+        "The wifi-only terminal is unsuitable for these event locations."
+      ],
+      "question": "Would it help to distinguish the device capability from venue coverage?",
+      "other": [
+        "Which event site has the connection problem?",
+        "We can discuss the setup without taking a test payment."
+      ],
+      "other_scopes": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": "school_payment_reference",
+      "split": "train",
+      "domain": "payment",
+      "call": "C05",
+      "goals": [
+        "Our school collects camp payments for several siblings in each family. We need to reconcile each child rather than just the payer name.",
+        "The sports club receives identical membership amounts. A payer name alone does not tell us which child the payment is for."
+      ],
+      "probe": "Is a child or member reference needed for reconciliation?",
+      "answer": "Yes, the amount and payer name are not enough.",
+      "operations": [
+        "I am looking at an electronic collection-service report.",
+        "The payment report sample includes a customer reference field."
+      ],
+      "op_probe": "Are you asking what gets included in the report?",
+      "op_answer": "Yes, which reference is shown.",
+      "explanation": "A payer account name and a member reference serve different identification purposes.",
+      "followup": "Does a payment amount uniquely identify a member?",
+      "followup_answer": "Several payments can have the same amount, so the report fields must be considered separately.",
+      "closing": "Can we compare the reconciliation output?",
+      "fact": [
+        "A payment-collection report",
+        "can include reference fields alongside transaction amounts."
+      ],
+      "procedure": "Compare the reference field in the sample report with the field on the payment instruction.",
+      "extra_fact": "The member reference is an important field for distinguishing otherwise identical payment receipts.",
+      "general": [
+        "Useful reconciliation fields",
+        "Useful reconciliation fields make a collection service more attractive."
+      ],
+      "basis": [
+        "When family payments have identical amounts,",
+        "When family payments have identical amounts, a collection report without member references is a poor substitute for usable reconciliation records."
+      ],
+      "choice": [
+        "The collection service retaining the member reference",
+        "The collection service retaining the member reference fits this reconciliation job."
+      ],
+      "question": "Would a redacted report sample be helpful?",
+      "other": [
+        "Which field is intended to hold the child reference?",
+        "We can use dummy member numbers for the explanation."
+      ],
+      "other_scopes": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": "super_small_balance_fee",
+      "split": "train",
+      "domain": "super",
+      "call": "C09",
+      "goals": [
+        "I have a small super balance from a short casual job. A fixed annual fee would take a noticeable part of it.",
+        "My second super account has very little in it. I am comparing the fixed and percentage administration charges."
+      ],
+      "probe": "Is the balance small relative to the fixed charge?",
+      "answer": "Yes, that fixed amount is substantial compared with the balance.",
+      "operations": [
+        "I have the super administration fee table open.",
+        "This super illustration has fixed and percentage charges."
+      ],
+      "op_probe": "Are you asking how the two fee types are expressed?",
+      "op_answer": "Yes, the fixed amount compared with the percentage.",
+      "explanation": "A fixed charge is stated as an amount; a percentage charge uses the specified calculation base.",
+      "followup": "Does the percentage rate by itself give the dollar cost?",
+      "followup_answer": "The relevant balance or calculation base is needed to convert it into an amount.",
+      "closing": "Please compare the fee structures.",
+      "fact": [
+        "Super administration fees",
+        "can include fixed amounts and percentage-based charges."
+      ],
+      "procedure": "Calculate the listed charges using the same balance before comparing them.",
+      "extra_fact": "The distinction between the two fee types is that one is stated as an amount and the other uses a calculation base.",
+      "general": [
+        "A low percentage fee",
+        "A low percentage fee is an incomplete comparison when a large fixed charge sits beside it."
+      ],
+      "basis": [
+        "For a small super balance,",
+        "For a small super balance, a modest fixed charge matters more than a small percentage-rate difference."
+      ],
+      "choice": [
+        "The super account with the large fixed charge",
+        "The super account with the large fixed charge is not the suitable choice at this balance."
+      ],
+      "question": "Would you like the charges shown as dollars for the same balance?",
+      "other": [
+        "Which fee is charged as a fixed amount?",
+        "We can compare the illustration without transferring any super."
+      ],
+      "other_scopes": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": "super_weekly_contribution",
+      "split": "train",
+      "domain": "super",
+      "call": "C09",
+      "goals": [
+        "I want to make small weekly super contributions. One account imposes a minimum above what I can put aside each week.",
+        "My voluntary super savings are modest but regular. I do not want to wait months to reach a large contribution minimum."
+      ],
+      "probe": "Would the minimum delay each planned contribution?",
+      "answer": "Yes, I would have to accumulate several weeks first.",
+      "operations": [
+        "The voluntary-contribution instructions list a minimum amount.",
+        "I am reading the super contribution-method page."
+      ],
+      "op_probe": "Are you asking about the minimum per contribution?",
+      "op_answer": "Yes, the amount for each instruction.",
+      "explanation": "A minimum contribution amount and an annual contribution cap are different limits.",
+      "followup": "Does a small minimum establish how much can be contributed in a year?",
+      "followup_answer": "An annual cap is a separate rule and cannot be inferred from the payment minimum.",
+      "closing": "Can we compare the contribution minimums?",
+      "fact": [
+        "A super contribution method",
+        "can specify a minimum amount for an individual payment."
+      ],
+      "procedure": "Locate the per-payment minimum separately from annual cap information.",
+      "extra_fact": "A minimum contribution amount is a stated feature of the payment method, separate from the annual cap.",
+      "general": [
+        "A straightforward contribution method",
+        "A straightforward contribution method is a worthwhile super account feature."
+      ],
+      "basis": [
+        "With only small weekly sums available,",
+        "With only small weekly sums available, a high contribution minimum is a poor account feature despite a polished app."
+      ],
+      "choice": [
+        "The account accepting the planned weekly amount",
+        "The account accepting the planned weekly amount fits this contribution pattern."
+      ],
+      "question": "Shall we distinguish the payment minimum from the annual cap?",
+      "other": [
+        "Is that amount per payment or per year?",
+        "You can take your time; we can leave the contribution instruction unsubmitted."
+      ],
+      "other_scopes": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": "super_occupation_cover",
+      "split": "train",
+      "domain": "super",
+      "call": "C15",
+      "goals": [
+        "I changed from desk work to paid tree-climbing work. I am comparing the occupation wording in my super insurance.",
+        "My new job involves regular work at height. The old super cover description was based on an office role."
+      ],
+      "probe": "Has the work changed from office duties to physical work at height?",
+      "answer": "Yes, that is now a normal part of the job.",
+      "operations": [
+        "I have an occupation-classification section for super insurance.",
+        "The super insurance page lists occupational exclusions."
+      ],
+      "op_probe": "Are you asking what the occupation classification refers to?",
+      "op_answer": "Yes, the duties covered by the description.",
+      "explanation": "A job title and the actual duties performed may not describe the same risk.",
+      "followup": "Does retaining the same account prove that a job change is covered?",
+      "followup_answer": "The cover terms and any notification requirements still need checking.",
+      "closing": "Please explain the occupation wording.",
+      "fact": [
+        "Insurance within super",
+        "can apply occupation definitions and exclusions."
+      ],
+      "procedure": "Read the duties specified for this type of occupational cover rather than relying only on a job title.",
+      "extra_fact": "The super investment option is different from the insurance occupation class.",
+      "general": [
+        "An unchanged insurance premium",
+        "An unchanged insurance premium is a weak reason to assume changed duties are covered."
+      ],
+      "basis": [
+        "With work at height replacing office duties,",
+        "With work at height replacing office duties, an accurate occupation definition matters more than retaining an old premium headline."
+      ],
+      "choice": [
+        "The cover excluding the new duties",
+        "The cover excluding the new duties is unsuitable for this work."
+      ],
+      "question": "Would you like the duty definitions read separately?",
+      "other": [
+        "Which duties are now part of the role?",
+        "I can read the occupation definition aloud to you."
+      ],
+      "other_scopes": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": "super_pension_frequency",
+      "split": "train",
+      "domain": "super",
+      "call": "C09",
+      "goals": [
+        "My rent is fortnightly, but the pension account I am comparing only pays quarterly. I would have to manage the gap myself.",
+        "The retirement budget has fortnightly living costs. I am comparing pension payment frequencies rather than just annual totals."
+      ],
+      "probe": "Do the regular expenses fall more often than quarterly?",
+      "answer": "Yes, rent and ordinary costs fall throughout the quarter.",
+      "operations": [
+        "I have the pension payment-frequency form.",
+        "The pension illustration has monthly and quarterly payment choices."
+      ],
+      "op_probe": "Are you asking how the frequency choices are recorded?",
+      "op_answer": "Yes, what the payment-frequency setting controls.",
+      "explanation": "Payment frequency describes timing; it is separate from the annual pension amount.",
+      "followup": "Does a more frequent schedule necessarily increase the annual amount?",
+      "followup_answer": "The frequency and the annual amount must be read separately.",
+      "closing": "Let us compare the timing choices.",
+      "fact": [
+        "A pension payment election",
+        "can specify the available payment frequency."
+      ],
+      "procedure": "Find the frequency field and distinguish it from the annual-amount field.",
+      "extra_fact": "We can discuss the timing separately: payment frequency and the annual amount are different fields.",
+      "general": [
+        "A pension account with understandable timing choices",
+        "A pension account with understandable timing choices is preferable to an unclear payment timetable."
+      ],
+      "basis": [
+        "With rent falling throughout the quarter,",
+        "With rent falling throughout the quarter, regular pension payments are more attractive than a quarterly-only arrangement."
+      ],
+      "choice": [
+        "The pension option supporting fortnightly payments",
+        "The pension option supporting fortnightly payments matches this expense schedule."
+      ],
+      "question": "Would a calendar showing the payment dates help?",
+      "other": [
+        "Which field is the frequency rather than the amount?",
+        "We can keep the current election in place while comparing."
+      ],
+      "other_scopes": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": "val_charity_card_acceptance",
+      "split": "validation",
+      "domain": "payment",
+      "call": "C16",
+      "goals": [
+        "Our charity receives donations from supporters abroad. Some have cards issued outside the country, and the local-only checkout rejects them.",
+        "The reunion group has overseas members. Their contributions fail at a payment page that only accepts domestic cards."
+      ],
+      "probe": "Are the rejected cards issued overseas?",
+      "answer": "Yes, local cards go through but overseas-issued cards fail.",
+      "operations": [
+        "I have the checkout card-acceptance specification.",
+        "The merchant service sheet distinguishes domestic and international cards."
+      ],
+      "op_probe": "Are you asking which card types the service accepts?",
+      "op_answer": "Yes, the acceptance description.",
+      "explanation": "The card issuer location and the currency displayed at checkout are different properties.",
+      "followup": "Does showing a foreign currency guarantee acceptance of a foreign-issued card?",
+      "followup_answer": "Acceptance rules and displayed currency need checking separately.",
+      "closing": "Please explain the acceptance difference.",
+      "fact": [
+        "A checkout acceptance policy",
+        "can distinguish supported card types and issuer locations."
+      ],
+      "procedure": "Read the supported issuer-location rules before changing the checkout currency.",
+      "extra_fact": "A declined payment does not by itself identify the reason for refusal.",
+      "general": [
+        "A multilingual checkout",
+        "A multilingual checkout is a poor substitute for accepting the cards donors actually hold."
+      ],
+      "basis": [
+        "With overseas-issued donor cards being rejected,",
+        "With overseas-issued donor cards being rejected, international card acceptance is more useful than extra page languages alone."
+      ],
+      "choice": [
+        "The domestic-card-only checkout",
+        "The domestic-card-only checkout is not appropriate for this donor group."
+      ],
+      "question": "Shall we separate card acceptance from currency display?",
+      "other": [
+        "Which issuer locations appear in that acceptance list?",
+        "We can compare the specifications without using a real donor card."
+      ],
+      "other_scopes": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": "cal_group_remittance",
+      "split": "calibration",
+      "domain": "payment",
+      "call": "C16",
+      "goals": [
+        "Our music ensemble pays several overseas tutors each month. Entering the same details repeatedly is causing transcription mistakes.",
+        "The language school makes recurring payments to a group of instructors abroad. Re-keying each recipient every month is error-prone."
+      ],
+      "probe": "Are the same recipients paid repeatedly?",
+      "answer": "Yes, the recipient list changes only occasionally.",
+      "operations": [
+        "I have a remittance service page about saved recipients.",
+        "The overseas-payments menu has a recipient-list function."
+      ],
+      "op_probe": "Are you asking how saved recipient details are used?",
+      "op_answer": "Yes, the saved-list feature rather than a payment quote.",
+      "explanation": "Saving a recipient record and authorising a payment are separate actions.",
+      "followup": "Does a saved record authorise a new payment automatically?",
+      "followup_answer": "The service must describe its authorisation process separately from storing the record.",
+      "closing": "Can we compare the repeated-entry steps?",
+      "fact": [
+        "A remittance recipient list",
+        "can store details for later payment instructions."
+      ],
+      "procedure": "We can inspect the saved-recipient record without submitting a payment instruction.",
+      "extra_fact": "The provider can locate the saved-recipient record for you without submitting a payment.",
+      "general": [
+        "A remittance service with a readable authorisation process",
+        "A remittance service with a readable authorisation process is easier to recommend than one with unclear payment stages."
+      ],
+      "basis": [
+        "For the recurring group of overseas tutors,",
+        "For the recurring group of overseas tutors, reliable saved-recipient handling matters more than a cosmetic payment dashboard."
+      ],
+      "choice": [
+        "The remittance service with reusable verified recipient records",
+        "The remittance service with reusable verified recipient records fits this recurring-payment task."
+      ],
+      "question": "Would it help to distinguish storing details from authorising a payment?",
+      "other": [
+        "Is that screen a recipient record or a payment instruction?",
+        "We can use placeholder account numbers during the walkthrough."
+      ],
+      "other_scopes": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": "cal_super_claim_support",
+      "split": "calibration",
+      "domain": "super",
+      "call": "C18",
+      "goals": [
+        "I manage paperwork for a family member whose disability makes long forms difficult. We are comparing support available with super insurance claims.",
+        "The member needs help completing insurance forms in small sessions. An online-only claim process is difficult to manage.",
+        "My rural internet drops out during long insurance claim forms. I need to complete the super claim questions with assistance in short telephone sessions."
+      ],
+      "probe": "Is assisted form completion important rather than just downloading a form?",
+      "answer": "Yes, the member needs someone to help through the questions.",
+      "operations": [
+        "The super insurance booklet lists claim-support channels.",
+        "I am reading the assisted-claims information for this super account."
+      ],
+      "op_probe": "Are you asking which support channels are described?",
+      "op_answer": "Yes, the assistance options rather than a claim outcome.",
+      "explanation": "Assistance completing a claim is different from a decision about the benefit.",
+      "followup": "Does access to an adviser guarantee an accepted insurance claim?",
+      "followup_answer": "Support with the process does not establish eligibility or the claim decision.",
+      "closing": "Please distinguish support from the benefit decision.",
+      "fact": [
+        "A super insurance support service",
+        "can describe the channels available for help with claim forms."
+      ],
+      "procedure": "Locate the assisted-completion contact rather than sending medical material to a general mailbox.",
+      "extra_fact": "A support channel is not a statement that a claim will be paid.",
+      "general": [
+        "Accessible claim support",
+        "Accessible claim support is a worthwhile feature of super insurance."
+      ],
+      "basis": [
+        "When forms need to be completed in small supported sessions,",
+        "When forms need to be completed in small supported sessions, human assistance is more valuable than a fast self-service screen alone."
+      ],
+      "choice": [
+        "The super insurance service offering assisted completion",
+        "The super insurance service offering assisted completion suits the required support arrangement."
+      ],
+      "question": "Would you like the support channels set out separately?",
+      "other": [
+        "Which channel is described as assisted completion?",
+        "I can read the form questions aloud to you if that helps."
+      ],
+      "other_scopes": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": "test_bicycle_commute",
+      "split": "test",
+      "domain": "insurance",
+      "call": "C15",
+      "goals": [
+        "I ride an expensive bicycle to work and leave it locked outside during the day. The home policy I am comparing has an away-from-home exclusion.",
+        "My bicycle is usually kept at the station while I commute. Cover restricted to the house would miss most of that use."
+      ],
+      "probe": "Is the bicycle regularly away from the insured home?",
+      "answer": "Yes, it is parked away from home on workdays.",
+      "operations": [
+        "I have the portable-items section of a home policy.",
+        "The bicycle section distinguishes home-only and away-from-home cover."
+      ],
+      "op_probe": "Are you asking where the item benefit applies?",
+      "op_answer": "Yes, the location wording.",
+      "explanation": "An item description and its covered locations are separate parts of the policy.",
+      "followup": "Does listing an item establish cover at every location?",
+      "followup_answer": "The location restrictions still need reading even if the item is listed.",
+      "closing": "Let us compare the covered locations.",
+      "fact": [
+        "A bicycle insurance benefit",
+        "can limit cover according to the item location and security conditions."
+      ],
+      "procedure": "Read the away-from-home clause alongside any locking requirements.",
+      "extra_fact": "Your purchase receipt does not itself establish where cover applies.",
+      "general": [
+        "A generous home contents total",
+        "A generous home contents total is a poor substitute for relevant away-from-home item cover."
+      ],
+      "basis": [
+        "With the bicycle parked away from home on workdays,",
+        "With the bicycle parked away from home on workdays, a useful away-from-home benefit matters more than a higher house-only total."
+      ],
+      "choice": [
+        "The home-only bicycle benefit",
+        "The home-only bicycle benefit is unsuitable for this regular commuting use."
+      ],
+      "question": "Would you like the security conditions separated from the location rule?",
+      "other": [
+        "Which locations does that clause actually name?",
+        "We can discuss the wording without the bicycle serial number."
+      ],
+      "other_scopes": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": "test_loan_lump_payout",
+      "split": "test",
+      "domain": "credit",
+      "call": "C10",
+      "goals": [
+        "A fixed-term work contract pays a large completion bonus. I am comparing loans because I want to clear the debt when that payment arrives.",
+        "My final contract payment should cover the remaining loan. I want to understand the cost of paying it out early rather than keeping it for the full term."
+      ],
+      "probe": "Is an early full payout part of the plan?",
+      "answer": "Yes, rather than just paying a little extra each month.",
+      "operations": [
+        "I have a loan early-payout quote example.",
+        "The loan agreement includes a section on early termination."
+      ],
+      "op_probe": "Are you asking about full payout rather than an extra instalment?",
+      "op_answer": "Yes, closing the loan ahead of the end date.",
+      "explanation": "A full early payout and an additional scheduled payment can use different calculations.",
+      "followup": "Does permission for extra repayments establish a zero-cost early termination?",
+      "followup_answer": "The payout calculation and any termination charge must be read separately.",
+      "closing": "Can we compare the full-payout conditions?",
+      "fact": [
+        "A loan early-payout calculation",
+        "can include the remaining balance and charges specified by the agreement."
+      ],
+      "procedure": "Check the quote date and stated validity period before using a payout figure.",
+      "extra_fact": "An estimated future payout and a current dated quote are different figures.",
+      "general": [
+        "A transparent early-payout calculation",
+        "A transparent early-payout calculation is a strength of a loan offer."
+      ],
+      "basis": [
+        "With a full payout planned after the contract payment,",
+        "With a full payout planned after the contract payment, reasonable termination terms are more useful than a modest rate discount over an unused long term."
+      ],
+      "choice": [
+        "The loan with the lower stated early-payout cost",
+        "The loan with the lower stated early-payout cost fits this planned debt exit."
+      ],
+      "question": "Would a dated payout example make the distinction clearer?",
+      "other": [
+        "Is that quote for today or for a later proposed payout date?",
+        "We can compare the clauses without requesting a live payout quote."
+      ],
+      "other_scopes": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": "night_shift_cash",
+      "split": "train",
+      "domain": "deposit",
+      "call": "C08",
+      "goals": [
+        "My shift finishes after bank branches close. I receive cash tips and cannot get to a counter during the week."
+      ],
+      "operations": [],
+      "probe": "Is getting to a counter during opening hours difficult?",
+      "answer": "Yes, the shift times rule that out.",
+      "op_probe": "",
+      "op_answer": "",
+      "explanation": "A branch counter and an after-hours deposit facility can have different access arrangements.",
+      "followup": "Does an after-hours slot mean the money is credited immediately?",
+      "followup_answer": "Access to the deposit point and processing time are separate arrangements.",
+      "closing": "Please compare the access options, not just the rate.",
+      "fact": [
+        "An after-hours cash-deposit service",
+        "can specify access and processing arrangements."
+      ],
+      "procedure": "Read when deposits left after hours are processed.",
+      "extra_fact": "Access hours do not establish when funds become available.",
+      "general": [
+        "An accessible deposit facility",
+        "An accessible deposit facility is preferable to an impressive account rate with impractical deposit access."
+      ],
+      "basis": [
+        "With branch hours conflicting with the shift,",
+        "With branch hours conflicting with the shift, after-hours cash access is more valuable than a small rate bonus."
+      ],
+      "choice": [
+        "",
+        ""
+      ],
+      "question": "Would a list of access hours help?",
+      "other": [
+        "Which location offers the after-hours facility?",
+        "We can keep the employer details private."
+      ],
+      "other_scopes": [
+        true,
+        false
+      ]
+    },
+    {
+      "key": "tenant_multiple_keys",
+      "split": "train",
+      "domain": "insurance",
+      "call": "C15",
+      "goals": [
+        "I rent out a share house with several separately keyed rooms. Replacing a lost set can mean changing more than one lock."
+      ],
+      "operations": [],
+      "probe": "Can one lost set affect several room locks?",
+      "answer": "Yes, some keys open shared doors as well.",
+      "op_probe": "",
+      "op_answer": "",
+      "explanation": "A lock-replacement benefit can specify both the event and the amount payable.",
+      "followup": "Does a contents sum establish the lock-replacement amount?",
+      "followup_answer": "The lock benefit may have its own limit and conditions.",
+      "closing": "Let us compare the lock benefit separately.",
+      "fact": [
+        "A landlord lock-replacement benefit",
+        "can have a separate limit within the policy."
+      ],
+      "procedure": "Locate the lock-replacement limit rather than using the full contents sum.",
+      "extra_fact": "A list of insured contents is not the lock-benefit schedule.",
+      "general": [
+        "Clear lock-replacement terms",
+        "Clear lock-replacement terms are a useful part of landlord cover."
+      ],
+      "basis": [
+        "For a house with several linked keys,",
+        "For a house with several linked keys, a realistic lock-replacement limit is more useful than a larger decorative-contents extension."
+      ],
+      "choice": [
+        "",
+        ""
+      ],
+      "question": "Shall we separate the event definition from the amount?",
+      "other": [
+        "Which doors are described by that key system?",
+        "We can discuss the structure without an address."
+      ],
+      "other_scopes": [
+        true,
+        false
+      ]
+    },
+    {
+      "key": "catering_invoice_cycle",
+      "split": "train",
+      "domain": "credit",
+      "call": "C19",
+      "goals": [
+        "My catering company pays suppliers before a corporate customer pays its invoice. The gap recurs, but the amount changes with each event."
+      ],
+      "operations": [],
+      "probe": "Is this a recurring timing gap rather than one equipment purchase?",
+      "answer": "Yes, the amounts vary for each booking.",
+      "op_probe": "",
+      "op_answer": "",
+      "explanation": "A credit limit and the amount currently drawn are different figures.",
+      "followup": "Does the full limit mean interest is charged on all of it?",
+      "followup_answer": "The agreement needs to specify the balance on which charges are calculated.",
+      "closing": "Please compare the recurring cash-flow features.",
+      "fact": [
+        "A revolving business-credit facility",
+        "can distinguish an available limit from the drawn balance."
+      ],
+      "procedure": "Identify the charge calculation base rather than treating the limit as the balance.",
+      "extra_fact": "A facility fee and interest on drawings can be separate charges.",
+      "general": [
+        "A clear drawn-balance calculation",
+        "A clear drawn-balance calculation is preferable to an unclear all-in finance headline."
+      ],
+      "basis": [
+        "With the catering gap changing by event,",
+        "With the catering gap changing by event, flexible drawings are preferable to repeatedly financing a fixed amount that is not needed."
+      ],
+      "choice": [
+        "",
+        ""
+      ],
+      "question": "Would a limit-versus-drawing example help?",
+      "other": [
+        "Which figure represents the current drawing?",
+        "We can use sample amounts rather than customer invoices."
+      ],
+      "other_scopes": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": "music_royalty_account",
+      "split": "train",
+      "domain": "deposit",
+      "call": "C07",
+      "goals": [
+        "My royalty payments arrive a few times a year. The account I am comparing charges a fee in months without a deposit."
+      ],
+      "operations": [],
+      "probe": "Would there be months with no incoming payment?",
+      "answer": "Yes, several between royalty statements.",
+      "op_probe": "",
+      "op_answer": "",
+      "explanation": "A monthly deposit condition can be separate from an annual account fee.",
+      "followup": "Does a large deposit in one month satisfy every later month?",
+      "followup_answer": "The stated assessment period determines that; one deposit does not establish the treatment of other periods.",
+      "closing": "Can we compare the quiet-month charges?",
+      "fact": [
+        "An account deposit condition",
+        "can assess incoming payments over a specified period."
+      ],
+      "procedure": "Read the assessment period for the fee condition.",
+      "extra_fact": "An annual income total and a monthly deposit test are different measures.",
+      "general": [
+        "A low headline account fee",
+        "A low headline account fee is not convincing if common quiet months trigger extra charges."
+      ],
+      "basis": [
+        "When royalties arrive only a few times a year,",
+        "When royalties arrive only a few times a year, avoiding a monthly deposit hurdle is more useful than an unused payment reward."
+      ],
+      "choice": [
+        "",
+        ""
+      ],
+      "question": "Shall we distinguish the annual total from the monthly condition?",
+      "other": [
+        "Which fee applies in a month with no deposit?",
+        "We can leave the royalty amounts out of the example."
+      ],
+      "other_scopes": [
+        true,
+        false
+      ]
+    },
+    {
+      "key": "grant_capital_preservation",
+      "split": "train",
+      "domain": "investment",
+      "call": "C09",
+      "goals": [
+        "The community grant deed requires the capital to be preserved for the next project round. We are comparing investments with different exposure to losses."
+      ],
+      "operations": [],
+      "probe": "Is preservation a written funding condition?",
+      "answer": "Yes, spending a loss-reduced balance would breach the project plan.",
+      "op_probe": "",
+      "op_answer": "",
+      "explanation": "A stated investment objective is different from a capital guarantee.",
+      "followup": "Does calling an investment conservative guarantee its capital?",
+      "followup_answer": "A descriptive label does not itself establish a contractual guarantee.",
+      "closing": "Please distinguish the capital terms from the label.",
+      "fact": [
+        "An investment capital statement",
+        "can describe whether a guarantee is offered and any applicable conditions."
+      ],
+      "procedure": "Find the actual guarantee wording rather than substituting the investment label.",
+      "extra_fact": "Lower expected volatility does not mean losses are impossible.",
+      "general": [
+        "A conservative label",
+        "A conservative label is a weak reason to ignore the actual capital conditions."
+      ],
+      "basis": [
+        "With the grant capital required for the next round,",
+        "With the grant capital required for the next round, clear capital-preservation terms matter more than a higher projected return."
+      ],
+      "choice": [
+        "",
+        ""
+      ],
+      "question": "Would it help to separate an objective from a guarantee?",
+      "other": [
+        "Which wording, if any, describes a guarantee?",
+        "We can read the condition without identifying the grant body."
+      ],
+      "other_scopes": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": "shared_vendor_approvals",
+      "split": "train",
+      "domain": "payment",
+      "call": "C19",
+      "goals": [
+        "Our association requires two people to approve a vendor payment. One payment service lets a single administrator approve alone."
+      ],
+      "operations": [],
+      "probe": "Is two-person approval part of the association rules?",
+      "answer": "Yes, one person must not release a payment alone.",
+      "op_probe": "",
+      "op_answer": "",
+      "explanation": "Preparing a vendor payment and authorising its release are separate actions.",
+      "followup": "Does having two users automatically require two approvals?",
+      "followup_answer": "The permission and approval settings need to describe the actual release rule.",
+      "closing": "Please compare the approval control.",
+      "fact": [
+        "A vendor-payment approval setting",
+        "can specify how many authorisations are required."
+      ],
+      "procedure": "Read the release rule rather than assuming the user count establishes it.",
+      "extra_fact": "A notification to a second user is not itself a second authorisation.",
+      "general": [
+        "A clear release rule",
+        "A clear release rule is more useful than a dashboard showing many users without their permissions."
+      ],
+      "basis": [
+        "Because the association requires two approvals,",
+        "Because the association requires two approvals, an enforced dual-release control is preferable to a notification-only feature."
+      ],
+      "choice": [
+        "",
+        ""
+      ],
+      "question": "Shall we separate notification from authorisation?",
+      "other": [
+        "Which action actually releases the vendor payment?",
+        "We can discuss roles without listing user names."
+      ],
+      "other_scopes": [
+        true,
+        false
+      ]
+    },
+    {
+      "key": "unpaid_leave_premium",
+      "split": "train",
+      "domain": "insurance",
+      "call": "C11",
+      "goals": [
+        "I am taking six months of unpaid leave. I want to compare how insurance premiums can be paid while ordinary salary deductions stop."
+      ],
+      "operations": [],
+      "probe": "Will the usual payroll deduction be unavailable?",
+      "answer": "Yes, there will be no salary during that period.",
+      "op_probe": "",
+      "op_answer": "",
+      "explanation": "A premium collection method is different from the insured benefit definition.",
+      "followup": "Does a payroll deduction record prove future premiums will be collected during leave?",
+      "followup_answer": "The alternate collection arrangement needs confirmation separately.",
+      "closing": "Please compare the collection options during leave.",
+      "fact": [
+        "An insurance premium collection arrangement",
+        "can specify the available payment methods."
+      ],
+      "procedure": "Check how a replacement payment method is confirmed before relying on it.",
+      "extra_fact": "A bank payment instruction and the insurer receipt are different records.",
+      "general": [
+        "Manageable premium collection options",
+        "Manageable premium collection options are a useful feature of ongoing insurance."
+      ],
+      "basis": [
+        "With salary deductions stopping during leave,",
+        "With salary deductions stopping during leave, a workable alternative premium method is more valuable than a small renewal gift."
+      ],
+      "choice": [
+        "",
+        ""
+      ],
+      "question": "Would a diagram of the collection steps help?",
+      "other": [
+        "Which payment method is recorded for the leave period?",
+        "We can keep employment identifiers out of this discussion."
+      ],
+      "other_scopes": [
+        true,
+        false
+      ]
+    },
+    {
+      "key": "sms_roaming_cost",
+      "split": "train",
+      "domain": "payment",
+      "call": "C16",
+      "goals": [
+        "I will be overseas with a data-only SIM. The travel payment service I am comparing sends every approval code to the home mobile number."
+      ],
+      "operations": [],
+      "probe": "Will the home number receive messages while away?",
+      "answer": "No, the data-only SIM will not receive those texts.",
+      "op_probe": "",
+      "op_answer": "",
+      "explanation": "A data connection and reception of a text sent to another number are different capabilities.",
+      "followup": "Does an app login guarantee every payment can be approved?",
+      "followup_answer": "A separate authorisation step may use a different channel.",
+      "closing": "Please compare the authorisation channels.",
+      "fact": [
+        "A travel-payment authorisation process",
+        "can specify the channel used to confirm an instruction."
+      ],
+      "procedure": "Identify the required approval channel independently of the login method.",
+      "extra_fact": "A saved recipient does not remove every authorisation step.",
+      "general": [
+        "A low travel fee",
+        "A low travel fee is a weak advantage when the authorisation channel cannot be used."
+      ],
+      "basis": [
+        "With no access to the home-number texts,",
+        "With no access to the home-number texts, an accessible alternative approval channel is preferable to a rate discount alone."
+      ],
+      "choice": [
+        "",
+        ""
+      ],
+      "question": "Shall we distinguish logging in from approving a payment?",
+      "other": [
+        "Which channel receives the approval request?",
+        "We do not need a live approval code."
+      ],
+      "other_scopes": [
+        true,
+        false
+      ]
+    },
+    {
+      "key": "retirement_document_language",
+      "split": "train",
+      "domain": "super",
+      "call": "C18",
+      "goals": [
+        "My parent reads the pension documents in a language other than English. We are comparing whether translated explanations are available."
+      ],
+      "operations": [],
+      "probe": "Is written explanation in that language important?",
+      "answer": "Yes, reading the English booklet alone is not enough.",
+      "op_probe": "",
+      "op_answer": "",
+      "explanation": "A translated explanation and the governing account terms can be separate documents.",
+      "followup": "Does a translated summary necessarily replace the governing wording?",
+      "followup_answer": "The provider needs to identify the status of each document.",
+      "closing": "Please compare the explanation formats.",
+      "fact": [
+        "A pension document service",
+        "can describe the languages available for explanatory material."
+      ],
+      "procedure": "Check the document status as well as its language.",
+      "extra_fact": "An interpreter appointment and a translated written document are different services.",
+      "general": [
+        "Accessible pension explanations",
+        "Accessible pension explanations are preferable to relying on an unexplained technical booklet."
+      ],
+      "basis": [
+        "When written explanations must be read in another language,",
+        "When written explanations must be read in another language, usable translated material matters more than a decorative account summary."
+      ],
+      "choice": [
+        "",
+        ""
+      ],
+      "question": "Would the document-status labels be helpful to identify?",
+      "other": [
+        "Which document is the explanation rather than the governing terms?",
+        "We can discuss the language need without personal identifiers."
+      ],
+      "other_scopes": [
+        true,
+        false
+      ]
+    },
+    {
+      "key": "val_offset_pay_timing",
+      "split": "validation",
+      "domain": "credit",
+      "call": "C10",
+      "goals": [
+        "My salary sits in the account until quarterly bills fall due. I am comparing a mortgage with an offset feature and a lower-rate loan without it."
+      ],
+      "operations": [],
+      "probe": "Does the money remain available between salary and the bill dates?",
+      "answer": "Yes, it stays there for weeks rather than leaving immediately.",
+      "op_probe": "",
+      "op_answer": "",
+      "explanation": "An offset balance is separate from a repayment made into the loan.",
+      "followup": "Does putting money in an offset reduce the stated loan principal?",
+      "followup_answer": "The principal and the balance used for an interest calculation are different records.",
+      "closing": "Please compare the offset feature with the rate difference.",
+      "fact": [
+        "A mortgage offset arrangement",
+        "can specify which linked balances affect the interest calculation."
+      ],
+      "procedure": "Read the eligible linked-balance rule separately from the advertised mortgage rate.",
+      "extra_fact": "A redraw balance is not the same record as a separate deposit balance.",
+      "general": [
+        "A clearly described offset arrangement",
+        "A clearly described offset arrangement is preferable to an unclear package headline."
+      ],
+      "basis": [
+        "While salary stays available ahead of quarterly bills,",
+        "While salary stays available ahead of quarterly bills, a usable offset balance has more value than an unused rewards package."
+      ],
+      "choice": [
+        "",
+        ""
+      ],
+      "question": "Would a principal-versus-offset example help?",
+      "other": [
+        "Which balance is in the linked account rather than the loan?",
+        "We can use sample salary dates."
+      ],
+      "other_scopes": [
+        true,
+        false
+      ]
+    },
+    {
+      "key": "val_dormant_savings",
+      "split": "validation",
+      "domain": "deposit",
+      "call": "C08",
+      "goals": [
+        "I leave emergency savings untouched for long stretches. One account charges when there has been no customer transaction for a specified time."
+      ],
+      "operations": [],
+      "probe": "Could several months pass without an initiated transaction?",
+      "answer": "Yes, it is only there for emergencies.",
+      "op_probe": "",
+      "op_answer": "",
+      "explanation": "An account transaction and a provider interest entry may be defined differently for an inactivity condition.",
+      "followup": "Does an interest credit necessarily reset the inactivity period?",
+      "followup_answer": "The definition of an eligible transaction determines that.",
+      "closing": "Can we compare the inactivity terms?",
+      "fact": [
+        "A savings inactivity condition",
+        "can specify both an assessment period and eligible activity."
+      ],
+      "procedure": "Check the eligible-activity definition before counting an automatic interest credit.",
+      "extra_fact": "A displayed balance does not establish the date of the last customer instruction.",
+      "general": [
+        "An account without an onerous inactivity hurdle",
+        "An account without an onerous inactivity hurdle is an attractive savings option."
+      ],
+      "basis": [
+        "For savings deliberately left untouched,",
+        "For savings deliberately left untouched, avoiding an inactivity charge is more useful than rewards for regular spending."
+      ],
+      "choice": [
+        "",
+        ""
+      ],
+      "question": "Shall we distinguish customer activity from automatic entries?",
+      "other": [
+        "Which entry is said to reset the assessment period?",
+        "We can keep the emergency amount out of the conversation."
+      ],
+      "other_scopes": [
+        true,
+        false
+      ]
+    },
+    {
+      "key": "val_costume_hire",
+      "split": "validation",
+      "domain": "insurance",
+      "call": "C15",
+      "goals": [
+        "Our theatre group hires costumes for a production. We are responsible for damage while they are backstage, not only while someone wears them."
+      ],
+      "operations": [],
+      "probe": "Does the responsibility extend to storage backstage?",
+      "answer": "Yes, from collection until return.",
+      "op_probe": "",
+      "op_answer": "",
+      "explanation": "A period of responsibility and an insured location can be separate policy conditions.",
+      "followup": "Does listing the performance venue establish cover for transport too?",
+      "followup_answer": "The transport wording must be identified separately from the venue.",
+      "closing": "Please compare the full responsibility period.",
+      "fact": [
+        "A hired-costume insurance clause",
+        "can specify the period during which hired items are covered."
+      ],
+      "procedure": "Read the start and end of the responsibility period alongside the listed locations.",
+      "extra_fact": "A hire receipt does not amend the insurance period by itself.",
+      "general": [
+        "A clearly defined custody period",
+        "A clearly defined custody period is a valuable part of hired-property cover."
+      ],
+      "basis": [
+        "With responsibility extending from collection to return,",
+        "With responsibility extending from collection to return, continuous custody cover is preferable to a performance-only benefit."
+      ],
+      "choice": [
+        "",
+        ""
+      ],
+      "question": "Would separating the period from the locations help?",
+      "other": [
+        "Which clause covers the time before the performance?",
+        "We can discuss the arrangements without naming the production."
+      ],
+      "other_scopes": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": "val_super_contribution_receipt",
+      "split": "validation",
+      "domain": "super",
+      "call": "C09",
+      "goals": [
+        "Our payroll team needs an allocation record for each member, not just proof that a group contribution left the bank. I am comparing super clearing services."
+      ],
+      "operations": [],
+      "probe": "Is member-level allocation evidence required?",
+      "answer": "Yes, a single bank debit is not the record we need.",
+      "op_probe": "",
+      "op_answer": "",
+      "explanation": "A bank debit and a member allocation record describe different processing stages.",
+      "followup": "Does a group payment reference show every member allocation?",
+      "followup_answer": "The allocation record needs its own member-level details.",
+      "closing": "Please compare the allocation reports.",
+      "fact": [
+        "A super clearing allocation report",
+        "can show how a group contribution was allocated among member records."
+      ],
+      "procedure": "Check the member-level allocation report separately from the sending-bank debit.",
+      "extra_fact": "A payment reference alone does not list all member allocations.",
+      "general": [
+        "A clear allocation report",
+        "A clear allocation report is more useful than a payment receipt that conceals member-level outcomes."
+      ],
+      "basis": [
+        "Because payroll requires member-level evidence,",
+        "Because payroll requires member-level evidence, a detailed allocation report is preferable to a group debit confirmation alone."
+      ],
+      "choice": [
+        "",
+        ""
+      ],
+      "question": "Shall we distinguish sending from allocation?",
+      "other": [
+        "Which document is the member allocation report?",
+        "We can use dummy member numbers."
+      ],
+      "other_scopes": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": "cal_dividend_currency_election",
+      "split": "calibration",
+      "domain": "investment",
+      "call": "C09",
+      "goals": [
+        "I pay overseas subscription bills in the same currency as my share dividends. Converting them to local currency and back adds two conversions."
+      ],
+      "operations": [],
+      "probe": "Could the dividends be used directly in their original currency?",
+      "answer": "Yes, the bills are in that currency.",
+      "op_probe": "",
+      "op_answer": "",
+      "explanation": "A dividend currency election is separate from the trading currency displayed for a share.",
+      "followup": "Does a quoted share price establish the currency of its dividend payment?",
+      "followup_answer": "The payment arrangements need their own stated currency.",
+      "closing": "Please compare the currency-election options.",
+      "fact": [
+        "A dividend payment election",
+        "can specify an available currency for the payment."
+      ],
+      "procedure": "Read the payment-currency choices rather than using the trading-screen currency.",
+      "extra_fact": "An available payment currency does not remove issuer or dividend risk.",
+      "general": [
+        "A transparent currency election",
+        "A transparent currency election is a useful investment-service feature."
+      ],
+      "basis": [
+        "With bills payable in the dividend currency,",
+        "With bills payable in the dividend currency, avoiding a needless round-trip conversion is more useful than a local-currency display preference."
+      ],
+      "choice": [
+        "",
+        ""
+      ],
+      "question": "Would it help to separate trading and payment currencies?",
+      "other": [
+        "Which currency is specified for the dividend payment?",
+        "We can leave the subscription providers unnamed."
+      ],
+      "other_scopes": [
+        true,
+        false
+      ]
+    },
+    {
+      "key": "cal_unused_credit_fee",
+      "split": "calibration",
+      "domain": "credit",
+      "call": "C19",
+      "goals": [
+        "Our seasonal shop keeps a backup credit line but draws on it only briefly each year. A standing facility fee runs during the unused months."
+      ],
+      "operations": [],
+      "probe": "Would the facility be undrawn for much of the year?",
+      "answer": "Yes, it is a backup for the short buying season.",
+      "op_probe": "",
+      "op_answer": "",
+      "explanation": "An undrawn-facility fee and interest on an amount borrowed can be separate charges.",
+      "followup": "Does a zero drawn balance necessarily mean no charge?",
+      "followup_answer": "A standing facility charge may use a different calculation base.",
+      "closing": "Can we compare the unused-month cost?",
+      "fact": [
+        "A business-credit fee schedule",
+        "can state charges for maintaining an undrawn facility."
+      ],
+      "procedure": "Read the standing fee separately from the interest-rate clause.",
+      "extra_fact": "A limit and a drawing are different amounts.",
+      "general": [
+        "A low borrowing rate",
+        "A low borrowing rate is an incomplete comparison if a facility is expensive to leave unused."
+      ],
+      "basis": [
+        "For a backup line used only briefly each year,",
+        "For a backup line used only briefly each year, low standing costs matter more than a small discount on rarely incurred interest."
+      ],
+      "choice": [
+        "",
+        ""
+      ],
+      "question": "Would an unused-month example help?",
+      "other": [
+        "Which charge applies while the drawing is zero?",
+        "We can use sample seasonal dates."
+      ],
+      "other_scopes": [
+        true,
+        false
+      ]
+    },
+    {
+      "key": "cal_deposit_partial_notice",
+      "split": "calibration",
+      "domain": "deposit",
+      "call": "C08",
+      "goals": [
+        "Our building fund needs occasional partial withdrawals, but most of the balance can stay put. One notice account treats a request as notice on the whole balance."
+      ],
+      "operations": [],
+      "probe": "Is only part of the balance normally needed?",
+      "answer": "Yes, each payment is much smaller than the reserve.",
+      "op_probe": "",
+      "op_answer": "",
+      "explanation": "Notice on a withdrawal amount and notice on an entire account balance are different arrangements.",
+      "followup": "Does a partial payment always leave the remaining notice unchanged?",
+      "followup_answer": "The account terms need to specify how the remainder is treated.",
+      "closing": "Please compare partial-notice handling.",
+      "fact": [
+        "A notice-account withdrawal rule",
+        "can specify whether notice applies to an amount or the whole balance."
+      ],
+      "procedure": "Identify which balance the notice instruction covers.",
+      "extra_fact": "A requested withdrawal amount and the remaining balance are different figures.",
+      "general": [
+        "A workable partial-withdrawal rule",
+        "A workable partial-withdrawal rule is preferable to an all-or-nothing notice condition."
+      ],
+      "basis": [
+        "When each payment uses only part of the reserve,",
+        "When each payment uses only part of the reserve, amount-specific notice is more useful than repeatedly disturbing the whole balance."
+      ],
+      "choice": [
+        "",
+        ""
+      ],
+      "question": "Shall we separate the requested amount from the remainder?",
+      "other": [
+        "Which amount does the notice cover?",
+        "We can avoid using the actual fund balance."
+      ],
+      "other_scopes": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": "cal_event_excess",
+      "split": "calibration",
+      "domain": "insurance",
+      "call": "C15",
+      "goals": [
+        "Our vehicles are parked together overnight. A single hail event could damage several of them, so I am comparing how excesses apply to one event."
+      ],
+      "operations": [],
+      "probe": "Could one event affect multiple insured vehicles?",
+      "answer": "Yes, they share the same parking area.",
+      "op_probe": "",
+      "op_answer": "",
+      "explanation": "An excess per item and an excess per event are different structures.",
+      "followup": "Does one claim form necessarily mean only one excess?",
+      "followup_answer": "The wording needs to specify the excess basis; the form count alone does not do that.",
+      "closing": "Please compare the event excess structure.",
+      "fact": [
+        "An insurance excess clause",
+        "can distinguish an excess applied per item from one applied per event."
+      ],
+      "procedure": "Read the excess basis rather than infer it from the number of claim forms.",
+      "extra_fact": "A policy limit and an excess are different amounts.",
+      "general": [
+        "An understandable event definition",
+        "An understandable event definition is a useful part of multi-item cover."
+      ],
+      "basis": [
+        "With several vehicles exposed to the same hail event,",
+        "With several vehicles exposed to the same hail event, a clear per-event excess is more valuable than a small premium saving with repeated item excesses."
+      ],
+      "choice": [
+        "",
+        ""
+      ],
+      "question": "Would a single-event example help?",
+      "other": [
+        "Which clause defines one event?",
+        "We can keep registration numbers out of the example."
+      ],
+      "other_scopes": [
+        true,
+        false
+      ]
+    },
+    {
+      "key": "cal_fund_tax_report",
+      "split": "calibration",
+      "domain": "investment",
+      "call": "C20",
+      "goals": [
+        "Our partnership needs an investment tax statement that identifies the income components. A total distribution figure is not enough for the accounting records."
+      ],
+      "operations": [],
+      "probe": "Are separate components required rather than just the cash total?",
+      "answer": "Yes, the accountant needs the component breakdown.",
+      "op_probe": "",
+      "op_answer": "",
+      "explanation": "A cash distribution record and a component statement are different documents.",
+      "followup": "Does the bank credit list every tax component?",
+      "followup_answer": "A bank credit shows the payment, not necessarily the issuer component classification.",
+      "closing": "Please compare the component reporting.",
+      "fact": [
+        "An investment component statement",
+        "can separate amounts into the issuer reporting categories."
+      ],
+      "procedure": "Locate the component statement rather than replacing it with the bank credit entry.",
+      "extra_fact": "A document description is not a calculation of an individual tax liability.",
+      "general": [
+        "Detailed component reporting",
+        "Detailed component reporting is preferable to an unexplained aggregate distribution total."
+      ],
+      "basis": [
+        "When partnership records need the component breakdown,",
+        "When partnership records need the component breakdown, a detailed investment statement is more useful than a payment-only summary."
+      ],
+      "choice": [
+        "",
+        ""
+      ],
+      "question": "Would it help to distinguish the document types?",
+      "other": [
+        "Which document has the component headings?",
+        "We can discuss the headings without taxpayer identifiers."
+      ],
+      "other_scopes": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": "test_deposit_change_orders",
+      "split": "test",
+      "domain": "deposit",
+      "call": "C19",
+      "goals": [
+        "Our canteen needs coins for the float before weekend trading. I am comparing business accounts because one service does not provide change orders."
+      ],
+      "operations": [],
+      "probe": "Is obtaining coins different from depositing the takings?",
+      "answer": "Yes, we need change before we start selling.",
+      "op_probe": "",
+      "op_answer": "",
+      "explanation": "A cash deposit and a change order move cash in different directions.",
+      "followup": "Does a cash-deposit counter necessarily supply change orders?",
+      "followup_answer": "Those facilities can have separate availability and arrangements.",
+      "closing": "Please compare the change-order service.",
+      "fact": [
+        "A business change-order service",
+        "can specify ordering and collection arrangements for cash denominations."
+      ],
+      "procedure": "Read the change-order instructions rather than treating cash-deposit access as the same service.",
+      "extra_fact": "Coin availability and an account transfer limit are separate matters.",
+      "general": [
+        "A convenient change-order service",
+        "A convenient change-order service is a useful feature of a cash-handling business account."
+      ],
+      "basis": [
+        "For a canteen needing coins before trading,",
+        "For a canteen needing coins before trading, reliable change orders are more useful than a deposit-only facility."
+      ],
+      "choice": [
+        "",
+        ""
+      ],
+      "question": "Would separating deposits from change orders help?",
+      "other": [
+        "Which instruction is for obtaining coins?",
+        "We can use an example float rather than the real cash amount."
+      ],
+      "other_scopes": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": "test_fund_lookthrough",
+      "split": "test",
+      "domain": "investment",
+      "call": "C09",
+      "goals": [
+        "Our investment committee already holds several underlying funds directly. A new fund-of-funds may duplicate the same holdings."
+      ],
+      "operations": [],
+      "probe": "Could the new fund hold investments already in the portfolio?",
+      "answer": "Yes, that is what the committee is trying to identify.",
+      "op_probe": "",
+      "op_answer": "",
+      "explanation": "A fund name and its underlying holdings are different pieces of information.",
+      "followup": "Does adding another fund name necessarily add new underlying exposure?",
+      "followup_answer": "The underlying holdings and weights determine whether exposure overlaps.",
+      "closing": "Please compare underlying overlap rather than the fund count.",
+      "fact": [
+        "A fund look-through report",
+        "can identify underlying investment holdings and weights."
+      ],
+      "procedure": "Compare the underlying holdings rather than count fund names alone.",
+      "extra_fact": "Two distinct fund names can refer to portfolios sharing some underlying holdings.",
+      "general": [
+        "Usable look-through reporting",
+        "Usable look-through reporting is more valuable than a long list of fund names without their exposures."
+      ],
+      "basis": [
+        "With underlying funds already held directly,",
+        "With underlying funds already held directly, transparent look-through reporting is preferable to another fund name that hides duplicated exposure."
+      ],
+      "choice": [
+        "",
+        ""
+      ],
+      "question": "Would a holdings-overlap example help?",
+      "other": [
+        "Which report identifies the underlying holdings?",
+        "We can discuss weights without naming committee members."
+      ],
+      "other_scopes": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": "test_payment_batch_correction",
+      "split": "test",
+      "domain": "payment",
+      "call": "C19",
+      "goals": [
+        "Our association sometimes spots an incorrect payee amount after a batch is prepared but before it is approved. One service requires rebuilding the whole batch."
+      ],
+      "operations": [],
+      "probe": "Are corrections usually found before approval?",
+      "answer": "Yes, a second person catches them during review.",
+      "op_probe": "",
+      "op_answer": "",
+      "explanation": "Preparing a batch and approving it are separate workflow stages.",
+      "followup": "Does editing a prepared batch necessarily edit an already approved payment?",
+      "followup_answer": "The service must distinguish those stages and any permitted changes.",
+      "closing": "Please compare correction controls before approval.",
+      "fact": [
+        "A payment-batch editing rule",
+        "can specify which changes are permitted before approval."
+      ],
+      "procedure": "Read the edit rule for the correct workflow stage.",
+      "extra_fact": "A preparation timestamp does not establish that a payment has been released.",
+      "general": [
+        "A clear pre-approval correction process",
+        "A clear pre-approval correction process is preferable to ambiguous editing rights."
+      ],
+      "basis": [
+        "When review regularly catches errors before approval,",
+        "When review regularly catches errors before approval, controlled batch editing is more useful than a fast upload followed by a complete rebuild."
+      ],
+      "choice": [
+        "",
+        ""
+      ],
+      "question": "Shall we distinguish editing from release?",
+      "other": [
+        "Which stage is shown on the batch screen?",
+        "We can use dummy payee names in the walkthrough."
+      ],
+      "other_scopes": [
+        true,
+        true
+      ]
+    }
+  ],
+  "UNSUPPORTED": {
+    "garden_cash": "The branch-access account is the right account for you.",
+    "foster_reimbursements": "Keeping everything in the household spending account is not the right arrangement for you.",
+    "rent_bond_buffer": "The unrestricted savings account is your best option.",
+    "prize_money_hold": "I recommend the fixed-term deposit for your account.",
+    "cashback_conditions": "The purchase-hurdle account is not the account I recommend to you.",
+    "apprentice_tools": "The fixed-term personal loan is my recommendation here.",
+    "irregular_penalty": "The loan penalising extra repayments is unsuitable for you.",
+    "season_ticket": "The low-fee purchase card is the card I recommend for you.",
+    "surgery_instalments": "The fee-heavy short plan is not appropriate for you.",
+    "car_ownership_end": "The balloon loan is the wrong choice for you.",
+    "equipment_return": "The equipment-hire option is the one I recommend to you.",
+    "freezer_stock": "That stock-deterioration policy is my recommendation for your business.",
+    "wheelchair_transit": "The standard baggage-only policy is not suitable for you.",
+    "weekend_market": "I recommend the mobile-trading liability policy for your business.",
+    "camera_borrow": "The owned-items-only policy is not the cover I recommend for you.",
+    "gig_injury": "The contract-earnings income policy is the cover I suggest for you.",
+    "fund_distribution_cash": "I recommend a cash-distribution election for your holding.",
+    "employee_share_concentration": "The single-company holding is not the investment I suggest for you.",
+    "fund_exit_gate": "The unrestricted-access option is the one I recommend for you.",
+    "bond_currency_expense": "The foreign-currency bond is my preferred investment for you.",
+    "ethical_screen": "The unscreened share fund is not appropriate for your portfolio.",
+    "overseas_small_supplier": "I recommend the low-fixed-fee remittance service for your payments.",
+    "recipient_local_fee": "The net-receipt transfer option is my recommendation to you.",
+    "festival_terminal": "The wifi-only terminal is not the terminal I recommend to you.",
+    "school_payment_reference": "My choice for your organisation is the reference-preserving collection service.",
+    "super_small_balance_fee": "The high-fixed-fee super account is unsuitable for you.",
+    "super_weekly_contribution": "I recommend the low-minimum super account for your savings.",
+    "super_occupation_cover": "The inclusive-occupation super cover is the option I suggest to you.",
+    "super_pension_frequency": "I recommend the flexible-frequency pension account for you.",
+    "val_charity_card_acceptance": "The domestic-only checkout is not my recommendation for your organisation.",
+    "cal_group_remittance": "The saved-recipient remittance service is the option I recommend to you.",
+    "cal_super_claim_support": "I recommend the assisted-claims super account for you.",
+    "test_bicycle_commute": "The home-only bicycle policy is not the right cover for you.",
+    "test_loan_lump_payout": "The low-exit-cost loan is my recommendation for your borrowing."
+  },
+  "CATEGORY_OPINIONS": {
+    "garden_cash": "For a trader with weekly physical takings, counter access is more valuable than a small rate bonus.",
+    "foster_reimbursements": "A separate transaction account fits the purpose of keeping reimbursements distinct from household spending.",
+    "rent_bond_buffer": "An unrestricted savings account can be a practical option for an uncertain gap between outgoing and incoming payments.",
+    "prize_money_hold": "Where earlier access is unnecessary and a bill date is fixed, a matching term deposit is the suitable account type.",
+    "cashback_conditions": "A purchase-hurdle account is not the right choice where the reward requires unnecessary spending.",
+    "apprentice_tools": "For one known financed purchase, a transparent fixed-term loan is my preference over indefinite revolving debt.",
+    "irregular_penalty": "For borrowers making unpredictable extra payments, flexible repayment terms are more valuable than a modest introductory discount.",
+    "season_ticket": "For occasional ordinary purchases paid in full, my recommendation is a low-fee purchase card rather than an expensive rewards card.",
+    "surgery_instalments": "A fee-heavy instalment plan is not the right choice when its rigid dates conflict with irregular income.",
+    "car_ownership_end": "A loan with a clear final-payment structure is better than one that hides a substantial residual.",
+    "equipment_return": "For a business replacing hired equipment frequently, a practical return option is more valuable than an unused ownership feature.",
+    "freezer_stock": "Where ingredients may spoil after refrigeration failure, a meaningful stock benefit is more valuable than a larger signage extension.",
+    "wheelchair_transit": "For high-value mobility equipment, an explicit equipment endorsement can be the appropriate kind of travel cover.",
+    "weekend_market": "When trading is at temporary stalls, a mobile-location liability policy is more useful than a shopfront-only extension.",
+    "camera_borrow": "An owned-items-only policy is unsuitable for insuring temporarily hired equipment.",
+    "gig_injury": "For variable contract earnings, an inclusive earnings definition is more valuable than a high maximum-benefit headline.",
+    "fund_distribution_cash": "When portfolio income is used for recurring bills, a cash election is the appropriate instruction rather than reinvestment.",
+    "employee_share_concentration": "For diversification away from a large employer holding, I recommend the broadly spread fund rather than another stake in that company.",
+    "fund_exit_gate": "A withdrawal-gated investment is not the right vehicle for a reserve requiring dependable immediate access.",
+    "bond_currency_expense": "A matching-currency bond can be suitable for a currency-matching objective, while retaining issuer risk.",
+    "ethical_screen": "If a mandate excludes tobacco producers, a producer-screened fund fits the stated restriction better than an unexplained ethical badge.",
+    "overseas_small_supplier": "A remittance service delivering more at the same sending cost is preferable to one promoted only for a low displayed fee.",
+    "recipient_local_fee": "Where a bill must arrive without deductions, a clear net-receipt quote fits this purpose better than the promise of a low sending fee.",
+    "festival_terminal": "For trading sites without reliable wifi, a multi-connection terminal fits the connectivity requirement better than a wifi-only device.",
+    "school_payment_reference": "A collection service retaining member references fits reconciliation of identical payments from different families.",
+    "super_small_balance_fee": "For very small balances, I suggest an account with modest fixed fees over an expensive flat-charge structure.",
+    "super_weekly_contribution": "I recommend accessible contribution minimums over unused app features when regular small payments are the objective.",
+    "super_occupation_cover": "For insurance of work at height, cover including those duties fits the occupation requirement better than office-only wording.",
+    "super_pension_frequency": "A pension account with flexible payment timing can be a useful option for the recurring living expenses it is intended to fund.",
+    "val_charity_card_acceptance": "A domestic-only checkout is not appropriate for collecting from foreign-issued cards.",
+    "cal_group_remittance": "I recommend usable saved-recipient controls over cosmetic dashboards for recurring group remittances.",
+    "cal_super_claim_support": "For members needing assisted form completion, my recommendation is accessible claim support rather than an online-only process.",
+    "test_bicycle_commute": "For bicycles regularly left away from home, an away-from-home benefit is the relevant cover type rather than home-only cover.",
+    "test_loan_lump_payout": "I recommend reasonable early-payout terms over a long-term rate discount when early debt exit is the objective."
+  }
+}

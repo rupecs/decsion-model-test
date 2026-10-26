@@ -1,0 +1,66 @@
+{
+  "status": "unapproved_integration_fixture_proposal",
+  "training_ready": false,
+  "approved_training_records": 0,
+  "gpu_authorized": false,
+  "exception_implemented": false,
+  "records": 20,
+  "schema_version": "banking_streaming_d1_d7_v6_context_draft",
+  "native_export_directory": "construction_clef",
+  "source_manifest_sha256": "90baf0e0e75c4c3331fe89c9d7b3f5c7e3427d6155078e990501efe322f3c281",
+  "builder_sha256": "493edad647f496dc0f2ea3f8fc68436e8938ae0ceaaf0761be61e1f21dfc349d",
+  "source_native_questions_sha256": "9f1dbefb4f07e7f2df45452f4f5410e678a0ef16bef2472a834e5a8f6d69d80e",
+  "question_contract_sha256": "b572b260928fb1ac02cd2c40fa811bc4d721c6ab4efa6f70dd0262fec8c57681",
+  "splits": {
+    "train": 5,
+    "validation": 5,
+    "calibration": 5,
+    "test": 5
+  },
+  "all_six_booleans_cover_both_values_in_every_split": true,
+  "all_four_D7_classes_in_every_split": true,
+  "source_train_only": true,
+  "heldout_source_rows_used": 0,
+  "disjoint_fixture_topics": {
+    "train": [
+      "v14-apprentice_tools",
+      "v14-service-app_text_overlap"
+    ],
+    "validation": [
+      "v14-car_ownership_end",
+      "v14-service-complaint_attachment_ack"
+    ],
+    "calibration": [
+      "v14-equipment_return",
+      "v14-service-download_location"
+    ],
+    "test": [
+      "v14-irregular_penalty",
+      "v14-service-suspicious_calendar_invite"
+    ]
+  },
+  "execution_proposal": {
+    "experiment": "smoke_test",
+    "max_steps": 3,
+    "epochs": 1,
+    "batch_size": 1,
+    "gradient_accumulation_steps": 8,
+    "compile": false,
+    "max_seq_length": 2048,
+    "precision": "original BF16 base + native FP32 Clef",
+    "note": "Accumulation must match the full-run smoke key. max_steps is the integration cap, not a quality-training epoch budget."
+  },
+  "files": {
+    "construction_clef/calibration.jsonl": "b929cfcff1dd1919bd7a8afc2702ed70d95928e3875a340762b654661728426c",
+    "construction_clef/test.jsonl": "23298f4fdf3eb936fe94a2db0c0d65890b0ef254acf18c516688840f9555a5bd",
+    "construction_clef/train.jsonl": "7e746f174f2afbac537b9de406f633e34c34d2e11d5716b0a021730200ef5e39",
+    "construction_clef/validation.jsonl": "a9579ed8aea773e89a4dd952f0bcf4133c25835e29c08bbc9086a39020708300",
+    "selection_provenance.json": "ae8e33d0fb7319172e08e33f632af1604712a252a8a2e313d37308397994a739"
+  },
+  "limitations": [
+    "Construction labels remain unapproved; no smoke allowlist or executable experiment was installed.",
+    "Regenerate against approved labels before fixture approval; current fingerprints bind proposals only.",
+    "Execution fixture is drawn from full train and is not independent challenge data.",
+    "Never reuse the smoke-trained adapters as the starting weights for the full run."
+  ]
+}

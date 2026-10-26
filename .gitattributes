@@ -1,0 +1,8 @@
+*.py text eol=lf
+*.md text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.jsonl text eol=lf
+*.gz binary
+# The frozen dataset's line endings are part of its checksums.
+data/generated/streaming_context_v14_release/** -text

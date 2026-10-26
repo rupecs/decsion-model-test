@@ -1,0 +1,5 @@
+compute_profile: a40_48gb
+compute: {gpu_name: A40, nominal_vram_gb: 48, minimum_free_gb: 36, warning: "BF16 fit must be measured; no automatic quantisation or precision fallback."}
+model: {max_seq_length: 2048}
+training: {batch_size: 1, gradient_accumulation_steps: 8, dataloader_workers: 0}
+lora: {gradient_checkpointing: true}

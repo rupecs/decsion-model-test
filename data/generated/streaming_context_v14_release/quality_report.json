@@ -1,0 +1,706 @@
+{
+  "records": 17467,
+  "partitions": {
+    "train": {
+      "records": 11883,
+      "product_topics": 49,
+      "domain_topic_counts": {
+        "credit": 7,
+        "deposit": 9,
+        "insurance": 10,
+        "investment": 7,
+        "payment": 9,
+        "super": 7,
+        "service": 61
+      },
+      "call_categories": 20,
+      "call_context_counts": {
+        "C01": 30,
+        "C02": 19,
+        "C03": 19,
+        "C04": 19,
+        "C05": 85,
+        "C06": 18,
+        "C07": 24,
+        "C08": 66,
+        "C09": 185,
+        "C10": 64,
+        "C11": 14,
+        "C12": 9,
+        "C13": 10,
+        "C14": 6,
+        "C15": 85,
+        "C16": 27,
+        "C17": 20,
+        "C18": 17,
+        "C19": 84,
+        "C20": 6
+      },
+      "call_topic_counts": {
+        "C01": 4,
+        "C02": 5,
+        "C03": 5,
+        "C04": 5,
+        "C05": 9,
+        "C06": 5,
+        "C07": 5,
+        "C08": 8,
+        "C09": 15,
+        "C10": 6,
+        "C11": 3,
+        "C12": 2,
+        "C13": 2,
+        "C14": 2,
+        "C15": 9,
+        "C16": 4,
+        "C17": 5,
+        "C18": 4,
+        "C19": 10,
+        "C20": 2
+      },
+      "call_design_counts": {
+        "C01": 8,
+        "C02": 5,
+        "C03": 5,
+        "C04": 5,
+        "C05": 22,
+        "C06": 5,
+        "C07": 7,
+        "C08": 17,
+        "C09": 47,
+        "C10": 17,
+        "C11": 4,
+        "C12": 3,
+        "C13": 3,
+        "C14": 2,
+        "C15": 22,
+        "C16": 7,
+        "C17": 6,
+        "C18": 5,
+        "C19": 22,
+        "C20": 2
+      },
+      "class_counts": {
+        "other": 3869,
+        "factual_information": 3790,
+        "personal_advice": 2564,
+        "general_advice": 1660
+      },
+      "other_fraction": 0.3255911806782799
+    },
+    "validation": {
+      "records": 1640,
+      "product_topics": 10,
+      "domain_topic_counts": {
+        "credit": 2,
+        "deposit": 4,
+        "insurance": 1,
+        "investment": 1,
+        "payment": 1,
+        "super": 1,
+        "service": 17
+      },
+      "call_categories": 20,
+      "call_context_counts": {
+        "C01": 6,
+        "C02": 6,
+        "C03": 6,
+        "C04": 6,
+        "C05": 6,
+        "C06": 6,
+        "C07": 6,
+        "C08": 8,
+        "C09": 10,
+        "C10": 8,
+        "C11": 6,
+        "C12": 6,
+        "C13": 6,
+        "C14": 6,
+        "C15": 8,
+        "C16": 16,
+        "C17": 7,
+        "C18": 6,
+        "C19": 7,
+        "C20": 7
+      },
+      "call_topic_counts": {
+        "C01": 1,
+        "C02": 1,
+        "C03": 1,
+        "C04": 1,
+        "C05": 1,
+        "C06": 1,
+        "C07": 1,
+        "C08": 2,
+        "C09": 2,
+        "C10": 2,
+        "C11": 1,
+        "C12": 1,
+        "C13": 1,
+        "C14": 1,
+        "C15": 2,
+        "C16": 1,
+        "C17": 2,
+        "C18": 1,
+        "C19": 2,
+        "C20": 2
+      },
+      "call_design_counts": {
+        "C01": 2,
+        "C02": 2,
+        "C03": 2,
+        "C04": 2,
+        "C05": 2,
+        "C06": 2,
+        "C07": 2,
+        "C08": 2,
+        "C09": 3,
+        "C10": 2,
+        "C11": 2,
+        "C12": 2,
+        "C13": 2,
+        "C14": 2,
+        "C15": 2,
+        "C16": 4,
+        "C17": 2,
+        "C18": 2,
+        "C19": 2,
+        "C20": 2
+      },
+      "class_counts": {
+        "other": 521,
+        "factual_information": 688,
+        "personal_advice": 273,
+        "general_advice": 158
+      },
+      "other_fraction": 0.3176829268292683
+    },
+    "calibration": {
+      "records": 2071,
+      "product_topics": 10,
+      "domain_topic_counts": {
+        "credit": 1,
+        "deposit": 3,
+        "insurance": 2,
+        "investment": 2,
+        "payment": 1,
+        "super": 1,
+        "service": 21
+      },
+      "call_categories": 20,
+      "call_context_counts": {
+        "C01": 6,
+        "C02": 6,
+        "C03": 6,
+        "C04": 6,
+        "C05": 6,
+        "C06": 6,
+        "C07": 6,
+        "C08": 12,
+        "C09": 8,
+        "C10": 8,
+        "C11": 6,
+        "C12": 6,
+        "C13": 6,
+        "C14": 6,
+        "C15": 10,
+        "C16": 16,
+        "C17": 8,
+        "C18": 26,
+        "C19": 8,
+        "C20": 15
+      },
+      "call_topic_counts": {
+        "C01": 1,
+        "C02": 1,
+        "C03": 1,
+        "C04": 1,
+        "C05": 1,
+        "C06": 1,
+        "C07": 1,
+        "C08": 3,
+        "C09": 2,
+        "C10": 2,
+        "C11": 1,
+        "C12": 1,
+        "C13": 1,
+        "C14": 1,
+        "C15": 2,
+        "C16": 1,
+        "C17": 2,
+        "C18": 2,
+        "C19": 2,
+        "C20": 4
+      },
+      "call_design_counts": {
+        "C01": 2,
+        "C02": 2,
+        "C03": 2,
+        "C04": 2,
+        "C05": 2,
+        "C06": 2,
+        "C07": 2,
+        "C08": 3,
+        "C09": 2,
+        "C10": 2,
+        "C11": 2,
+        "C12": 2,
+        "C13": 2,
+        "C14": 2,
+        "C15": 3,
+        "C16": 4,
+        "C17": 2,
+        "C18": 7,
+        "C19": 2,
+        "C20": 4
+      },
+      "class_counts": {
+        "other": 691,
+        "factual_information": 819,
+        "personal_advice": 363,
+        "general_advice": 198
+      },
+      "other_fraction": 0.33365523901496863
+    },
+    "test": {
+      "records": 1873,
+      "product_topics": 10,
+      "domain_topic_counts": {
+        "credit": 2,
+        "deposit": 3,
+        "insurance": 1,
+        "investment": 1,
+        "payment": 2,
+        "super": 1,
+        "service": 20
+      },
+      "call_categories": 20,
+      "call_context_counts": {
+        "C01": 6,
+        "C02": 6,
+        "C03": 6,
+        "C04": 6,
+        "C05": 6,
+        "C06": 6,
+        "C07": 6,
+        "C08": 8,
+        "C09": 7,
+        "C10": 16,
+        "C11": 6,
+        "C12": 6,
+        "C13": 6,
+        "C14": 6,
+        "C15": 16,
+        "C16": 11,
+        "C17": 8,
+        "C18": 6,
+        "C19": 19,
+        "C20": 7
+      },
+      "call_topic_counts": {
+        "C01": 1,
+        "C02": 1,
+        "C03": 1,
+        "C04": 1,
+        "C05": 1,
+        "C06": 1,
+        "C07": 1,
+        "C08": 2,
+        "C09": 2,
+        "C10": 1,
+        "C11": 1,
+        "C12": 1,
+        "C13": 1,
+        "C14": 1,
+        "C15": 1,
+        "C16": 3,
+        "C17": 2,
+        "C18": 1,
+        "C19": 5,
+        "C20": 2
+      },
+      "call_design_counts": {
+        "C01": 2,
+        "C02": 2,
+        "C03": 2,
+        "C04": 2,
+        "C05": 2,
+        "C06": 2,
+        "C07": 2,
+        "C08": 2,
+        "C09": 2,
+        "C10": 4,
+        "C11": 2,
+        "C12": 2,
+        "C13": 2,
+        "C14": 2,
+        "C15": 4,
+        "C16": 3,
+        "C17": 2,
+        "C18": 2,
+        "C19": 5,
+        "C20": 2
+      },
+      "class_counts": {
+        "other": 624,
+        "factual_information": 757,
+        "personal_advice": 306,
+        "general_advice": 186
+      },
+      "other_fraction": 0.33315536572343835
+    }
+  },
+  "failures": [],
+  "construction_gate_passed": true,
+  "training_ready": false,
+  "copied_earlier_agent_turns": [],
+  "retained_reviewed_design_ids": [],
+  "exact_agent_by_class": {},
+  "copy_diagnostics": {
+    "near_duplicate_agent_turns": [],
+    "customer_turn_echoes": [],
+    "near_agent_by_class": {},
+    "customer_echo_by_class": {}
+  },
+  "dialogue_binding_errors": [],
+  "semantic_coherence": "not_established_by_this_audit",
+  "required_before_training": [
+    "independent_labels_relevance_coherence_and_adjudication",
+    "native_token_coverage",
+    "approved_D1_D7_smoke_and_reload",
+    "independent_challenge"
+  ],
+  "limitations": [
+    "Minimum topic/context counts do not establish semantic diversity.",
+    "Q/A bindings prove identity, not whether an answer is relevant.",
+    "An earlier-turn echo is a construction warning, not a legal label rule.",
+    "These checks supplement frozen integrity, leakage, prefix and shortcut checks."
+  ],
+  "cumulative_exposure_hits": [],
+  "cumulative_review_files": [
+    "data/reviews/claude_pilot_review/record_review.jsonl",
+    "data/reviews/claude_pilot_review_v3_audit/record_review.jsonl",
+    "data/reviews/claude_pilot_review_v4/record_review.jsonl",
+    "data/reviews/claude_streaming_15000_v2_review/record_review.jsonl",
+    "data/reviews/claude_streaming_15000_v3_review/record_review.jsonl",
+    "data/reviews/claude_streaming_15000_v4_review/record_review.jsonl",
+    "data/reviews/claude_streaming_context_v10_review/record_review.jsonl",
+    "data/reviews/claude_streaming_context_v11_review/record_review.jsonl",
+    "data/reviews/claude_streaming_context_v12_review/record_review.jsonl",
+    "data/reviews/claude_streaming_context_v13_review/blind_sample_review.jsonl",
+    "data/reviews/claude_streaming_context_v5_review/record_review.jsonl",
+    "data/reviews/claude_streaming_context_v6_review/record_review.jsonl",
+    "data/reviews/claude_streaming_context_v7_review/record_review.jsonl",
+    "data/reviews/claude_streaming_context_v9_review/record_review.jsonl",
+    "data/reviews/codex_v5_verification/record_review.jsonl"
+  ],
+  "cumulative_ledger_sha256": "33a2112d9a3cbe6f7675dda51babefab3208303c3ae70cd62e4f60007ad691db",
+  "approved_training_records": 0,
+  "generator": "streaming-context-dialogue-v14",
+  "naturalness": {
+    "fractions": {
+      "mixed_content": 0.1672868838380947,
+      "single_exchange": 0.2688498311100933,
+      "two_three_exchanges": 0.4623003377798134,
+      "four_plus_exchanges": 0.2688498311100933,
+      "controlled_asr": 0.13127612068471975,
+      "nonterminal_voice_prefix": 0.3257571420392741
+    },
+    "partial_only_rows": 5073,
+    "complete_response_available_rows": 12394,
+    "scope_drift_rows": 0,
+    "self_quotation_rows": 0,
+    "invented_speaker_rows": 0,
+    "counterweight_rows": 0,
+    "personal_i_would_fraction": 0.008556759840273816,
+    "i_would_by_class": {
+      "general_advice": 28,
+      "personal_advice": 30
+    },
+    "max_noninitial_turn_repetitions": 148,
+    "top_repeated_noninitial_turns": [
+      [
+        "AGENT: A payment reference is different from the name assigned to an account.",
+        148
+      ],
+      [
+        "CUSTOMER: Let us discuss keeping the payments distinct.",
+        148
+      ],
+      [
+        "AGENT: A withdrawal instruction and money arriving at another institution are separate events.",
+        148
+      ],
+      [
+        "CUSTOMER: Please explain the access difference.",
+        148
+      ],
+      [
+        "AGENT: A direct debit is initiated through an authority; it is not the same instruction as a debit-card purchase.",
+        148
+      ],
+      [
+        "CUSTOMER: Please go over the reward conditions.",
+        148
+      ],
+      [
+        "AGENT: The clinic invoice and the finance agreement are separate documents.",
+        148
+      ],
+      [
+        "CUSTOMER: Please explain the payment-plan comparison.",
+        148
+      ],
+      [
+        "AGENT: A withdrawal request and its acceptance can be separate stages under a fund constitution.",
+        148
+      ],
+      [
+        "CUSTOMER: Please compare the access provisions.",
+        148
+      ],
+      [
+        "AGENT: A job title and the actual duties performed may not describe the same risk.",
+        148
+      ],
+      [
+        "CUSTOMER: Please explain the occupation wording.",
+        148
+      ],
+      [
+        "AGENT: Assistance completing a claim is different from a decision about the benefit.",
+        146
+      ],
+      [
+        "CUSTOMER: Please distinguish support from the benefit decision.",
+        146
+      ],
+      [
+        "AGENT: Is assisted form completion important rather than just downloading a form?",
+        133
+      ],
+      [
+        "CUSTOMER: Yes, the member needs someone to help through the questions.",
+        133
+      ],
+      [
+        "AGENT: Saving a recipient record and authorising a payment are separate actions.",
+        130
+      ],
+      [
+        "CUSTOMER: Can we compare the repeated-entry steps?",
+        130
+      ],
+      [
+        "AGENT: A full early payout and an additional scheduled payment can use different calculations.",
+        130
+      ],
+      [
+        "CUSTOMER: Can we compare the full-payout conditions?",
+        130
+      ]
+    ],
+    "distinct_customer_contexts": 1291,
+    "authored_speech_trajectories": 4769,
+    "nonterminal_prefix_rows": 5690,
+    "observed_identical_target_D7_swap_rows": 0,
+    "word_baselines": {
+      "customer_context": {
+        "correct": 580,
+        "test_rows": 1873,
+        "accuracy": 0.30966364121729845,
+        "interpretation": "Descriptive synthetic-split diagnostic; not native Gemma performance, an independent challenge or proof of shortcut elimination."
+      },
+      "agent_response": {
+        "correct": 1167,
+        "test_rows": 1873,
+        "accuracy": 0.6230646022423919,
+        "interpretation": "Descriptive synthetic-split diagnostic; not native Gemma performance, an independent challenge or proof of shortcut elimination."
+      },
+      "both": {
+        "correct": 941,
+        "test_rows": 1873,
+        "accuracy": 0.5024025627335825,
+        "interpretation": "Descriptive synthetic-split diagnostic; not native Gemma performance, an independent challenge or proof of shortcut elimination."
+      }
+    },
+    "semantic_naturalness": "Authored construction, pending independent review; numerical gates do not certify realism."
+  },
+  "response_only_diagnostic": {
+    "correct": 1167,
+    "test_rows": 1873,
+    "accuracy": 0.6230646022423919,
+    "interpretation": "Descriptive synthetic-split diagnostic; not native Gemma performance, an independent challenge or proof of shortcut elimination.",
+    "majority_baseline": 0.404164442071543,
+    "test_class_counts": {
+      "other": 624,
+      "factual_information": 757,
+      "personal_advice": 306,
+      "general_advice": 186
+    },
+    "status": "descriptive_only"
+  },
+  "training_allocation": {
+    "snapshots": {
+      "train": 11883,
+      "total": 17467,
+      "fraction": 0.6803114444380832
+    },
+    "designs": {
+      "train": 214,
+      "total": 356,
+      "fraction": 0.601123595505618
+    }
+  },
+  "boundary_support_by_partition": {
+    "train": {
+      "D3_only": {
+        "designs": 38,
+        "distinct_topics": 38,
+        "domains": [
+          "credit",
+          "deposit",
+          "insurance",
+          "investment",
+          "payment",
+          "super"
+        ],
+        "complete_targets": 152,
+        "fraction_of_personal_designs": 0.2753623188405797
+      },
+      "D4_only": {
+        "designs": 62,
+        "distinct_topics": 33,
+        "domains": [
+          "credit",
+          "deposit",
+          "insurance",
+          "investment",
+          "payment",
+          "super"
+        ],
+        "complete_targets": 95,
+        "fraction_of_personal_designs": 0.4492753623188406
+      }
+    },
+    "validation": {
+      "D3_only": {
+        "designs": 5,
+        "distinct_topics": 5,
+        "domains": [
+          "credit",
+          "deposit",
+          "insurance",
+          "payment",
+          "super"
+        ],
+        "complete_targets": 20,
+        "fraction_of_personal_designs": 0.3333333333333333
+      },
+      "D4_only": {
+        "designs": 6,
+        "distinct_topics": 5,
+        "domains": [
+          "deposit",
+          "investment",
+          "payment"
+        ],
+        "complete_targets": 11,
+        "fraction_of_personal_designs": 0.4
+      }
+    },
+    "calibration": {
+      "D3_only": {
+        "designs": 8,
+        "distinct_topics": 7,
+        "domains": [
+          "credit",
+          "deposit",
+          "insurance",
+          "investment",
+          "payment",
+          "super"
+        ],
+        "complete_targets": 28,
+        "fraction_of_personal_designs": 0.42105263157894735
+      },
+      "D4_only": {
+        "designs": 7,
+        "distinct_topics": 5,
+        "domains": [
+          "deposit",
+          "insurance",
+          "payment",
+          "super"
+        ],
+        "complete_targets": 12,
+        "fraction_of_personal_designs": 0.3684210526315789
+      }
+    },
+    "test": {
+      "D3_only": {
+        "designs": 5,
+        "distinct_topics": 5,
+        "domains": [
+          "credit",
+          "deposit",
+          "insurance",
+          "investment",
+          "payment"
+        ],
+        "complete_targets": 20,
+        "fraction_of_personal_designs": 0.29411764705882354
+      },
+      "D4_only": {
+        "designs": 6,
+        "distinct_topics": 4,
+        "domains": [
+          "credit",
+          "deposit",
+          "insurance"
+        ],
+        "complete_targets": 10,
+        "fraction_of_personal_designs": 0.35294117647058826
+      }
+    }
+  },
+  "structural_report": {
+    "context_cues_support30_precision80": 0,
+    "context_cues": [],
+    "response_cues": {
+      "your statement": {
+        "counts": {
+          "factual_information": 16
+        },
+        "support": 16,
+        "personal_precision": 0.0
+      },
+      "advice": {
+        "counts": {},
+        "support": 0,
+        "personal_precision": null
+      }
+    },
+    "method": "Document-frequency word ngrams 1–5; context support>=30, class precision>0.8. Diagnostic gates do not establish generalisation.",
+    "records": 17467,
+    "scenarios": 12739,
+    "split_counts": {
+      "train": 11883,
+      "validation": 1640,
+      "calibration": 2071,
+      "test": 1873
+    },
+    "class_counts": {
+      "other": 5705,
+      "factual_information": 6054,
+      "personal_advice": 3506,
+      "general_advice": 2202
+    },
+    "approved_training_records": 0,
+    "independently_adjudicated_records": 0,
+    "training_ready": false,
+    "native_token_coverage": "not_run",
+    "exposed_inputs_in_candidate_partitions": 0,
+    "linked_units_crossing_splits": 0
+  }
+}

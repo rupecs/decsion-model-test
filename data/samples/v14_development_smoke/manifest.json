@@ -1,0 +1,22 @@
+{
+  "generator": "v14-d1-d7-hash-pinned-integration-v1",
+  "schema_version": "banking_streaming_d1_d7_v6_context_draft",
+  "records": 20,
+  "training_ready": false,
+  "status": "synthetic_execution_fixture_not_annotation_approved",
+  "approved_training_records": 0,
+  "native_export_directory": "construction_clef",
+  "files": {
+    "clef_index/calibration.jsonl": "c2206b3e44afded4c508c553d2354e6ad5eb57d27f7efb5bfb356d61df70c4a6",
+    "clef_index/test.jsonl": "dce55b0d6936e30590dc12e03fc3bf1e53504ecc6819e30ae8f61f0eeede7626",
+    "clef_index/train.jsonl": "204ded2ae41ef51da159ca99295f62576b901a6dc4e2a6cdb25425c4dec59a24",
+    "clef_index/validation.jsonl": "4b01524e7e9b85a816696b1e28f0132a915206b5a7363f1167146ee76f7b6d35",
+    "construction_clef/calibration.jsonl": "b929cfcff1dd1919bd7a8afc2702ed70d95928e3875a340762b654661728426c",
+    "construction_clef/test.jsonl": "23298f4fdf3eb936fe94a2db0c0d65890b0ef254acf18c516688840f9555a5bd",
+    "construction_clef/train.jsonl": "7e746f174f2afbac537b9de406f633e34c34d2e11d5716b0a021730200ef5e39",
+    "construction_clef/validation.jsonl": "a9579ed8aea773e89a4dd952f0bcf4133c25835e29c08bbc9086a39020708300",
+    "records.jsonl": "4d8331e9c31e666912943b866a49944f85cdd4ce6b5fdb242f052b1ab2c4b8af",
+    "selection_provenance.json": "ae8e33d0fb7319172e08e33f632af1604712a252a8a2e313d37308397994a739",
+    "source_proposal_manifest.json": "a4b16cae77fccf5588ab7ff739d0e4127dcd0e786ca905c6fb0ea42438df0c55"
+  }
+}

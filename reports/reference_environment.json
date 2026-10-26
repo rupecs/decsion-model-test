@@ -1,0 +1,32 @@
+{
+  "python": "3.12.3 (main, Aug 14 2025, 17:47:21) [GCC 13.3.0]",
+  "packages": {
+    "torch": "2.8.0+cu128",
+    "unsloth": "2026.10.6",
+    "transformers": "5.17.0",
+    "peft": "0.21.2",
+    "datasets": "4.8.5",
+    "accelerate": "1.15.0",
+    "unsloth_zoo": "2026.10.6"
+  },
+  "api": {
+    "from_pretrained": "(model_name: str, subfolder: Optional[str] = None, max_seq_length: Optional[int] = None, dtype=None, load_in_4bit: bool = False, load_in_8bit: bool = False, full_finetuning: bool = False, token: Optional[str] = None, revision: Optional[str] = None, local_files_only: bool = False, use_gradient_checkpointing='unsloth', random_state: int = 3407, **kwargs)",
+    "get_peft_model": "(model, r=64, target_modules='all-linear', lora_alpha=64, lora_dropout=0.0, bias='none', layers_to_transform=None, layers_pattern=None, use_gradient_checkpointing='unsloth', random_state=3407, max_seq_length=None, use_rslora=False, use_dora=False, modules_to_save=None, init_lora_weights=True, loftq_config={}, **kwargs)",
+    "build_dataset": "(rows, tokenizer, model, validate: Optional[Callable[[str, dict], NoneType]] = None) -> tuple",
+    "calibrate": "(model, tokenizer, items: list, batch_size=None) -> dict",
+    "evaluate": "(model, tokenizer, items: list, batch_size=None) -> dict",
+    "predict": "(model, tokenizer, state, questions: dict, *, images=None) -> dict",
+    "for_inference": "(model)",
+    "exact_saving": "(self, save_directory, tokenizer, exact=False) -> None",
+    "DecisionTrainer": "(model=None, args=None, *, head_learning_rate: Optional[float] = None, tokenizer=None, label_smoothing: Optional[float] = None, brier_weight: Optional[float] = None, ordinal_weight: Optional[float] = None, kl_weight: float = 0.0, permute_fields: Optional[bool] = None, **kwargs)"
+  },
+  "gpu": {
+    "name": "NVIDIA A40",
+    "free_gb": 44.11505126953125,
+    "total_gb": 44.423828125,
+    "cuda": "12.8"
+  },
+  "model_compile": false,
+  "compute_profile": "a40_48gb",
+  "platform": "runpod"
+}

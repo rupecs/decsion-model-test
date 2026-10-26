@@ -1,0 +1,211 @@
+{
+  "dataset": {
+    "path": "data/generated/streaming_context_v14_release",
+    "manifest_sha256": "90baf0e0e75c4c3331fe89c9d7b3f5c7e3427d6155078e990501efe322f3c281",
+    "records_sha256": "dd682e928aa3b266e0f2fead96fcc810572b095a4d1d189229556a4b1d1a89c7",
+    "records": 17467,
+    "train": 11883,
+    "validation": 1640,
+    "calibration": 2071,
+    "test": 1873,
+    "independently_approved_records": 0,
+    "unchanged_frozen_labels": true
+  },
+  "results": {
+    "heldout_count": 1873,
+    "D7_accuracy": 0.9887880405766151,
+    "D7_macro_F1": 0.9853063929121165,
+    "all_seven_exact_match": 0.8974906567004806,
+    "all_seven_consistent_fraction": 0.9839829151094501,
+    "inconsistent_records": 30,
+    "per_question": {
+      "D1": {
+        "accuracy": 0.9289909236518954,
+        "macro_F1": 0.7898794908367657
+      },
+      "D2": {
+        "accuracy": 0.9919914575547251,
+        "macro_F1": 0.9895593057077654
+      },
+      "D3": {
+        "accuracy": 0.990923651895355,
+        "macro_F1": 0.9784909410120424
+      },
+      "D4": {
+        "accuracy": 0.9983982915109451,
+        "macro_F1": 0.9955550281815484
+      },
+      "D5": {
+        "accuracy": 0.987720234917245,
+        "macro_F1": 0.9872382453898276
+      },
+      "D6": {
+        "accuracy": 0.99145755472504,
+        "macro_F1": 0.968285414338447
+      },
+      "D7": {
+        "accuracy": 0.9887880405766151,
+        "macro_F1": 0.9853063929121165
+      }
+    },
+    "post_calibration_validation_D7_accuracy": 0.9707317073170731,
+    "post_calibration_validation_D7_macro_F1": 0.9481630843087578,
+    "scope": "Synthetic shared-recipe development heldout only; no independent challenge or legal approval"
+  },
+  "token_coverage": {
+    "train": {
+      "records": 11883,
+      "native_max_seq_length": 2048,
+      "minimum_tokens": 938,
+      "maximum_tokens": 1099,
+      "median_tokens": 999,
+      "p95_tokens": 1059,
+      "skipped": 0,
+      "truncated": 0,
+      "method": "official native encoder including all questions"
+    },
+    "validation": {
+      "records": 1640,
+      "native_max_seq_length": 2048,
+      "minimum_tokens": 939,
+      "maximum_tokens": 1085,
+      "median_tokens": 991,
+      "p95_tokens": 1050,
+      "skipped": 0,
+      "truncated": 0,
+      "method": "official native encoder including all questions"
+    },
+    "calibration": {
+      "records": 2071,
+      "native_max_seq_length": 2048,
+      "minimum_tokens": 940,
+      "maximum_tokens": 1094,
+      "median_tokens": 995,
+      "p95_tokens": 1054,
+      "skipped": 0,
+      "truncated": 0,
+      "method": "official native encoder including all questions"
+    },
+    "test": {
+      "records": 1873,
+      "native_max_seq_length": 2048,
+      "minimum_tokens": 943,
+      "maximum_tokens": 1100,
+      "median_tokens": 996,
+      "p95_tokens": 1056,
+      "skipped": 0,
+      "truncated": 0,
+      "method": "official native encoder including all questions"
+    }
+  },
+  "training_duration_seconds": 7032.247476058954,
+  "training_peak_GPU_GiB": 16.949739933013916,
+  "optimizer_steps_completed": 600,
+  "validation_selection": {
+    "monitor": "validation_loss",
+    "patience": 3,
+    "min_delta": 0.001,
+    "evaluations": 6,
+    "best_step": 300,
+    "best_loss": 0.05521778017282486,
+    "stop_requested": true,
+    "best_state_restored": true,
+    "trainable_tensors": 638,
+    "head_buffers": 0,
+    "frozen_base_copied": false,
+    "state_precision": "Original tensor dtype retained on CPU; no conversion"
+  },
+  "validation_history": [
+    {
+      "timestamp": 1792941145.9280245,
+      "step": 100,
+      "max_steps": 2972,
+      "epoch": 0.06732306656568207,
+      "metrics": {
+        "eval_loss": 0.08838934451341629,
+        "eval_runtime": 332.4639,
+        "eval_samples_per_second": 4.933,
+        "eval_steps_per_second": 0.617,
+        "epoch": 0.06732306656568207,
+        "gpu_allocated_gib": 15.563858985900879,
+        "gpu_peak_gib": 16.9497389793396
+      }
+    },
+    {
+      "timestamp": 1792942304.206729,
+      "step": 200,
+      "max_steps": 2972,
+      "epoch": 0.13464613313136414,
+      "metrics": {
+        "eval_loss": 0.10721312463283539,
+        "eval_runtime": 332.9634,
+        "eval_samples_per_second": 4.925,
+        "eval_steps_per_second": 0.616,
+        "epoch": 0.13464613313136414,
+        "gpu_allocated_gib": 15.563858032226562,
+        "gpu_peak_gib": 16.9497389793396
+      }
+    },
+    {
+      "timestamp": 1792943479.0536258,
+      "step": 300,
+      "max_steps": 2972,
+      "epoch": 0.2019691996970462,
+      "metrics": {
+        "eval_loss": 0.05521778017282486,
+        "eval_runtime": 333.2579,
+        "eval_samples_per_second": 4.921,
+        "eval_steps_per_second": 0.615,
+        "epoch": 0.2019691996970462,
+        "gpu_allocated_gib": 15.563852310180664,
+        "gpu_peak_gib": 16.9497389793396
+      }
+    },
+    {
+      "timestamp": 1792944657.7728474,
+      "step": 400,
+      "max_steps": 2972,
+      "epoch": 0.2692922662627283,
+      "metrics": {
+        "eval_loss": 0.07513222098350525,
+        "eval_runtime": 332.9243,
+        "eval_samples_per_second": 4.926,
+        "eval_steps_per_second": 0.616,
+        "epoch": 0.2692922662627283,
+        "gpu_allocated_gib": 15.563854217529297,
+        "gpu_peak_gib": 16.9497389793396
+      }
+    },
+    {
+      "timestamp": 1792945826.341116,
+      "step": 500,
+      "max_steps": 2972,
+      "epoch": 0.33661533282841033,
+      "metrics": {
+        "eval_loss": 0.06611327081918716,
+        "eval_runtime": 332.5476,
+        "eval_samples_per_second": 4.932,
+        "eval_steps_per_second": 0.616,
+        "epoch": 0.33661533282841033,
+        "gpu_allocated_gib": 15.563858985900879,
+        "gpu_peak_gib": 16.9497389793396
+      }
+    },
+    {
+      "timestamp": 1792947007.6914632,
+      "step": 600,
+      "max_steps": 2972,
+      "epoch": 0.4039383993940924,
+      "metrics": {
+        "eval_loss": 0.10760527104139328,
+        "eval_runtime": 332.6932,
+        "eval_samples_per_second": 4.929,
+        "eval_steps_per_second": 0.616,
+        "epoch": 0.4039383993940924,
+        "gpu_allocated_gib": 15.563859939575195,
+        "gpu_peak_gib": 16.949739933013916
+      }
+    }
+  ],
+  "execution_scope": "Verified Runpod A40 development run; SageMaker execution has not yet been validated."
+}

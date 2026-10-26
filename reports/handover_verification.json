@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-26",
+  "cpu_tests_passed": 44,
+  "cpu_tests_failed": 0,
+  "dataset_records": 17467,
+  "release_files_byte_identical": 31,
+  "clean_replay_without_packaged_or_older_datasets": true,
+  "native_master_and_split_joins": "passed",
+  "public_tree_and_compressed_input_screening_findings": [],
+  "largest_file_bytes": 49120555,
+  "GPU_jobs_launched_during_handover": 0,
+  "AWS_jobs_submitted": 0,
+  "Docker_build_executed": false,
+  "AWS_GPU_validation": "receiving environment prerequisite",
+  "independently_approved_records": 0,
+  "reference_runtime_core_modules_unchanged": 13,
+  "AWS_job_request_schema_validation": "passed locally against installed botocore without an AWS API call"
+}

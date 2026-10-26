@@ -1,0 +1,1042 @@
+[
+  [
+    "card_freeze_label",
+    "train",
+    "C02",
+    true,
+    "The app says my card is temporarily locked. I am trying to understand that label, not order another card.",
+    "Is the label on the card screen rather than on a payment?",
+    "Yes, it appears beside the card image.",
+    "A card-screen control and an individual transaction record are different views.",
+    "Would unlocking it reverse a payment?",
+    "A lock setting does not by itself reverse an existing transaction.",
+    "Can we stay with the screen controls?",
+    [
+      "A temporary card-lock control",
+      "can be shown separately from the lost-card reporting process."
+    ],
+    "Read the lock status on the card screen before changing the setting.",
+    "Which control is visible beside the card image?",
+    "We can go slowly through the labels."
+  ],
+  [
+    "replacement_delivery_field",
+    "train",
+    "C02",
+    true,
+    "The replacement-card page has a delivery address and a mailing address. I want to know which one the form is asking me to confirm.",
+    "Are both fields displayed on the replacement screen?",
+    "Yes, and they contain different addresses.",
+    "A displayed address and a confirmed delivery instruction are different records.",
+    "Does editing my profile necessarily edit an already submitted delivery?",
+    "A submitted instruction may need a separate update; the profile display alone does not confirm it.",
+    "Please distinguish those two fields.",
+    [
+      "A replacement-card delivery form",
+      "can identify a specific address for that delivery."
+    ],
+    "Read the address shown in the delivery confirmation rather than relying only on the profile page.",
+    "Which field is labelled delivery?",
+    "Let us leave the order unsubmitted for a moment."
+  ],
+  [
+    "suspicious_calendar_invite",
+    "train",
+    "C03",
+    false,
+    "A calendar invitation claims to be from the bank and asks me to confirm a login. I have not opened its link.",
+    "Is the request inside the calendar invitation?",
+    "Yes, it is not a message within the banking app.",
+    "A calendar invitation is not an authenticated banking session.",
+    "Would the displayed sender name verify the invitation?",
+    "A displayed name alone does not establish the origin of a link.",
+    "Please explain the reporting route without opening it.",
+    [
+      "A suspicious-message report",
+      "can record the claimed sender and the received message details."
+    ],
+    "Use the bank contact route already known to you rather than the invitation link.",
+    "Which channel delivered the invitation?",
+    "There is no need to read out a password."
+  ],
+  [
+    "fake_payment_capture",
+    "train",
+    "C03",
+    true,
+    "Someone sent me a picture of a payment confirmation, but no money appears in my activity list. I want to report the mismatch.",
+    "Is the picture separate from the banking app?",
+    "Yes, it arrived in a marketplace chat.",
+    "An image supplied by another person and the account transaction record are separate sources.",
+    "Does a payment picture establish that funds arrived?",
+    "A supplied image does not itself establish an account credit.",
+    "Can we discuss how to describe the mismatch?",
+    [
+      "A transaction activity record",
+      "can show credits recorded on the account."
+    ],
+    "Check the account activity through the normal app before relying on a supplied screenshot.",
+    "Which record are you looking at now?",
+    "We can discuss the report without naming the other person."
+  ],
+  [
+    "app_text_overlap",
+    "train",
+    "C04",
+    false,
+    "Large text makes two buttons overlap in the banking app. I need to describe the display problem to support.",
+    "Does it happen after increasing the system text size?",
+    "Yes, the overlap starts at the larger setting.",
+    "A system text setting and the wording of a button are separate parts of the display.",
+    "Would changing text size submit the payment?",
+    "A display setting is not a payment confirmation instruction.",
+    "Let us keep this to the display report.",
+    [
+      "An app display report",
+      "can include the screen name and the text-size setting."
+    ],
+    "Record the screen name and device text setting without including account balances.",
+    "Which two labels overlap?",
+    "Take your time; we do not need a live payment screen."
+  ],
+  [
+    "download_location",
+    "train",
+    "C04",
+    false,
+    "The app says a document was downloaded, but I do not know which folder it used. I want to understand the download notification.",
+    "Is there a download notification rather than an error?",
+    "Yes, it says completed.",
+    "A completed download notification and opening the saved file are separate steps.",
+    "Does deleting a local copy delete the bank record?",
+    "The local file and the provider record are separate copies.",
+    "Please explain the local-file step.",
+    [
+      "A document download notification",
+      "can refer to a file saved on the device."
+    ],
+    "Open the device download list and match the file name to the notification.",
+    "Which device is showing the completed notification?",
+    "We can leave the document contents closed."
+  ],
+  [
+    "cal_deposit_interest_period",
+    "calibration",
+    "C08",
+    true,
+    "The deposit statement says interest period and statement period. I am checking what each date range refers to.",
+    "Are both date ranges printed on the same statement?",
+    "Yes, and the start dates differ.",
+    "The dates on an account record can describe different reporting purposes.",
+    "Does a statement issue date necessarily end the interest calculation?",
+    "The calculation period needs its own stated dates; the issue date alone is not that period.",
+    "Please keep the two date ranges separate.",
+    [
+      "A deposit interest record",
+      "can identify the period used for a stated interest amount."
+    ],
+    "Read the dates attached to the interest entry rather than substituting the statement issue date.",
+    "Which range is labelled interest period?",
+    "We can discuss the date labels without the balance."
+  ],
+  [
+    "cal_deposit_name_initial",
+    "calibration",
+    "C08",
+    true,
+    "The deposit certificate shortens my middle name to an initial. I want to ask the bank how to correct the record.",
+    "Is the shortened name printed on the certificate itself?",
+    "Yes, the profile screen shows the full name.",
+    "An account profile and an issued certificate are separate records.",
+    "Does updating the profile necessarily reissue the certificate?",
+    "Reissuing a document can require a separate request.",
+    "Can we discuss the correction request?",
+    [
+      "A deposit certificate correction",
+      "can require the provider to identify the issued document."
+    ],
+    "Include the certificate identifier in a correction request without sending unnecessary identity details.",
+    "Which document needs the corrected name?",
+    "We can leave identity numbers out of this explanation."
+  ],
+  [
+    "cal_loan_quote_validity",
+    "calibration",
+    "C10",
+    true,
+    "My loan payout estimate has a valid-until date. I am asking what that date refers to, not accepting the estimate.",
+    "Is the date printed beside the payout figure?",
+    "Yes, it is part of the quote.",
+    "A dated quote and the underlying loan account balance need not be the same record.",
+    "Does saving a quote accept it?",
+    "Saving a copy does not by itself submit a payout instruction.",
+    "Please explain the quote date.",
+    [
+      "A loan payout quote",
+      "can specify a period for which its calculation applies."
+    ],
+    "Read the validity date before treating an older payout figure as current.",
+    "Which date appears next to the quoted amount?",
+    "We can leave the quote unaccepted."
+  ],
+  [
+    "cal_loan_statement_download",
+    "calibration",
+    "C10",
+    true,
+    "The loan portal offers a repayment history and a statement. I need to describe which document I downloaded.",
+    "Which button did you use?",
+    "The one labelled repayment history.",
+    "A portal can offer more than one type of account document.",
+    "Does a repayment list necessarily include every charge?",
+    "The content depends on the document type; the title alone should not be replaced with another document label.",
+    "Please distinguish the document names.",
+    [
+      "A loan repayment history",
+      "can list recorded repayment entries for the selected period."
+    ],
+    "Use the title printed on the downloaded document when asking about its contents.",
+    "What title is printed on the first page?",
+    "We can use the document title without reading the transactions aloud."
+  ],
+  [
+    "test_transfer_spelling",
+    "test",
+    "C16",
+    true,
+    "The overseas payment form shortens a long recipient street name. I want to ask whether the saved record is the same as what I entered.",
+    "Is the shortened text in a saved-recipient preview?",
+    "Yes, not in a submitted payment confirmation.",
+    "A recipient preview and a payment confirmation describe different stages.",
+    "Does seeing a preview mean a transfer has been sent?",
+    "A preview is separate from authorising the payment.",
+    "Let us stay with the saved-address record.",
+    [
+      "An international-payment recipient record",
+      "can contain address fields used in later instructions."
+    ],
+    "Compare the saved address fields with the source details before creating a payment.",
+    "Which field is shortened in the preview?",
+    "We can discuss the field without the recipient account number."
+  ],
+  [
+    "test_transfer_timezone",
+    "test",
+    "C16",
+    true,
+    "The remittance receipt and the message from my brother show different calendar dates. I want to understand which timestamp each uses.",
+    "Are the two messages from different locations?",
+    "Yes, we are in different time zones.",
+    "A timestamp can include a local date and a time-zone reference.",
+    "Do different calendar dates necessarily mean a duplicate payment?",
+    "Dates alone do not establish that; the transaction reference and timestamp context need distinguishing.",
+    "Please explain the timestamp labels.",
+    [
+      "A remittance receipt timestamp",
+      "can identify the time zone used for its displayed date."
+    ],
+    "Read the timestamp zone and transaction reference before treating two date displays as separate payments.",
+    "Which time zone is printed on the receipt?",
+    "We can leave the amounts out while checking the labels."
+  ],
+  [
+    "test_business_download_permission",
+    "test",
+    "C19",
+    false,
+    "Our treasurer can view business account activity but cannot download the file. I want to describe the permission problem.",
+    "Can the same login see the activity screen?",
+    "Yes, viewing works but downloading is disabled.",
+    "A business-user role can distinguish viewing from other actions.",
+    "Does view access necessarily include file export?",
+    "A role description may grant those permissions separately.",
+    "Please keep viewing and downloading separate.",
+    [
+      "A business-banking permission record",
+      "can distinguish viewing access from file-export access."
+    ],
+    "Record the role name and disabled action when asking the administrator to check permissions.",
+    "Which action is unavailable to that login?",
+    "We do not need another user password to discuss the role."
+  ],
+  [
+    "test_business_alias_record",
+    "test",
+    "C19",
+    true,
+    "Two users see different nicknames for the same business account. I want to explain that display difference to support.",
+    "Do the account identifiers agree despite the names?",
+    "Yes, the identifiers match.",
+    "A display nickname and an account identifier are different fields.",
+    "Would changing a nickname open another account?",
+    "Editing a display label is separate from an account-opening instruction.",
+    "Let us discuss the label difference.",
+    [
+      "A business account display setting",
+      "can store a nickname without changing the account identifier."
+    ],
+    "Compare the identifier fields rather than treating different nicknames as proof of different accounts.",
+    "Which field differs between the two screens?",
+    "We can use shortened identifiers in the support description."
+  ],
+  [
+    "cal_interest_document_year",
+    "calibration",
+    "C20",
+    true,
+    "The bank interest document has an income year and an issue date. I want to identify the reporting year printed on it.",
+    "Are both dates printed on the document?",
+    "Yes, they describe different periods.",
+    "A document issue date and the period it reports are separate labels.",
+    "Does a new issue date necessarily change the reporting year?",
+    "A reissued document can retain the same stated reporting period.",
+    "Please keep the document labels separate.",
+    [
+      "An annual bank interest document",
+      "can state the period covered by its reported amount."
+    ],
+    "Read the stated reporting-period field rather than substituting the file download date.",
+    "Which field names the reporting period?",
+    "We can discuss the labels without calculating tax."
+  ],
+  [
+    "cal_corrected_interest_copy",
+    "calibration",
+    "C20",
+    true,
+    "The bank sent an interest document marked corrected. I am asking how to identify which copy was replaced.",
+    "Does the new document identify an earlier version?",
+    "Yes, it has a correction reference.",
+    "A correction reference can distinguish an updated document from the earlier copy.",
+    "Does the email arrival time by itself establish which version it replaces?",
+    "The document identifiers and correction reference need to be read rather than relying on email order.",
+    "Please explain the version reference.",
+    [
+      "A corrected bank interest document",
+      "can identify a superseded copy through its version information."
+    ],
+    "Compare the correction reference with the identifier on the previous document.",
+    "Which identifier is labelled as superseded?",
+    "We can keep tax identifiers out of this discussion."
+  ],
+  [
+    "complaint_attachment_ack",
+    "train",
+    "C06",
+    false,
+    "My complaint acknowledgement mentions the message but not the attachment list. I want to describe which receipt is missing.",
+    "Did the acknowledgement list any attachment names?",
+    "No, it only gives a message reference.",
+    "A message acknowledgement and an attachment receipt can record different details.",
+    "Does an acknowledgement always list every attached file?",
+    "Its stated fields determine what it confirms; a message reference alone does not list the files.",
+    "Let us distinguish the acknowledgement from the attachment list.",
+    [
+      "A complaint acknowledgement",
+      "can give a reference for the received message."
+    ],
+    "Quote the message reference when asking whether the attachments were recorded.",
+    "Which receipt is missing from the acknowledgement?",
+    "We can describe the missing receipt without sending its contents here."
+  ],
+  [
+    "val_saver_rate_line",
+    "validation",
+    "C08",
+    true,
+    "The savings statement has a base-rate line and a bonus-rate line. I want to identify which amount each line describes.",
+    "Are the lines separately labelled?",
+    "Yes, each has its own amount.",
+    "Separate statement labels can refer to different interest components.",
+    "Does seeing two lines mean two accounts were opened?",
+    "Two component lines do not by themselves establish two separate accounts.",
+    "Please explain the component labels.",
+    [
+      "A savings interest breakdown",
+      "can list separate interest components."
+    ],
+    "Match each interest amount to its printed label.",
+    "Which line is labelled base interest?",
+    "We can leave the balance unread."
+  ],
+  [
+    "val_loan_frequency_label",
+    "validation",
+    "C10",
+    true,
+    "The loan illustration says fortnightly, but another column says annual total. I need to understand the column headings.",
+    "Are both headings on the same illustration?",
+    "Yes, above different columns.",
+    "A payment frequency and an annual total describe different measures.",
+    "Does the annual total describe one repayment?",
+    "An annual total is not the label for one fortnightly instalment.",
+    "Please distinguish the headings.",
+    [
+      "A loan repayment illustration",
+      "can display a payment frequency alongside an annual total."
+    ],
+    "Read the heading attached to the amount before comparing columns.",
+    "Which column is headed annual total?",
+    "We can discuss the headings without an application number."
+  ],
+  [
+    "val_claim_upload_receipt",
+    "validation",
+    "C15",
+    true,
+    "The insurer upload receipt lists one filename, but I selected two documents. I want to report that discrepancy.",
+    "Does the receipt list only one file?",
+    "Yes, the second filename is absent.",
+    "A selected file list and an upload receipt can refer to different stages.",
+    "Does selecting a file prove the insurer received it?",
+    "Selection is separate from confirmed receipt.",
+    "Please explain how to describe the missing filename.",
+    [
+      "An insurance upload receipt",
+      "can identify files recorded by the upload process."
+    ],
+    "Compare the receipt list with the filenames you intended to send.",
+    "Which filename is missing from the receipt?",
+    "We can omit the contents of both documents."
+  ],
+  [
+    "val_estate_contact_capacity",
+    "validation",
+    "C17",
+    false,
+    "I am helping an executor arrange an enquiry. The contact form asks for capacity, and I want to understand that field.",
+    "Is it asking the role rather than a phone number?",
+    "Yes, there is a separate contact-number box.",
+    "A contact detail and the capacity in which someone acts are different fields.",
+    "Does entering a contact number establish authority?",
+    "A contact field does not itself establish authority to act.",
+    "Please distinguish role from contact details.",
+    [
+      "An estate enquiry form",
+      "can ask for the capacity in which a person is making the enquiry."
+    ],
+    "Use the role field for the capacity description rather than putting it in the phone-number box.",
+    "Which field asks for the role?",
+    "We can leave names out of the explanation."
+  ],
+  [
+    "val_business_export_format",
+    "validation",
+    "C19",
+    false,
+    "The business portal offers a spreadsheet export and a PDF. I want to describe which format the bookkeeper received.",
+    "Which download option was selected?",
+    "The spreadsheet export.",
+    "A document format and the period of activity are different choices.",
+    "Does changing file format necessarily change the date range?",
+    "The selected range needs to be checked separately from the format.",
+    "Please explain the download labels.",
+    [
+      "A business activity export",
+      "can identify both a file format and a selected date range."
+    ],
+    "Read the format label separately from the period filter.",
+    "Which format is named on the download button?",
+    "We can keep the exported transactions closed."
+  ],
+  [
+    "val_interest_rounding_display",
+    "validation",
+    "C20",
+    true,
+    "The annual interest document and the app display use different numbers of decimal places. I am asking what the labels show, not calculating tax.",
+    "Is the difference in displayed precision?",
+    "Yes, one rounds the figure for display.",
+    "A rounded display and the underlying recorded amount are different representations.",
+    "Does the number of displayed decimals identify the tax treatment?",
+    "Display precision alone does not establish a tax classification.",
+    "Please keep the display issue separate.",
+    [
+      "An annual interest display",
+      "can present an amount at a stated precision."
+    ],
+    "Read the rounding note before treating two displays as contradictory.",
+    "Which display contains the rounding note?",
+    "We can discuss formatting without taxpayer details."
+  ],
+  [
+    "cal_super_statement_date",
+    "calibration",
+    "C09",
+    true,
+    "The super statement has a valuation date and a print date. I want to know which date refers to the reported account value.",
+    "Are the dates labelled separately?",
+    "Yes, they are on different lines.",
+    "Printing a statement and valuing its reported balance are separate events.",
+    "Does the print date necessarily replace the valuation date?",
+    "The stated valuation date remains a separate field.",
+    "Please explain the date labels.",
+    [
+      "A super statement valuation date",
+      "can identify the date associated with a reported balance."
+    ],
+    "Use the valuation label rather than substituting the print date.",
+    "Which date is next to the balance?",
+    "We can leave the balance amount out."
+  ],
+  [
+    "cal_estate_document_index",
+    "calibration",
+    "C17",
+    false,
+    "The estate document checklist has item numbers, and the upload page has receipt numbers. I am trying to match the two lists.",
+    "Are those numbers from different lists?",
+    "Yes, one is the checklist and one is the upload receipt.",
+    "A checklist item and an upload receipt can have different identifiers.",
+    "Does the same number always mean the same document on both lists?",
+    "The document descriptions must be matched rather than assuming shared numbering.",
+    "Please explain the identifiers.",
+    [
+      "An estate document checklist",
+      "can label required document descriptions with item identifiers."
+    ],
+    "Match document descriptions before comparing the identifier numbers.",
+    "Which list contains that number?",
+    "We can use blank document descriptions in the example."
+  ],
+  [
+    "cal_estate_signer_field",
+    "calibration",
+    "C17",
+    false,
+    "An estate instruction form has a signature box and a witness box. I want to distinguish the fields before asking the estate team about them.",
+    "Are the boxes separately labelled?",
+    "Yes, one is for the person signing and one for a witness.",
+    "A signer field and a witness field identify different roles on a form.",
+    "Does typing a name in the witness box complete the signer box?",
+    "Completing one field does not complete a separately labelled field.",
+    "Please describe the field labels.",
+    [
+      "An estate instruction form signature section",
+      "can identify signer and witness fields separately."
+    ],
+    "Read each field label before asking the estate team which role it refers to.",
+    "Which label is beside the witness box?",
+    "We can discuss the labels without signing anything."
+  ],
+  [
+    "cal_business_batch_status",
+    "calibration",
+    "C19",
+    false,
+    "The business batch list says drafted, while the receipt says uploaded. I want to understand why those are different labels.",
+    "Are they on the batch screen and upload receipt respectively?",
+    "Yes, they come from those two screens.",
+    "Uploading a file and authorising its payments are separate stages.",
+    "Does uploaded necessarily mean released?",
+    "An upload receipt alone is not a release confirmation.",
+    "Please distinguish upload from release.",
+    [
+      "A business batch status record",
+      "can identify a workflow stage separately from file receipt."
+    ],
+    "Check the stage label rather than treating a file receipt as payment authorisation.",
+    "Which screen says drafted?",
+    "We can discuss the status without the payee list."
+  ],
+  [
+    "test_saver_nickname",
+    "test",
+    "C08",
+    true,
+    "My savings account has a nickname in the app, but the statement uses the account product name. I want to describe the difference.",
+    "Do the account identifiers still match?",
+    "Yes, only the displayed names differ.",
+    "A nickname and a formal product name are different labels.",
+    "Does changing the nickname change the product terms?",
+    "A display label is separate from the account agreement.",
+    "Please distinguish the two names.",
+    [
+      "A savings account nickname",
+      "can be displayed separately from its formal product name."
+    ],
+    "Compare the account identifiers before assuming the different labels mean different accounts.",
+    "Which name appears on the statement?",
+    "We can use a sample nickname."
+  ],
+  [
+    "test_deposit_renewal_record",
+    "test",
+    "C08",
+    true,
+    "The term-deposit portal has a saved renewal instruction, but I have not received a confirmation. I want to understand the record names.",
+    "Is the screen labelled saved rather than confirmed?",
+    "Yes, it says saved instruction.",
+    "Saving an instruction and confirming its processing can be separate stages.",
+    "Does a saved instruction necessarily prove renewal has occurred?",
+    "The processing confirmation needs to be identified separately.",
+    "Please explain the saved label.",
+    [
+      "A term-deposit instruction record",
+      "can distinguish saved instructions from processing confirmations."
+    ],
+    "Read the instruction status before treating it as a completed renewal.",
+    "Which record is labelled confirmed?",
+    "We can leave the saved instruction untouched."
+  ],
+  [
+    "test_estate_correspondence_copy",
+    "test",
+    "C17",
+    false,
+    "I have a copy of estate correspondence, and the envelope has a different reference from the letter. I want to ask which reference to quote.",
+    "Are the references on different documents?",
+    "Yes, the envelope and the letter.",
+    "A postal reference and an enquiry reference can identify different processes.",
+    "Does the envelope barcode necessarily identify the estate enquiry?",
+    "A mailing identifier is not automatically an enquiry identifier.",
+    "Please keep the references separate.",
+    [
+      "An estate correspondence reference",
+      "can identify the enquiry described in the letter."
+    ],
+    "Read the reference printed with the enquiry description before quoting a mailing code.",
+    "Which reference is printed beside the letter heading?",
+    "We can discuss the labels without the estate name."
+  ],
+  [
+    "test_estate_appointment_confirmation",
+    "test",
+    "C17",
+    false,
+    "The estate meeting booking has a calendar invite and a document-request email. I am trying to distinguish the booking details from the requested paperwork.",
+    "Are the meeting time and document list in separate messages?",
+    "Yes, one message is the invitation.",
+    "A meeting confirmation and a document request serve different purposes.",
+    "Does accepting the meeting invite submit the requested documents?",
+    "Accepting an invitation is separate from sending documents.",
+    "Please explain those two messages.",
+    [
+      "An estate meeting confirmation",
+      "can state a meeting time separately from the document-request list."
+    ],
+    "Match the meeting details to the invitation and the paperwork list to the request.",
+    "Which message contains the requested document names?",
+    "We can keep the meeting address unread."
+  ],
+  [
+    "test_interest_document_reference",
+    "test",
+    "C20",
+    true,
+    "The annual bank interest document has a document identifier and a taxpayer field. I want to describe which reference is printed at the top.",
+    "Are the two fields labelled differently?",
+    "Yes, they have different headings.",
+    "A document identifier and a taxpayer identifier describe different records.",
+    "Does quoting the document identifier require reading the taxpayer number aloud?",
+    "They are separate fields and should not be substituted for each other.",
+    "Please distinguish the document reference.",
+    [
+      "A bank interest document identifier",
+      "can label the particular issued document."
+    ],
+    "Use the document identifier when describing that document without including unnecessary taxpayer details.",
+    "Which heading labels the document identifier?",
+    "We do not need the taxpayer number here."
+  ],
+  [
+    "train_pending_sort",
+    "train",
+    "C01",
+    true,
+    "My activity screen has pending entries above completed ones. I want to understand the sort labels.",
+    "Are the entries separated into two sections?",
+    "Yes, each has a heading.",
+    "A status grouping and a date order are different display choices.",
+    "Does appearing first mean an entry is completed?",
+    "Position alone does not establish status.",
+    "Please explain the headings.",
+    [
+      "An account activity display",
+      "can group pending and completed entries separately."
+    ],
+    "Read the status label rather than infer status from screen position.",
+    "Which heading is above the entry?",
+    "We can use a blank activity example."
+  ],
+  [
+    "train_transfer_description",
+    "train",
+    "C01",
+    true,
+    "One account entry shows a merchant name and another shows a reference. I want to describe what each field contains.",
+    "Are these separately labelled fields?",
+    "Yes, description and reference.",
+    "A transaction description and a supplied reference can differ.",
+    "Does the reference replace the transaction date?",
+    "Those fields record different details.",
+    "Please distinguish description from reference.",
+    [
+      "An account entry detail view",
+      "can display a description and a reference in separate fields."
+    ],
+    "Match the value to its field label before describing the entry.",
+    "Which label is beside that text?",
+    "We can omit the merchant name."
+  ],
+  [
+    "train_card_issue_date",
+    "train",
+    "C02",
+    true,
+    "The card letter has an issue date and an activation instruction. I want to distinguish the date from the action.",
+    "Is the date printed on the letter?",
+    "Yes, beside the letter heading.",
+    "A letter issue date is different from a card activation event.",
+    "Does receiving the letter mean activation was completed?",
+    "Delivery of a letter alone is not an activation confirmation.",
+    "Please explain the two labels.",
+    [
+      "A card issue letter",
+      "can contain a date separately from activation instructions."
+    ],
+    "Read the activation status separately from the letter date.",
+    "Which part describes an action?",
+    "We can leave the card number covered."
+  ],
+  [
+    "train_card_wallet_name",
+    "train",
+    "C02",
+    true,
+    "The digital wallet shortens the card nickname. I want to describe that display without replacing the card.",
+    "Is only the nickname shortened?",
+    "Yes, it is a display issue.",
+    "A display nickname and a card identifier are separate fields.",
+    "Does changing the nickname replace the physical card?",
+    "A display-label change is separate from a replacement-card instruction.",
+    "Please keep the display issue separate.",
+    [
+      "A digital-wallet card display",
+      "can use a nickname without changing the physical card."
+    ],
+    "Describe the display label without reading the full card details.",
+    "Which part of the nickname is missing?",
+    "We can leave the wallet open without making a payment."
+  ],
+  [
+    "train_unknown_push",
+    "train",
+    "C03",
+    false,
+    "I received an unexpected approval notification and did not approve it. I want to describe it to the bank.",
+    "Was it an approval request rather than a receipt?",
+    "Yes, it asked for approval.",
+    "An approval request and a completed-action receipt are different messages.",
+    "Does declining to approve establish who sent the request?",
+    "That response alone does not identify the originator.",
+    "Please explain what details to describe.",
+    [
+      "An unexpected approval notification",
+      "can include a time and a description of the requested action."
+    ],
+    "Use a known bank contact route to report the unexpected request.",
+    "What action was named in the request?",
+    "There is no need to approve anything for this discussion."
+  ],
+  [
+    "train_spoofed_invoice_name",
+    "train",
+    "C03",
+    true,
+    "An invoice email uses my supplier name but gives different bank details. I want to describe the mismatch without paying it.",
+    "Do the details differ from the supplier record already held?",
+    "Yes, the account details changed.",
+    "A familiar sender display name does not establish the authenticity of changed payment details.",
+    "Does replying to the same email verify the account change?",
+    "A reply in the same message chain does not provide an independent contact check.",
+    "Please explain the independent-contact idea.",
+    [
+      "A changed-payment-details report",
+      "can identify the mismatch without submitting the payment."
+    ],
+    "Contact the supplier using details already independently held rather than relying on the changed-details email.",
+    "Which field changed from the existing record?",
+    "We can keep both account numbers out of the chat."
+  ],
+  [
+    "train_browser_zoom",
+    "train",
+    "C04",
+    false,
+    "The browser page cuts off the submit label when zoomed in. I want to report a display problem.",
+    "Does it happen at the enlarged zoom setting?",
+    "Yes, the normal view shows the whole label.",
+    "Page zoom and the action assigned to a button are different settings.",
+    "Does zooming the page submit the form?",
+    "A view setting is not a submission instruction.",
+    "Please keep this to the display report.",
+    [
+      "A browser display report",
+      "can identify the page and zoom setting."
+    ],
+    "Record the page name and zoom level without including private form values.",
+    "Which label is cut off?",
+    "We can leave the form unsubmitted."
+  ],
+  [
+    "train_session_timer",
+    "train",
+    "C04",
+    false,
+    "The portal has a session countdown, and I want to understand which timer I am looking at.",
+    "Is it labelled session time?",
+    "Yes, above the sign-out control.",
+    "A login session timer and a payment-processing timer describe different processes.",
+    "Does the timer reaching zero prove a payment failed?",
+    "A session timeout alone does not establish a transaction outcome.",
+    "Please distinguish the session from a payment.",
+    [
+      "A banking session countdown",
+      "can describe the remaining time for the current login session."
+    ],
+    "Check the session label rather than treating it as a transaction status.",
+    "Which timer label is visible?",
+    "We can discuss the timer without keeping a live payment open."
+  ],
+  [
+    "train_recipient_alias",
+    "train",
+    "C05",
+    true,
+    "The payment list shows a nickname for a recipient, while the receipt uses a longer name. I want to explain the display difference.",
+    "Is the short name a saved nickname?",
+    "Yes, I typed it as a label.",
+    "A saved recipient nickname and a payment receipt name can be different fields.",
+    "Does changing the nickname edit a completed receipt?",
+    "Editing a saved label is separate from the record of a completed payment.",
+    "Please distinguish the nickname from the receipt.",
+    [
+      "A saved payment-recipient label",
+      "can differ from the name printed on a receipt."
+    ],
+    "Compare the relevant identifiers rather than assuming the display name alone identifies the instruction.",
+    "Which name came from the nickname field?",
+    "We can use a dummy recipient label."
+  ],
+  [
+    "train_payment_print_copy",
+    "train",
+    "C05",
+    true,
+    "I printed a payment confirmation, but the printout omits the page footer. I want to describe which part was cut off.",
+    "Is the footer visible on the screen version?",
+    "Yes, it is only missing on paper.",
+    "A print layout can differ from the on-screen document layout.",
+    "Does a missing printed footer mean the payment was cancelled?",
+    "A printing issue alone does not establish a change to the payment.",
+    "Please keep the print issue separate.",
+    [
+      "A payment-confirmation print layout",
+      "can place a footer outside the selected printable area."
+    ],
+    "Check print scaling without changing the payment instruction.",
+    "Which footer line is missing?",
+    "We can leave the confirmation amount unread."
+  ],
+  [
+    "train_complaint_channel_receipt",
+    "train",
+    "C06",
+    false,
+    "The complaint email acknowledgement and the portal receipt have different references. I want to describe both to the complaints team.",
+    "Were they issued by different channels?",
+    "Yes, email and portal.",
+    "Different channel receipts can use different identifiers.",
+    "Does a second reference necessarily mean a second complaint was opened?",
+    "Reference numbers alone do not establish whether the underlying records are separate.",
+    "Please explain how to distinguish the receipts.",
+    [
+      "A complaint channel receipt",
+      "can identify the channel through which a message was received."
+    ],
+    "Quote each reference with its channel label when asking whether the records are linked.",
+    "Which reference came from the portal?",
+    "We can leave the complaint contents out."
+  ],
+  [
+    "train_complaint_file_version",
+    "train",
+    "C06",
+    false,
+    "I attached a corrected document to a complaint. I want to identify the revised filename in my enquiry.",
+    "Does the revised file have a different filename?",
+    "Yes, I added a revision identifier.",
+    "A filename can identify a copy without proving what another party received.",
+    "Does renaming my local file replace the earlier uploaded copy?",
+    "A local rename does not itself update a received attachment.",
+    "Please explain the copy distinction.",
+    [
+      "A complaint attachment enquiry",
+      "can identify the filename and revision being discussed."
+    ],
+    "Specify the revised filename when asking which copy was recorded.",
+    "Which filename is the revision?",
+    "We can discuss the revision without sending the document here."
+  ],
+  [
+    "train_fee_date_field",
+    "train",
+    "C07",
+    true,
+    "The account fee entry has a posting date and a period description. I want to distinguish them.",
+    "Are both shown beside the fee?",
+    "Yes, the dates are not the same.",
+    "A posting date and a charge period can refer to different things.",
+    "Does the posting date always describe the start of the period?",
+    "The period description needs its own dates.",
+    "Please explain the fee labels.",
+    [
+      "An account fee entry",
+      "can state a posting date separately from the charge period."
+    ],
+    "Read the period description rather than replacing it with the posting date.",
+    "Which field describes the charged period?",
+    "We can leave the fee amount out."
+  ],
+  [
+    "train_rate_example_balance",
+    "train",
+    "C07",
+    true,
+    "The fee booklet has an example using a balance unlike the one on the account screen. I want to understand the example label.",
+    "Is it explicitly marked as an example?",
+    "Yes, above the illustrated amount.",
+    "An illustration balance is not necessarily the current account balance.",
+    "Does the example establish the charge on every balance?",
+    "Its stated assumptions need to be identified separately.",
+    "Please keep the example separate from the live account.",
+    [
+      "A bank fee illustration",
+      "can state a balance assumption used in the example."
+    ],
+    "Read the example assumptions before treating the figure as an account-specific charge.",
+    "Which amount is labelled as the example balance?",
+    "We can use the printed example without a live balance."
+  ],
+  [
+    "train_saver_rate_notice",
+    "train",
+    "C08",
+    true,
+    "I saved a savings rate notice last month and have another now. I want to identify the effective date on each.",
+    "Does each notice state an effective date?",
+    "Yes, different dates are printed.",
+    "A notice date and an effective date can identify different events.",
+    "Does downloading an old notice make its rate current?",
+    "A download date does not change the notice effective period.",
+    "Please distinguish the dates.",
+    [
+      "A savings rate notice",
+      "can identify an effective date for its stated rate."
+    ],
+    "Read the effective-date field rather than using the download timestamp.",
+    "Which date is labelled effective?",
+    "We can leave the interest amounts unmentioned."
+  ],
+  [
+    "train_deposit_instruction_copy",
+    "train",
+    "C08",
+    true,
+    "The deposit instruction I printed has a different page number from the portal view. I want to identify the document version.",
+    "Is there a version label on the printout?",
+    "Yes, near the page number.",
+    "A page number and a document version label serve different purposes.",
+    "Does a higher page number establish a newer instruction?",
+    "Page numbering alone does not establish the document version.",
+    "Please explain the version label.",
+    [
+      "A deposit instruction document",
+      "can include a version identifier separate from page numbering."
+    ],
+    "Compare the version identifiers rather than infer age from the page count.",
+    "Which code is labelled version?",
+    "We can discuss the layout without changing an instruction."
+  ],
+  [
+    "train_super_contact_preference",
+    "train",
+    "C09",
+    true,
+    "The super portal has contact preferences and investment settings on different tabs. I want to explain which tab I changed.",
+    "Was it the contact preference tab?",
+    "Yes, only that tab.",
+    "A contact preference and an investment election are different settings.",
+    "Does changing an email preference necessarily change an investment option?",
+    "A communication preference is a separate setting from an investment election.",
+    "Please distinguish the settings.",
+    [
+      "A super contact preference",
+      "can specify a communication choice separately from an investment election."
+    ],
+    "Use the tab label when describing the setting changed.",
+    "Which tab was open?",
+    "We can leave the investment amounts out."
+  ],
+  [
+    "train_loan_document_heading",
+    "train",
+    "C10",
+    true,
+    "The loan portal offers a balance summary and a repayment schedule. I want to ask which heading is on my saved document.",
+    "Is the heading visible on the first page?",
+    "Yes, it says balance summary.",
+    "A summary balance and a forward schedule describe different information.",
+    "Does a balance summary necessarily list every future instalment?",
+    "The document content needs to be identified rather than inferred from another document type.",
+    "Please distinguish those document names.",
+    [
+      "A loan balance summary",
+      "can report a balance without being a full future repayment schedule."
+    ],
+    "Quote the document heading rather than substituting the name of another portal download.",
+    "Which heading is printed at the top?",
+    "We can leave the balance unread."
+  ],
+  [
+    "train_hardship_callback_label",
+    "train",
+    "C11",
+    false,
+    "The hardship contact form says preferred callback window. I want to understand whether that is a request field or a booking confirmation.",
+    "Is it on the request form rather than a confirmation?",
+    "Yes, I have not submitted it.",
+    "A preference field and a confirmed booking are different records.",
+    "Does filling the field guarantee a call at that time?",
+    "A stated preference alone is not a booking confirmation.",
+    "Please explain the request field.",
+    [
+      "A hardship callback request",
+      "can record a preferred contact window."
+    ],
+    "Read whether the message is a request receipt or a confirmed appointment.",
+    "Which label is on the page?",
+    "We can discuss the field without describing financial circumstances."
+  ],
+  [
+    "train_profile_postcode",
+    "train",
+    "C13",
+    false,
+    "The profile form separates residential and mailing postcodes. I want to describe which field is incorrect.",
+    "Are the two address types labelled separately?",
+    "Yes, they have their own postcode boxes.",
+    "Residential and mailing address fields can describe different destinations.",
+    "Does correcting one box necessarily update both?",
+    "The form fields need to be identified separately; one edit does not prove another field changed.",
+    "Please keep the address types separate.",
+    [
+      "A bank profile address form",
+      "can distinguish residential and mailing postcode fields."
+    ],
+    "Use the address-type label when requesting the correction.",
+    "Which postcode box contains the error?",
+    "We can leave the actual postcode out of the example."
+  ]
+]

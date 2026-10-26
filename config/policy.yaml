@@ -1,0 +1,4 @@
+version: research-review-v1
+# Illustrative, unapproved policy: compliance owners must version their own rules.
+default_action: review
+rules: {}

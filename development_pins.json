@@ -1,0 +1,39 @@
+{
+  "authorization": "65270c7a6e4f833ded66bea30cbd36f1ce97bce812942635a9e15d9695802b80",
+  "lora": {
+    "rank": 16,
+    "alpha": 16,
+    "dropout": 0.0,
+    "gradient_checkpointing": true,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ]
+  },
+  "contract": "b572b260928fb1ac02cd2c40fa811bc4d721c6ab4efa6f70dd0262fec8c57681",
+  "full": {
+    "manifest": "90baf0e0e75c4c3331fe89c9d7b3f5c7e3427d6155078e990501efe322f3c281",
+    "records": "dd682e928aa3b266e0f2fead96fcc810572b095a4d1d189229556a4b1d1a89c7",
+    "files": {
+      "train": "fe2ce042d1157168f79b41d83fd2a0d0829884c86f82134f56f4aa127b85bde9",
+      "validation": "97520b3c3dc259c494188aa59ef8d08b5438d67fc3567dc12240b2dee1d0b3bc",
+      "calibration": "847b5b9a6985b69f6f7dcab42464538250e4e9a89a4d8fc23c0eb78507a84750",
+      "test": "fc870e7d5597197752e765642740ee6baa6cbc000c02756825d0dc584a1f4dc7"
+    }
+  },
+  "smoke": {
+    "manifest": "21294ec22efd4783e2470a0126e13535b2da2562d09fb8328ed68a7fdd16ef6e",
+    "files": {
+      "train": "7e746f174f2afbac537b9de406f633e34c34d2e11d5716b0a021730200ef5e39",
+      "validation": "a9579ed8aea773e89a4dd952f0bcf4133c25835e29c08bbc9086a39020708300",
+      "calibration": "b929cfcff1dd1919bd7a8afc2702ed70d95928e3875a340762b654661728426c",
+      "test": "23298f4fdf3eb936fe94a2db0c0d65890b0ef254acf18c516688840f9555a5bd"
+    },
+    "records": "4d8331e9c31e666912943b866a49944f85cdd4ce6b5fdb242f052b1ab2c4b8af"
+  }
+}

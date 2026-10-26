@@ -1,0 +1,32 @@
+{
+  "product_references_in_services": [
+    "card_freeze_label",
+    "fake_payment_capture",
+    "replacement_delivery_field",
+    "test_business_alias_record",
+    "train_card_issue_date",
+    "train_card_wallet_name",
+    "train_spoofed_invoice_name",
+    "val_claim_upload_receipt"
+  ],
+  "nonproduct_backchannels": [
+    "bond_currency_expense",
+    "cal_dividend_currency_election",
+    "cal_event_excess",
+    "cal_unused_credit_fee",
+    "camera_borrow",
+    "freezer_stock",
+    "fund_exit_gate",
+    "music_royalty_account",
+    "night_shift_cash",
+    "rent_bond_buffer",
+    "retirement_document_language",
+    "shared_vendor_approvals",
+    "sms_roaming_cost",
+    "tenant_multiple_keys",
+    "unpaid_leave_premium",
+    "val_dormant_savings",
+    "val_offset_pay_timing"
+  ],
+  "rationale": "Card/payment/account facts resolve an actual product; pure identifiers/privacy backchannels do not acquire product scope only because earlier turns did. Proposals remain subject to D1 adjudication."
+}

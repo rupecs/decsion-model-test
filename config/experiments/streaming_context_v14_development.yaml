@@ -1,0 +1,41 @@
+experiment: streaming_context_v14_development
+project:
+  model_version: banking-streaming-context-v14-SYNTHETIC-DEVELOPMENT
+training:
+  epochs: 2
+  evaluation_interval: 100
+  logging_steps: 5
+  checkpoint_interval: 100
+  development_run: v14_synthetic_development_20261026
+  max_steps: 2972
+  validation_selection:
+    enabled: true
+    patience: 3
+    min_delta: 0.001
+    restore_best: true
+dataset:
+  schema: banking_streaming_d1_d7_v6_context_draft
+  path: null
+  version: streaming-context-dialogue-v14
+  labels:
+  - factual_information
+  - general_advice
+  - personal_advice
+  - other
+  multi_question: false
+  files:
+    train: data/generated/streaming_context_v14_release/construction_clef/train.jsonl
+    validation: data/generated/streaming_context_v14_release/construction_clef/validation.jsonl
+    calibration: data/generated/streaming_context_v14_release/construction_clef/calibration.jsonl
+    test: data/generated/streaming_context_v14_release/construction_clef/test.jsonl
+  provenance_path: data/generated/streaming_context_v14_release/records.jsonl
+  provenance_sha256: dd682e928aa3b266e0f2fead96fcc810572b095a4d1d189229556a4b1d1a89c7
+  manifest_path: data/generated/streaming_context_v14_release/manifest.json
+  manifest_sha256: 90baf0e0e75c4c3331fe89c9d7b3f5c7e3427d6155078e990501efe322f3c281
+  expected_total: 17467
+  splits:
+    train: 11883
+    validation: 1640
+    calibration: 2071
+    test: 1873
+  export_mode: construction_review_only

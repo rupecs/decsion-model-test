@@ -1,0 +1,142 @@
+[
+  {
+    "fixture_split": "train",
+    "source_record_id": "sctxv14-8d779ddf098477217e69b5d5",
+    "source_split": "train",
+    "source_topic": "v14-apprentice_tools",
+    "input_labels_sha256": "0d63d6c2d53303af5b5c84d88754e8ab152319a72a92177854939fc08d6dcf57"
+  },
+  {
+    "fixture_split": "train",
+    "source_record_id": "sctxv14-170ca4b5c3041fea417ff5b5",
+    "source_split": "train",
+    "source_topic": "v14-apprentice_tools",
+    "input_labels_sha256": "44f0baa198f12e6ea3f0d529a465cecfa2b4e840183d0c646d5bcf53af560fb6"
+  },
+  {
+    "fixture_split": "train",
+    "source_record_id": "sctxv14-55c3d4487c087b4773718a9a",
+    "source_split": "train",
+    "source_topic": "v14-apprentice_tools",
+    "input_labels_sha256": "fecf1111cb0171941ef446f286df331f8afb0886faecfc59c57fd9523b22f6b7"
+  },
+  {
+    "fixture_split": "train",
+    "source_record_id": "sctxv14-833c4177cab6a0fbe554b72c",
+    "source_split": "train",
+    "source_topic": "v14-apprentice_tools",
+    "input_labels_sha256": "09ac8b3c22b9152d122e363067accf0bfc116e47edf6df1b2bdb2c626454caf1"
+  },
+  {
+    "fixture_split": "train",
+    "source_record_id": "sctxv14-132de8ef2eb2b6418636323f",
+    "source_split": "train",
+    "source_topic": "v14-service-app_text_overlap",
+    "input_labels_sha256": "5df755584a56d547ea96e80c3c718565f5b08cdb4b3f0bd0d2893a80d986150a"
+  },
+  {
+    "fixture_split": "validation",
+    "source_record_id": "sctxv14-4a2d9827b24c4c2ed4f3b3f3",
+    "source_split": "train",
+    "source_topic": "v14-car_ownership_end",
+    "input_labels_sha256": "7ab94415367c09e246e05a321cb31cd79010c351db21a3368ce0e02b5e8744e5"
+  },
+  {
+    "fixture_split": "validation",
+    "source_record_id": "sctxv14-26787e46227a9fa1ee27e55e",
+    "source_split": "train",
+    "source_topic": "v14-car_ownership_end",
+    "input_labels_sha256": "1d92740fc16156196f435353a4635c1eb2f0aa9e7fae54b2e70d0176cd24b231"
+  },
+  {
+    "fixture_split": "validation",
+    "source_record_id": "sctxv14-85339a31d383780783d3613d",
+    "source_split": "train",
+    "source_topic": "v14-car_ownership_end",
+    "input_labels_sha256": "e4cbf641701afb7e7ba3f384dd2ece498724faa77c229a51e4a1974557c4c97a"
+  },
+  {
+    "fixture_split": "validation",
+    "source_record_id": "sctxv14-096321d79ebdf6ac90b08fd4",
+    "source_split": "train",
+    "source_topic": "v14-car_ownership_end",
+    "input_labels_sha256": "2455532e1032a7f47bc5eec4812f4443e1c8b6abbb6e4c67b743997ecb3a952a"
+  },
+  {
+    "fixture_split": "validation",
+    "source_record_id": "sctxv14-03e1a9026e20c94852d8c070",
+    "source_split": "train",
+    "source_topic": "v14-service-complaint_attachment_ack",
+    "input_labels_sha256": "8dc1d60d931160b99a19f8d5939faaed315d6d19f9e59257da55823d577b565b"
+  },
+  {
+    "fixture_split": "calibration",
+    "source_record_id": "sctxv14-f4955dbdfbc0dfc5687c13b8",
+    "source_split": "train",
+    "source_topic": "v14-equipment_return",
+    "input_labels_sha256": "020140cbe4112bf54df0b253cb519c4717dca4941af7481726d6deeed9e47e95"
+  },
+  {
+    "fixture_split": "calibration",
+    "source_record_id": "sctxv14-08ab9dbaae9df0fd9a51a6d9",
+    "source_split": "train",
+    "source_topic": "v14-equipment_return",
+    "input_labels_sha256": "ae1519a0e41f262c393cb13ff7dd20fc2e7b7f59c02cb0360d4311fa032a050b"
+  },
+  {
+    "fixture_split": "calibration",
+    "source_record_id": "sctxv14-a725f1bfba4d9bf21761c031",
+    "source_split": "train",
+    "source_topic": "v14-equipment_return",
+    "input_labels_sha256": "49174434d13ea529fcb20bf2c176f7a30941a850152888bcb74f89c1a57c68e1"
+  },
+  {
+    "fixture_split": "calibration",
+    "source_record_id": "sctxv14-6e05bbca0dc40efc9936ed12",
+    "source_split": "train",
+    "source_topic": "v14-equipment_return",
+    "input_labels_sha256": "32bc6c32a54da8ecb5c554c2c6258874b8530bf621e9d954650e85ce9a88b716"
+  },
+  {
+    "fixture_split": "calibration",
+    "source_record_id": "sctxv14-13a59f742b2c8487c1b96984",
+    "source_split": "train",
+    "source_topic": "v14-service-download_location",
+    "input_labels_sha256": "cd4bb9577fe836418e1dc302776824bfae745951a607000c96c77b34777354aa"
+  },
+  {
+    "fixture_split": "test",
+    "source_record_id": "sctxv14-2606e439a544a2e0a2e224ce",
+    "source_split": "train",
+    "source_topic": "v14-irregular_penalty",
+    "input_labels_sha256": "2b47de74b0289e742c55790d6619ce286026420f44cca9623d33baef95fee2a5"
+  },
+  {
+    "fixture_split": "test",
+    "source_record_id": "sctxv14-071b9b3d4c854a19c0a7c574",
+    "source_split": "train",
+    "source_topic": "v14-irregular_penalty",
+    "input_labels_sha256": "c3a8246b415407b049dadb41cfda6b9c1da9af7a3572bf205adfd6d6dba5a047"
+  },
+  {
+    "fixture_split": "test",
+    "source_record_id": "sctxv14-e193b134a142119a2986c397",
+    "source_split": "train",
+    "source_topic": "v14-irregular_penalty",
+    "input_labels_sha256": "e3dac6c487805df7b57ab81cf8bd708ca497d2d8c907525f50cdabdce393b4b9"
+  },
+  {
+    "fixture_split": "test",
+    "source_record_id": "sctxv14-4a53c265acad15f524062c9d",
+    "source_split": "train",
+    "source_topic": "v14-irregular_penalty",
+    "input_labels_sha256": "560df7bb0b796a9255f108b35aa462d6576d5a1558da6d4431bb90bd5a6c76f8"
+  },
+  {
+    "fixture_split": "test",
+    "source_record_id": "sctxv14-4f3cf442d9be4f4507422d6e",
+    "source_split": "train",
+    "source_topic": "v14-service-suspicious_calendar_invite",
+    "input_labels_sha256": "73aa4c6071d8840bdea0a13f4d094620174b65eb3fe30caded31f07a2a721641"
+  }
+]

@@ -1,0 +1,42 @@
+contract: banking_streaming_d1_d7_v6_context_draft
+minimum_records_exclusive: 10000
+minimum_product_topics: 60
+minimum_product_topics_per_partition: 10
+minimum_each_final_class: 500
+minimum_designs_per_call_per_partition: 2
+minimum_contexts_per_call_per_partition: 2
+minimum_other_fraction_per_partition: 0.1
+minimum_rows_per_class_per_partition: 30
+fractions:
+  mixed_content:
+  - 0.15
+  - 0.2
+  single_exchange:
+  - 0.25
+  - 0.35
+  two_three_exchanges:
+  - 0.35
+  - 0.5
+  four_plus_exchanges:
+  - 0.2
+  - 0.35
+  controlled_asr:
+  - 0.1
+  - 0.15
+  nonterminal_voice_prefix:
+  - 0.2
+  - 0.4
+maximum_personal_i_would_fraction: 0.15
+maximum_noninitial_turn_repetitions: 250
+maximum_response_only_nb_accuracy: 0.68
+notes:
+- Every partition must cover all six product domains plus service and all 20 call
+  categories.
+- Distinct designs are counted by validated content hash, not renamed IDs or context
+  count.
+- No bypass flag and no failed draft may be published by the v14 builder.
+- Passing construction never approves annotation, native token coverage, GPU smoke
+  or training.
+- Training snapshot and design shares 60-70%; at least 35 training product topics.
+- Each discordant group requires five designs and 15% of personal designs in each
+  partition.

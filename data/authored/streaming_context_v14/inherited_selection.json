@@ -1,0 +1,14 @@
+{
+  "policy": "Retain only exact unexposed service records or product families with a clear general product view; exclude all inherited D3-only designs pending broader comparison-step adjudication.",
+  "independent_annotation": false,
+  "product_topic_allowlist": [
+    "v13-asset_custody", "v13-cal_account_reporting_dates", "v13-cal_deposit_authorised_route", "v13-cal_insured_locations",
+    "v13-goods_risk_period", "v13-insurance_notification_route", "v13-interest_distribution", "v13-multiple_beneficiaries",
+    "v13-payment_reference_length", "v13-payment_return_detail", "v13-payment_status_feed", "v13-retroactive_date",
+    "v13-super_investment_switch", "v13-super_nomination_record", "v13-test_bank_document_revision", "v13-test_covenant_report_format",
+    "v13-test_currency_quote_commitment", "v13-test_large_print_records", "v13-test_super_nomination_review",
+    "v13-val_covenant_measure", "v13-val_estate_reporting", "v13-val_interest_owner_record", "v13-val_leverage_limit",
+    "v13-val_statement_access", "v13-withdrawal_channels"
+  ],
+  "rationale": "A comparison procedure or a claim that a comparison is useful is not a product endorsement. Ambiguous older product families are quarantined rather than relabelled to meet coverage. This is author curation, not independent approval."
+}
