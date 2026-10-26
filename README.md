@@ -14,6 +14,10 @@ All four partitions are included because reproducing this model requires separat
 
 **These are frozen synthetic labels, not independently approved production labels.** The completed run was explicitly a bounded development experiment. The manifest remains `training_ready: false` with zero independently approved records. Training requires an explicit synthetic-development opt-in; do not change the manifest to bypass this distinction.
 
+## Offline demonstrations
+
+Open [the prediction gallery](demo/index.html) for **30 genuine captured model results**, or [the dataset label explorer](demo/dataset.html) for **all 17,467 proposed v14 annotations**. Download or clone the repository and open the HTML files locally; GitHub displays HTML source rather than running it. Both pages are self-contained and work without a GPU or internet. Search/filter examples, explore saved voice stages and export slide images. See [demo instructions](demo/README.md). Model outputs and proposed dataset labels are clearly separated.
+
 ## Start here
 
 ```sh

@@ -1,0 +1,2748 @@
+{
+  "format": "v14_offline_prediction_capture_v1",
+  "case_count": 30,
+  "model_version": "banking-streaming-context-v14-SYNTHETIC-DEVELOPMENT",
+  "checkpoint_manifest_sha256": "7e71e83eae65fab5787f04c9696dfc544223635f1c8e1ae31835d8c64b980b36",
+  "cases_sha256": "7b9d76457f9a7ec7f4958614c0487c06361e62f599233df1c3c05d1fe320c7e9",
+  "questions": {
+    "D1": {
+      "type": "noul",
+      "instructions": "Does the assistant text so far concern a banking or financial product, including credit?"
+    },
+    "D2": {
+      "type": "noul",
+      "instructions": "Does the assistant text so far express a product recommendation or an opinion intended to influence a product decision?"
+    },
+    "D3": {
+      "type": "noul",
+      "instructions": "Does that product advice demonstrably link actual customer objectives, financial situation or needs to the recommendation, including a reference resolved from earlier turns? Mere product comparison, statement review or information requests do not constitute such a basis."
+    },
+    "D4": {
+      "type": "noul",
+      "instructions": "Does that product advice assert or imply suitability for the current customer in the full conversation, including a direct selection answering their suitability request without requiring a pronoun? A selection addressed to the customer after a bare actual disclosure can imply fit even without a question. Disclosure alone is insufficient, and a generic request does not override a tailored response."
+    },
+    "D5": {
+      "type": "noul",
+      "instructions": "Does the assistant text so far provide substantive facts or procedural banking help without product advice? Unendorsed quotations of opinions alone do not count as substantive facts."
+    },
+    "D6": {
+      "type": "noul",
+      "instructions": "Does the assistant text so far provide a recommendation or influential opinion about a credit product?"
+    },
+    "D7": {
+      "type": "choice",
+      "instructions": "What is the classification of the assistant text available so far?",
+      "criteria": {
+        "factual_information": "Substantive product facts/procedure without endorsed advice in this target.",
+        "general_advice": "Endorsed product advice without actual-basis use or individual suitability in context.",
+        "personal_advice": "Product advice demonstrably using a substantive actual basis or asserting/implying individual suitability.",
+        "other": "No substantive facts, procedure or endorsed product advice expressed so far."
+      }
+    }
+  },
+  "notice": "Genuine saved model outputs on authored synthetic demonstration cases. Not ground truth, independent evaluation or live inference. No outputs have been corrected.",
+  "samples": [
+    {
+      "id": "single-01",
+      "title": "A plain interest definition",
+      "kind": "single",
+      "context": "What does interest mean?",
+      "response": "Interest is a charge for borrowing money.",
+      "result": {
+        "prediction": {
+          "schema_version": "banking_streaming_d1_d7_v6_context_draft",
+          "labels": {
+            "D1": true,
+            "D2": false,
+            "D3": false,
+            "D4": false,
+            "D5": true,
+            "D6": false,
+            "D7": "other"
+          },
+          "decisions": {
+            "D1": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9809,
+                "false": 0.0191
+              }
+            },
+            "D2": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0004,
+                "false": 0.9996
+              }
+            },
+            "D3": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0003,
+                "false": 0.9997
+              }
+            },
+            "D4": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0002,
+                "false": 0.9998
+              }
+            },
+            "D5": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.6935,
+                "false": 0.3065
+              }
+            },
+            "D6": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0004,
+                "false": 0.9996
+              }
+            },
+            "D7": {
+              "answer": "other",
+              "probabilities": {
+                "factual_information": 0.0701,
+                "general_advice": 0.001,
+                "personal_advice": 0.0008,
+                "other": 0.9281
+              }
+            }
+          },
+          "classification": "other",
+          "probabilities": {
+            "factual_information": 0.0701,
+            "general_advice": 0.001,
+            "personal_advice": 0.0008,
+            "other": 0.9281
+          },
+          "model_version": "banking-streaming-context-v14-SYNTHETIC-DEVELOPMENT",
+          "consistency": {
+            "consistent": false,
+            "violations": [
+              "D7 disagrees with D2–D5"
+            ]
+          },
+          "schema_sha256": "b572b260928fb1ac02cd2c40fa811bc4d721c6ab4efa6f70dd0262fec8c57681"
+        },
+        "latency_seconds": 0.7992670210078359
+      },
+      "captured_at": "2026-10-26T01:30:26.601408+00:00"
+    },
+    {
+      "id": "single-02",
+      "title": "A general savings opinion",
+      "kind": "single",
+      "context": "What is your general view of savings accounts with monthly fees?",
+      "response": "For small balances, an account without a monthly fee is usually the better choice.",
+      "result": {
+        "prediction": {
+          "schema_version": "banking_streaming_d1_d7_v6_context_draft",
+          "labels": {
+            "D1": true,
+            "D2": true,
+            "D3": false,
+            "D4": false,
+            "D5": false,
+            "D6": false,
+            "D7": "general_advice"
+          },
+          "decisions": {
+            "D1": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9979,
+                "false": 0.0021
+              }
+            },
+            "D2": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9997,
+                "false": 0.0003
+              }
+            },
+            "D3": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.1628,
+                "false": 0.8372
+              }
+            },
+            "D4": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0009,
+                "false": 0.9991
+              }
+            },
+            "D5": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0008,
+                "false": 0.9992
+              }
+            },
+            "D6": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0009,
+                "false": 0.9991
+              }
+            },
+            "D7": {
+              "answer": "general_advice",
+              "probabilities": {
+                "factual_information": 0.0025,
+                "general_advice": 0.9731,
+                "personal_advice": 0.0233,
+                "other": 0.0011
+              }
+            }
+          },
+          "classification": "general_advice",
+          "probabilities": {
+            "factual_information": 0.0025,
+            "general_advice": 0.9731,
+            "personal_advice": 0.0233,
+            "other": 0.0011
+          },
+          "model_version": "banking-streaming-context-v14-SYNTHETIC-DEVELOPMENT",
+          "consistency": {
+            "consistent": true,
+            "violations": []
+          },
+          "schema_sha256": "b572b260928fb1ac02cd2c40fa811bc4d721c6ab4efa6f70dd0262fec8c57681"
+        },
+        "latency_seconds": 0.300453474977985
+      },
+      "captured_at": "2026-10-26T01:30:27.937795+00:00"
+    },
+    {
+      "id": "single-03",
+      "title": "Suitability without a pronoun",
+      "kind": "single",
+      "context": "The house deposit is due in eight weeks. Every dollar is needed and the settlement date cannot move. Which option makes sense?",
+      "response": "An accessible savings account is the appropriate choice.",
+      "result": {
+        "prediction": {
+          "schema_version": "banking_streaming_d1_d7_v6_context_draft",
+          "labels": {
+            "D1": true,
+            "D2": true,
+            "D3": false,
+            "D4": true,
+            "D5": false,
+            "D6": false,
+            "D7": "personal_advice"
+          },
+          "decisions": {
+            "D1": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9989,
+                "false": 0.0011
+              }
+            },
+            "D2": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9999,
+                "false": 0.0001
+              }
+            },
+            "D3": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.3529,
+                "false": 0.6471
+              }
+            },
+            "D4": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9998,
+                "false": 0.0002
+              }
+            },
+            "D5": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0005,
+                "false": 0.9995
+              }
+            },
+            "D6": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0013,
+                "false": 0.9987
+              }
+            },
+            "D7": {
+              "answer": "personal_advice",
+              "probabilities": {
+                "factual_information": 0.0007,
+                "general_advice": 0.0158,
+                "personal_advice": 0.9804,
+                "other": 0.0031
+              }
+            }
+          },
+          "classification": "personal_advice",
+          "probabilities": {
+            "factual_information": 0.0007,
+            "general_advice": 0.0158,
+            "personal_advice": 0.9804,
+            "other": 0.0031
+          },
+          "model_version": "banking-streaming-context-v14-SYNTHETIC-DEVELOPMENT",
+          "consistency": {
+            "consistent": true,
+            "violations": []
+          },
+          "schema_sha256": "b572b260928fb1ac02cd2c40fa811bc4d721c6ab4efa6f70dd0262fec8c57681"
+        },
+        "latency_seconds": 0.27880779607221484
+      },
+      "captured_at": "2026-10-26T01:30:28.948516+00:00"
+    },
+    {
+      "id": "single-04",
+      "title": "A disclaimer followed by tailored advice",
+      "kind": "single",
+      "context": "My income varies each month and an early withdrawal could be necessary. Should I lock these savings away for a year?",
+      "response": "This is general information only. With that need for early access, I recommend an accessible savings account rather than a twelve-month term deposit.",
+      "result": {
+        "prediction": {
+          "schema_version": "banking_streaming_d1_d7_v6_context_draft",
+          "labels": {
+            "D1": true,
+            "D2": true,
+            "D3": true,
+            "D4": true,
+            "D5": false,
+            "D6": false,
+            "D7": "personal_advice"
+          },
+          "decisions": {
+            "D1": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9989,
+                "false": 0.0011
+              }
+            },
+            "D2": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9998,
+                "false": 0.0002
+              }
+            },
+            "D3": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.977,
+                "false": 0.023
+              }
+            },
+            "D4": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.939,
+                "false": 0.061
+              }
+            },
+            "D5": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0007,
+                "false": 0.9993
+              }
+            },
+            "D6": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0016,
+                "false": 0.9984
+              }
+            },
+            "D7": {
+              "answer": "personal_advice",
+              "probabilities": {
+                "factual_information": 0.0018,
+                "general_advice": 0.0244,
+                "personal_advice": 0.9717,
+                "other": 0.0021
+              }
+            }
+          },
+          "classification": "personal_advice",
+          "probabilities": {
+            "factual_information": 0.0018,
+            "general_advice": 0.0244,
+            "personal_advice": 0.9717,
+            "other": 0.0021
+          },
+          "model_version": "banking-streaming-context-v14-SYNTHETIC-DEVELOPMENT",
+          "consistency": {
+            "consistent": true,
+            "violations": []
+          },
+          "schema_sha256": "b572b260928fb1ac02cd2c40fa811bc4d721c6ab4efa6f70dd0262fec8c57681"
+        },
+        "latency_seconds": 0.25648126599844545
+      },
+      "captured_at": "2026-10-26T01:30:29.968652+00:00"
+    },
+    {
+      "id": "single-05",
+      "title": "Personal context, factual credit answer",
+      "kind": "single",
+      "context": "I have an unpredictable income and a credit-card balance. What does a balance-transfer fee mean?",
+      "response": "A balance-transfer fee is a charge for moving a balance between credit accounts. It may be a fixed amount or a percentage of the balance transferred.",
+      "result": {
+        "prediction": {
+          "schema_version": "banking_streaming_d1_d7_v6_context_draft",
+          "labels": {
+            "D1": true,
+            "D2": false,
+            "D3": false,
+            "D4": false,
+            "D5": true,
+            "D6": false,
+            "D7": "factual_information"
+          },
+          "decisions": {
+            "D1": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9988,
+                "false": 0.0012
+              }
+            },
+            "D2": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0002,
+                "false": 0.9998
+              }
+            },
+            "D3": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0002,
+                "false": 0.9998
+              }
+            },
+            "D4": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0002,
+                "false": 0.9998
+              }
+            },
+            "D5": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9998,
+                "false": 0.0002
+              }
+            },
+            "D6": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0003,
+                "false": 0.9997
+              }
+            },
+            "D7": {
+              "answer": "factual_information",
+              "probabilities": {
+                "factual_information": 0.9991,
+                "general_advice": 0.0002,
+                "personal_advice": 0.0002,
+                "other": 0.0005
+              }
+            }
+          },
+          "classification": "factual_information",
+          "probabilities": {
+            "factual_information": 0.9991,
+            "general_advice": 0.0002,
+            "personal_advice": 0.0002,
+            "other": 0.0005
+          },
+          "model_version": "banking-streaming-context-v14-SYNTHETIC-DEVELOPMENT",
+          "consistency": {
+            "consistent": true,
+            "violations": []
+          },
+          "schema_sha256": "b572b260928fb1ac02cd2c40fa811bc4d721c6ab4efa6f70dd0262fec8c57681"
+        },
+        "latency_seconds": 0.2873817740473896
+      },
+      "captured_at": "2026-10-26T01:30:31.199654+00:00"
+    },
+    {
+      "id": "single-06",
+      "title": "An opinion quoted without endorsement",
+      "kind": "single",
+      "context": "Can you repeat the sentence in the example, without giving your own recommendation?",
+      "response": "The example says, ‘This credit card is the best choice for you.’ I am quoting the example, not endorsing that choice.",
+      "result": {
+        "prediction": {
+          "schema_version": "banking_streaming_d1_d7_v6_context_draft",
+          "labels": {
+            "D1": true,
+            "D2": false,
+            "D3": false,
+            "D4": false,
+            "D5": false,
+            "D6": false,
+            "D7": "other"
+          },
+          "decisions": {
+            "D1": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.7548,
+                "false": 0.2452
+              }
+            },
+            "D2": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0154,
+                "false": 0.9846
+              }
+            },
+            "D3": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0004,
+                "false": 0.9996
+              }
+            },
+            "D4": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0124,
+                "false": 0.9876
+              }
+            },
+            "D5": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.172,
+                "false": 0.828
+              }
+            },
+            "D6": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0008,
+                "false": 0.9992
+              }
+            },
+            "D7": {
+              "answer": "other",
+              "probabilities": {
+                "factual_information": 0.2713,
+                "general_advice": 0.0114,
+                "personal_advice": 0.0033,
+                "other": 0.714
+              }
+            }
+          },
+          "classification": "other",
+          "probabilities": {
+            "factual_information": 0.2713,
+            "general_advice": 0.0114,
+            "personal_advice": 0.0033,
+            "other": 0.714
+          },
+          "model_version": "banking-streaming-context-v14-SYNTHETIC-DEVELOPMENT",
+          "consistency": {
+            "consistent": true,
+            "violations": []
+          },
+          "schema_sha256": "b572b260928fb1ac02cd2c40fa811bc4d721c6ab4efa6f70dd0262fec8c57681"
+        },
+        "latency_seconds": 0.2668684279778972
+      },
+      "captured_at": "2026-10-26T01:30:32.319714+00:00"
+    },
+    {
+      "id": "single-07",
+      "title": "Card-freeze instructions",
+      "kind": "single",
+      "context": "Where can I temporarily freeze my card?",
+      "response": "Open the banking app, select the card and choose the freeze control. A temporary freeze can be removed from the same screen.",
+      "result": {
+        "prediction": {
+          "schema_version": "banking_streaming_d1_d7_v6_context_draft",
+          "labels": {
+            "D1": true,
+            "D2": false,
+            "D3": false,
+            "D4": false,
+            "D5": true,
+            "D6": false,
+            "D7": "factual_information"
+          },
+          "decisions": {
+            "D1": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9985,
+                "false": 0.0015
+              }
+            },
+            "D2": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0001,
+                "false": 0.9999
+              }
+            },
+            "D3": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0002,
+                "false": 0.9998
+              }
+            },
+            "D4": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0002,
+                "false": 0.9998
+              }
+            },
+            "D5": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9997,
+                "false": 0.0003
+              }
+            },
+            "D6": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0003,
+                "false": 0.9997
+              }
+            },
+            "D7": {
+              "answer": "factual_information",
+              "probabilities": {
+                "factual_information": 0.9983,
+                "general_advice": 0.0002,
+                "personal_advice": 0.0002,
+                "other": 0.0012
+              }
+            }
+          },
+          "classification": "factual_information",
+          "probabilities": {
+            "factual_information": 0.9983,
+            "general_advice": 0.0002,
+            "personal_advice": 0.0002,
+            "other": 0.0012
+          },
+          "model_version": "banking-streaming-context-v14-SYNTHETIC-DEVELOPMENT",
+          "consistency": {
+            "consistent": true,
+            "violations": []
+          },
+          "schema_sha256": "b572b260928fb1ac02cd2c40fa811bc4d721c6ab4efa6f70dd0262fec8c57681"
+        },
+        "latency_seconds": 0.24533540499396622
+      },
+      "captured_at": "2026-10-26T01:30:33.453320+00:00"
+    },
+    {
+      "id": "single-08",
+      "title": "A privacy acknowledgement",
+      "kind": "single",
+      "context": "Please do not repeat the identifier I mentioned earlier.",
+      "response": "Understood. I will leave that identifier out of the discussion.",
+      "result": {
+        "prediction": {
+          "schema_version": "banking_streaming_d1_d7_v6_context_draft",
+          "labels": {
+            "D1": false,
+            "D2": false,
+            "D3": false,
+            "D4": false,
+            "D5": false,
+            "D6": false,
+            "D7": "other"
+          },
+          "decisions": {
+            "D1": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.2356,
+                "false": 0.7644
+              }
+            },
+            "D2": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0004,
+                "false": 0.9996
+              }
+            },
+            "D3": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0003,
+                "false": 0.9997
+              }
+            },
+            "D4": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0003,
+                "false": 0.9997
+              }
+            },
+            "D5": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0003,
+                "false": 0.9997
+              }
+            },
+            "D6": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0003,
+                "false": 0.9997
+              }
+            },
+            "D7": {
+              "answer": "other",
+              "probabilities": {
+                "factual_information": 0.0023,
+                "general_advice": 0.0008,
+                "personal_advice": 0.0004,
+                "other": 0.9964
+              }
+            }
+          },
+          "classification": "other",
+          "probabilities": {
+            "factual_information": 0.0023,
+            "general_advice": 0.0008,
+            "personal_advice": 0.0004,
+            "other": 0.9964
+          },
+          "model_version": "banking-streaming-context-v14-SYNTHETIC-DEVELOPMENT",
+          "consistency": {
+            "consistent": true,
+            "violations": []
+          },
+          "schema_sha256": "b572b260928fb1ac02cd2c40fa811bc4d721c6ab4efa6f70dd0262fec8c57681"
+        },
+        "latency_seconds": 0.25268519506789744
+      },
+      "captured_at": "2026-10-26T01:30:34.392344+00:00"
+    },
+    {
+      "id": "single-09",
+      "title": "Comparison steps without a product choice",
+      "kind": "single",
+      "context": "How should I compare the costs of two personal loans?",
+      "response": "Compare the total repayments over the same term, including establishment and ongoing fees. Check whether either loan charges for early repayment.",
+      "result": {
+        "prediction": {
+          "schema_version": "banking_streaming_d1_d7_v6_context_draft",
+          "labels": {
+            "D1": true,
+            "D2": false,
+            "D3": false,
+            "D4": false,
+            "D5": true,
+            "D6": false,
+            "D7": "factual_information"
+          },
+          "decisions": {
+            "D1": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9989,
+                "false": 0.0011
+              }
+            },
+            "D2": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0006,
+                "false": 0.9994
+              }
+            },
+            "D3": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0002,
+                "false": 0.9998
+              }
+            },
+            "D4": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0002,
+                "false": 0.9998
+              }
+            },
+            "D5": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9997,
+                "false": 0.0003
+              }
+            },
+            "D6": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0003,
+                "false": 0.9997
+              }
+            },
+            "D7": {
+              "answer": "factual_information",
+              "probabilities": {
+                "factual_information": 0.9987,
+                "general_advice": 0.0003,
+                "personal_advice": 0.0003,
+                "other": 0.0008
+              }
+            }
+          },
+          "classification": "factual_information",
+          "probabilities": {
+            "factual_information": 0.9987,
+            "general_advice": 0.0003,
+            "personal_advice": 0.0003,
+            "other": 0.0008
+          },
+          "model_version": "banking-streaming-context-v14-SYNTHETIC-DEVELOPMENT",
+          "consistency": {
+            "consistent": true,
+            "violations": []
+          },
+          "schema_sha256": "b572b260928fb1ac02cd2c40fa811bc4d721c6ab4efa6f70dd0262fec8c57681"
+        },
+        "latency_seconds": 0.2871365339960903
+      },
+      "captured_at": "2026-10-26T01:30:35.456757+00:00"
+    },
+    {
+      "id": "single-10",
+      "title": "An explicitly general product view",
+      "kind": "single",
+      "context": "I have some savings, but I am asking a general question rather than what suits my situation. What is your view of high-fee transaction accounts?",
+      "response": "A low-fee transaction account is generally preferable when the extra services of a higher-fee account are not needed.",
+      "result": {
+        "prediction": {
+          "schema_version": "banking_streaming_d1_d7_v6_context_draft",
+          "labels": {
+            "D1": true,
+            "D2": true,
+            "D3": false,
+            "D4": false,
+            "D5": false,
+            "D6": false,
+            "D7": "general_advice"
+          },
+          "decisions": {
+            "D1": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9961,
+                "false": 0.0039
+              }
+            },
+            "D2": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9979,
+                "false": 0.0021
+              }
+            },
+            "D3": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0019,
+                "false": 0.9981
+              }
+            },
+            "D4": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0004,
+                "false": 0.9996
+              }
+            },
+            "D5": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0025,
+                "false": 0.9975
+              }
+            },
+            "D6": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0016,
+                "false": 0.9984
+              }
+            },
+            "D7": {
+              "answer": "general_advice",
+              "probabilities": {
+                "factual_information": 0.0113,
+                "general_advice": 0.9844,
+                "personal_advice": 0.003,
+                "other": 0.0012
+              }
+            }
+          },
+          "classification": "general_advice",
+          "probabilities": {
+            "factual_information": 0.0113,
+            "general_advice": 0.9844,
+            "personal_advice": 0.003,
+            "other": 0.0012
+          },
+          "model_version": "banking-streaming-context-v14-SYNTHETIC-DEVELOPMENT",
+          "consistency": {
+            "consistent": true,
+            "violations": []
+          },
+          "schema_sha256": "b572b260928fb1ac02cd2c40fa811bc4d721c6ab4efa6f70dd0262fec8c57681"
+        },
+        "latency_seconds": 0.2912710070377216
+      },
+      "captured_at": "2026-10-26T01:30:36.442418+00:00"
+    },
+    {
+      "id": "multi-01",
+      "title": "A corrected deadline takes precedence",
+      "kind": "multi",
+      "context": "CUSTOMER: I could lock the money away for twelve months.\nAGENT: Would access during that period matter?\nCUSTOMER: Actually, the purchase has moved forward. The money is needed in ten weeks.\nAGENT: Could the purchase wait if the funds were unavailable?\nCUSTOMER: No. There is no other money available. Which option fits?",
+      "response": "That revised deadline rules out locking the money away for a year. An accessible savings account is the better fit.",
+      "result": {
+        "prediction": {
+          "schema_version": "banking_streaming_d1_d7_v6_context_draft",
+          "labels": {
+            "D1": true,
+            "D2": true,
+            "D3": true,
+            "D4": true,
+            "D5": false,
+            "D6": false,
+            "D7": "personal_advice"
+          },
+          "decisions": {
+            "D1": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9989,
+                "false": 0.0011
+              }
+            },
+            "D2": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9998,
+                "false": 0.0002
+              }
+            },
+            "D3": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9402,
+                "false": 0.0598
+              }
+            },
+            "D4": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9995,
+                "false": 0.0005
+              }
+            },
+            "D5": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0007,
+                "false": 0.9993
+              }
+            },
+            "D6": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.001,
+                "false": 0.999
+              }
+            },
+            "D7": {
+              "answer": "personal_advice",
+              "probabilities": {
+                "factual_information": 0.0043,
+                "general_advice": 0.0168,
+                "personal_advice": 0.9757,
+                "other": 0.0032
+              }
+            }
+          },
+          "classification": "personal_advice",
+          "probabilities": {
+            "factual_information": 0.0043,
+            "general_advice": 0.0168,
+            "personal_advice": 0.9757,
+            "other": 0.0032
+          },
+          "model_version": "banking-streaming-context-v14-SYNTHETIC-DEVELOPMENT",
+          "consistency": {
+            "consistent": true,
+            "violations": []
+          },
+          "schema_sha256": "b572b260928fb1ac02cd2c40fa811bc4d721c6ab4efa6f70dd0262fec8c57681"
+        },
+        "latency_seconds": 0.28750625997781754
+      },
+      "captured_at": "2026-10-26T01:30:37.446562+00:00"
+    },
+    {
+      "id": "multi-02",
+      "title": "Current facts after an earlier recommendation",
+      "kind": "multi",
+      "context": "CUSTOMER: I need somewhere to hold an emergency buffer.\nAGENT: An accessible savings account may suit that need.\nCUSTOMER: Leave the recommendation aside now. What does a minimum-balance condition mean?",
+      "response": "A minimum-balance condition requires an account balance to meet a stated threshold, sometimes to receive a rate or avoid a fee.",
+      "result": {
+        "prediction": {
+          "schema_version": "banking_streaming_d1_d7_v6_context_draft",
+          "labels": {
+            "D1": true,
+            "D2": false,
+            "D3": false,
+            "D4": false,
+            "D5": true,
+            "D6": false,
+            "D7": "factual_information"
+          },
+          "decisions": {
+            "D1": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9918,
+                "false": 0.0082
+              }
+            },
+            "D2": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.001,
+                "false": 0.999
+              }
+            },
+            "D3": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0003,
+                "false": 0.9997
+              }
+            },
+            "D4": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0006,
+                "false": 0.9994
+              }
+            },
+            "D5": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9997,
+                "false": 0.0003
+              }
+            },
+            "D6": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0004,
+                "false": 0.9996
+              }
+            },
+            "D7": {
+              "answer": "factual_information",
+              "probabilities": {
+                "factual_information": 0.9972,
+                "general_advice": 0.0004,
+                "personal_advice": 0.0003,
+                "other": 0.0021
+              }
+            }
+          },
+          "classification": "factual_information",
+          "probabilities": {
+            "factual_information": 0.9972,
+            "general_advice": 0.0004,
+            "personal_advice": 0.0003,
+            "other": 0.0021
+          },
+          "model_version": "banking-streaming-context-v14-SYNTHETIC-DEVELOPMENT",
+          "consistency": {
+            "consistent": true,
+            "violations": []
+          },
+          "schema_sha256": "b572b260928fb1ac02cd2c40fa811bc4d721c6ab4efa6f70dd0262fec8c57681"
+        },
+        "latency_seconds": 0.2827687340322882
+      },
+      "captured_at": "2026-10-26T01:30:38.461071+00:00"
+    },
+    {
+      "id": "multi-03",
+      "title": "A friend's recommendation is not the agent's",
+      "kind": "multi",
+      "context": "CUSTOMER: A friend said a credit card would be perfect for my irregular income.\nAGENT: Are you asking whether I agree or what the charges mean?\nCUSTOMER: Just explain the charges. Please do not recommend a product.",
+      "response": "I am not endorsing that recommendation. An annual fee is charged for holding the card; purchase interest can be charged on eligible unpaid purchases under the card's terms.",
+      "result": {
+        "prediction": {
+          "schema_version": "banking_streaming_d1_d7_v6_context_draft",
+          "labels": {
+            "D1": true,
+            "D2": false,
+            "D3": false,
+            "D4": false,
+            "D5": true,
+            "D6": false,
+            "D7": "factual_information"
+          },
+          "decisions": {
+            "D1": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9979,
+                "false": 0.0021
+              }
+            },
+            "D2": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0055,
+                "false": 0.9945
+              }
+            },
+            "D3": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0002,
+                "false": 0.9998
+              }
+            },
+            "D4": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0002,
+                "false": 0.9998
+              }
+            },
+            "D5": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9987,
+                "false": 0.0013
+              }
+            },
+            "D6": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0005,
+                "false": 0.9995
+              }
+            },
+            "D7": {
+              "answer": "factual_information",
+              "probabilities": {
+                "factual_information": 0.9971,
+                "general_advice": 0.0011,
+                "personal_advice": 0.0004,
+                "other": 0.0014
+              }
+            }
+          },
+          "classification": "factual_information",
+          "probabilities": {
+            "factual_information": 0.9971,
+            "general_advice": 0.0011,
+            "personal_advice": 0.0004,
+            "other": 0.0014
+          },
+          "model_version": "banking-streaming-context-v14-SYNTHETIC-DEVELOPMENT",
+          "consistency": {
+            "consistent": true,
+            "violations": []
+          },
+          "schema_sha256": "b572b260928fb1ac02cd2c40fa811bc4d721c6ab4efa6f70dd0262fec8c57681"
+        },
+        "latency_seconds": 0.27326519798953086
+      },
+      "captured_at": "2026-10-26T01:30:39.688463+00:00"
+    },
+    {
+      "id": "multi-04",
+      "title": "Clarify an unresolved reference",
+      "kind": "multi",
+      "context": "CUSTOMER: The comparison lists a savings account and a term deposit.\nAGENT: Which feature is unclear?\nCUSTOMER: The condition attached to that one.",
+      "response": "Which of the two products do you mean?",
+      "result": {
+        "prediction": {
+          "schema_version": "banking_streaming_d1_d7_v6_context_draft",
+          "labels": {
+            "D1": true,
+            "D2": false,
+            "D3": false,
+            "D4": false,
+            "D5": false,
+            "D6": false,
+            "D7": "other"
+          },
+          "decisions": {
+            "D1": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.7604,
+                "false": 0.2396
+              }
+            },
+            "D2": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0003,
+                "false": 0.9997
+              }
+            },
+            "D3": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0002,
+                "false": 0.9998
+              }
+            },
+            "D4": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0002,
+                "false": 0.9998
+              }
+            },
+            "D5": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0003,
+                "false": 0.9997
+              }
+            },
+            "D6": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0003,
+                "false": 0.9997
+              }
+            },
+            "D7": {
+              "answer": "other",
+              "probabilities": {
+                "factual_information": 0.0006,
+                "general_advice": 0.0003,
+                "personal_advice": 0.0002,
+                "other": 0.9989
+              }
+            }
+          },
+          "classification": "other",
+          "probabilities": {
+            "factual_information": 0.0006,
+            "general_advice": 0.0003,
+            "personal_advice": 0.0002,
+            "other": 0.9989
+          },
+          "model_version": "banking-streaming-context-v14-SYNTHETIC-DEVELOPMENT",
+          "consistency": {
+            "consistent": true,
+            "violations": []
+          },
+          "schema_sha256": "b572b260928fb1ac02cd2c40fa811bc4d721c6ab4efa6f70dd0262fec8c57681"
+        },
+        "latency_seconds": 0.2686095309909433
+      },
+      "captured_at": "2026-10-26T01:30:40.517111+00:00"
+    },
+    {
+      "id": "multi-05",
+      "title": "An unsolicited individual selection",
+      "kind": "multi",
+      "context": "CUSTOMER: Where is the credit-card fee schedule?\nAGENT: It is in the product documents section.\nCUSTOMER: Thanks. That was all I needed.",
+      "response": "The low-rate credit card is the right choice for you.",
+      "result": {
+        "prediction": {
+          "schema_version": "banking_streaming_d1_d7_v6_context_draft",
+          "labels": {
+            "D1": true,
+            "D2": true,
+            "D3": false,
+            "D4": true,
+            "D5": false,
+            "D6": true,
+            "D7": "personal_advice"
+          },
+          "decisions": {
+            "D1": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9982,
+                "false": 0.0018
+              }
+            },
+            "D2": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9998,
+                "false": 0.0002
+              }
+            },
+            "D3": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0014,
+                "false": 0.9986
+              }
+            },
+            "D4": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9996,
+                "false": 0.0004
+              }
+            },
+            "D5": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0002,
+                "false": 0.9998
+              }
+            },
+            "D6": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9975,
+                "false": 0.0025
+              }
+            },
+            "D7": {
+              "answer": "personal_advice",
+              "probabilities": {
+                "factual_information": 0.0005,
+                "general_advice": 0.0115,
+                "personal_advice": 0.9821,
+                "other": 0.0059
+              }
+            }
+          },
+          "classification": "personal_advice",
+          "probabilities": {
+            "factual_information": 0.0005,
+            "general_advice": 0.0115,
+            "personal_advice": 0.9821,
+            "other": 0.0059
+          },
+          "model_version": "banking-streaming-context-v14-SYNTHETIC-DEVELOPMENT",
+          "consistency": {
+            "consistent": true,
+            "violations": []
+          },
+          "schema_sha256": "b572b260928fb1ac02cd2c40fa811bc4d721c6ab4efa6f70dd0262fec8c57681"
+        },
+        "latency_seconds": 0.2785037129651755
+      },
+      "captured_at": "2026-10-26T01:30:41.747509+00:00"
+    },
+    {
+      "id": "multi-06",
+      "title": "Circumstances used without saying 'suitable'",
+      "kind": "multi",
+      "context": "CUSTOMER: Payments from my clients often arrive after rent is due.\nAGENT: Does that gap happen regularly?\nCUSTOMER: Most months, and it usually lasts about a week. What do you think of keeping a buffer?",
+      "response": "I favour building an accessible cash buffer because that recurring gap leaves rent due before the client payments arrive.",
+      "result": {
+        "prediction": {
+          "schema_version": "banking_streaming_d1_d7_v6_context_draft",
+          "labels": {
+            "D1": true,
+            "D2": true,
+            "D3": true,
+            "D4": false,
+            "D5": false,
+            "D6": false,
+            "D7": "personal_advice"
+          },
+          "decisions": {
+            "D1": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9957,
+                "false": 0.0043
+              }
+            },
+            "D2": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9996,
+                "false": 0.0004
+              }
+            },
+            "D3": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9635,
+                "false": 0.0365
+              }
+            },
+            "D4": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0014,
+                "false": 0.9986
+              }
+            },
+            "D5": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0006,
+                "false": 0.9994
+              }
+            },
+            "D6": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0042,
+                "false": 0.9958
+              }
+            },
+            "D7": {
+              "answer": "personal_advice",
+              "probabilities": {
+                "factual_information": 0.0043,
+                "general_advice": 0.1691,
+                "personal_advice": 0.8217,
+                "other": 0.0049
+              }
+            }
+          },
+          "classification": "personal_advice",
+          "probabilities": {
+            "factual_information": 0.0043,
+            "general_advice": 0.1691,
+            "personal_advice": 0.8217,
+            "other": 0.0049
+          },
+          "model_version": "banking-streaming-context-v14-SYNTHETIC-DEVELOPMENT",
+          "consistency": {
+            "consistent": true,
+            "violations": []
+          },
+          "schema_sha256": "b572b260928fb1ac02cd2c40fa811bc4d721c6ab4efa6f70dd0262fec8c57681"
+        },
+        "latency_seconds": 0.2740852429997176
+      },
+      "captured_at": "2026-10-26T01:30:42.792370+00:00"
+    },
+    {
+      "id": "multi-07",
+      "title": "A practical conversation outside finance",
+      "kind": "multi",
+      "context": "CUSTOMER: My tripod no longer fits in its case.\nAGENT: Has the centre column been lowered?\nCUSTOMER: Yes, but the folded legs are still too long.",
+      "response": "Could you check whether the lower leg sections are fully retracted?",
+      "result": {
+        "prediction": {
+          "schema_version": "banking_streaming_d1_d7_v6_context_draft",
+          "labels": {
+            "D1": false,
+            "D2": false,
+            "D3": false,
+            "D4": false,
+            "D5": false,
+            "D6": false,
+            "D7": "other"
+          },
+          "decisions": {
+            "D1": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.1514,
+                "false": 0.8486
+              }
+            },
+            "D2": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0002,
+                "false": 0.9998
+              }
+            },
+            "D3": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0003,
+                "false": 0.9997
+              }
+            },
+            "D4": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0002,
+                "false": 0.9998
+              }
+            },
+            "D5": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0814,
+                "false": 0.9186
+              }
+            },
+            "D6": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0002,
+                "false": 0.9998
+              }
+            },
+            "D7": {
+              "answer": "other",
+              "probabilities": {
+                "factual_information": 0.0973,
+                "general_advice": 0.0004,
+                "personal_advice": 0.0003,
+                "other": 0.9019
+              }
+            }
+          },
+          "classification": "other",
+          "probabilities": {
+            "factual_information": 0.0973,
+            "general_advice": 0.0004,
+            "personal_advice": 0.0003,
+            "other": 0.9019
+          },
+          "model_version": "banking-streaming-context-v14-SYNTHETIC-DEVELOPMENT",
+          "consistency": {
+            "consistent": true,
+            "violations": []
+          },
+          "schema_sha256": "b572b260928fb1ac02cd2c40fa811bc4d721c6ab4efa6f70dd0262fec8c57681"
+        },
+        "latency_seconds": 0.2692515170201659
+      },
+      "captured_at": "2026-10-26T01:30:43.962834+00:00"
+    },
+    {
+      "id": "multi-08",
+      "title": "Credit advice uses a fixed-repayment need",
+      "kind": "multi",
+      "context": "CUSTOMER: I am carrying balances on two cards.\nAGENT: Is keeping the monthly repayment predictable important?\nCUSTOMER: Yes. I can budget for a fixed payment, but not a changing one. Which option should I compare?",
+      "response": "Because predictable payments are important here, I recommend comparing a fixed-rate consolidation loan with keeping the two card balances.",
+      "result": {
+        "prediction": {
+          "schema_version": "banking_streaming_d1_d7_v6_context_draft",
+          "labels": {
+            "D1": true,
+            "D2": true,
+            "D3": true,
+            "D4": true,
+            "D5": false,
+            "D6": true,
+            "D7": "personal_advice"
+          },
+          "decisions": {
+            "D1": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9993,
+                "false": 0.0007
+              }
+            },
+            "D2": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9997,
+                "false": 0.0003
+              }
+            },
+            "D3": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9824,
+                "false": 0.0176
+              }
+            },
+            "D4": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.7511,
+                "false": 0.2489
+              }
+            },
+            "D5": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0006,
+                "false": 0.9994
+              }
+            },
+            "D6": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9979,
+                "false": 0.0021
+              }
+            },
+            "D7": {
+              "answer": "personal_advice",
+              "probabilities": {
+                "factual_information": 0.0025,
+                "general_advice": 0.0247,
+                "personal_advice": 0.969,
+                "other": 0.0038
+              }
+            }
+          },
+          "classification": "personal_advice",
+          "probabilities": {
+            "factual_information": 0.0025,
+            "general_advice": 0.0247,
+            "personal_advice": 0.969,
+            "other": 0.0038
+          },
+          "model_version": "banking-streaming-context-v14-SYNTHETIC-DEVELOPMENT",
+          "consistency": {
+            "consistent": true,
+            "violations": []
+          },
+          "schema_sha256": "b572b260928fb1ac02cd2c40fa811bc4d721c6ab4efa6f70dd0262fec8c57681"
+        },
+        "latency_seconds": 0.2634089000057429
+      },
+      "captured_at": "2026-10-26T01:30:44.696924+00:00"
+    },
+    {
+      "id": "multi-09",
+      "title": "A general insurance opinion in a personal conversation",
+      "kind": "multi",
+      "context": "CUSTOMER: I have recently moved house.\nAGENT: Are you asking about a policy for the new address?\nCUSTOMER: Not yet. I want your general view on choosing a policy just because the premium is lowest.",
+      "response": "The lowest premium is not always the best choice; a policy with more appropriate limits and fewer relevant exclusions can be better value.",
+      "result": {
+        "prediction": {
+          "schema_version": "banking_streaming_d1_d7_v6_context_draft",
+          "labels": {
+            "D1": true,
+            "D2": true,
+            "D3": false,
+            "D4": false,
+            "D5": false,
+            "D6": false,
+            "D7": "general_advice"
+          },
+          "decisions": {
+            "D1": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9954,
+                "false": 0.0046
+              }
+            },
+            "D2": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9995,
+                "false": 0.0005
+              }
+            },
+            "D3": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0008,
+                "false": 0.9992
+              }
+            },
+            "D4": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0004,
+                "false": 0.9996
+              }
+            },
+            "D5": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0005,
+                "false": 0.9995
+              }
+            },
+            "D6": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0026,
+                "false": 0.9974
+              }
+            },
+            "D7": {
+              "answer": "general_advice",
+              "probabilities": {
+                "factual_information": 0.0047,
+                "general_advice": 0.9923,
+                "personal_advice": 0.0021,
+                "other": 0.0009
+              }
+            }
+          },
+          "classification": "general_advice",
+          "probabilities": {
+            "factual_information": 0.0047,
+            "general_advice": 0.9923,
+            "personal_advice": 0.0021,
+            "other": 0.0009
+          },
+          "model_version": "banking-streaming-context-v14-SYNTHETIC-DEVELOPMENT",
+          "consistency": {
+            "consistent": true,
+            "violations": []
+          },
+          "schema_sha256": "b572b260928fb1ac02cd2c40fa811bc4d721c6ab4efa6f70dd0262fec8c57681"
+        },
+        "latency_seconds": 0.28066164802294225
+      },
+      "captured_at": "2026-10-26T01:30:45.972589+00:00"
+    },
+    {
+      "id": "multi-10",
+      "title": "Do not inherit advice from an earlier turn",
+      "kind": "multi",
+      "context": "CUSTOMER: I need access to the money at short notice.\nAGENT: I recommend keeping it accessible rather than locking it into a fixed term.\nCUSTOMER: Now, just explain what a fixed term is.",
+      "response": "A fixed term is a specified period during which money is held under the product's agreed conditions.",
+      "result": {
+        "prediction": {
+          "schema_version": "banking_streaming_d1_d7_v6_context_draft",
+          "labels": {
+            "D1": true,
+            "D2": false,
+            "D3": false,
+            "D4": false,
+            "D5": true,
+            "D6": false,
+            "D7": "factual_information"
+          },
+          "decisions": {
+            "D1": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9977,
+                "false": 0.0023
+              }
+            },
+            "D2": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0027,
+                "false": 0.9973
+              }
+            },
+            "D3": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0004,
+                "false": 0.9996
+              }
+            },
+            "D4": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0002,
+                "false": 0.9998
+              }
+            },
+            "D5": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9997,
+                "false": 0.0003
+              }
+            },
+            "D6": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0006,
+                "false": 0.9994
+              }
+            },
+            "D7": {
+              "answer": "factual_information",
+              "probabilities": {
+                "factual_information": 0.9932,
+                "general_advice": 0.0003,
+                "personal_advice": 0.0002,
+                "other": 0.0062
+              }
+            }
+          },
+          "classification": "factual_information",
+          "probabilities": {
+            "factual_information": 0.9932,
+            "general_advice": 0.0003,
+            "personal_advice": 0.0002,
+            "other": 0.0062
+          },
+          "model_version": "banking-streaming-context-v14-SYNTHETIC-DEVELOPMENT",
+          "consistency": {
+            "consistent": true,
+            "violations": []
+          },
+          "schema_sha256": "b572b260928fb1ac02cd2c40fa811bc4d721c6ab4efa6f70dd0262fec8c57681"
+        },
+        "latency_seconds": 0.2801103410311043
+      },
+      "captured_at": "2026-10-26T01:30:46.999383+00:00"
+    },
+    {
+      "id": "voice-01a",
+      "title": "Savings definition · opening fragment",
+      "kind": "voice",
+      "family": "voice-01",
+      "stage": 1,
+      "stages": 2,
+      "context": "What is a savings account?",
+      "response": "A savings account",
+      "result": {
+        "prediction": {
+          "schema_version": "banking_streaming_d1_d7_v6_context_draft",
+          "labels": {
+            "D1": true,
+            "D2": false,
+            "D3": false,
+            "D4": false,
+            "D5": false,
+            "D6": false,
+            "D7": "other"
+          },
+          "decisions": {
+            "D1": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.7768,
+                "false": 0.2232
+              }
+            },
+            "D2": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0002,
+                "false": 0.9998
+              }
+            },
+            "D3": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0003,
+                "false": 0.9997
+              }
+            },
+            "D4": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0002,
+                "false": 0.9998
+              }
+            },
+            "D5": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0004,
+                "false": 0.9996
+              }
+            },
+            "D6": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0004,
+                "false": 0.9996
+              }
+            },
+            "D7": {
+              "answer": "other",
+              "probabilities": {
+                "factual_information": 0.0005,
+                "general_advice": 0.0003,
+                "personal_advice": 0.0002,
+                "other": 0.9989
+              }
+            }
+          },
+          "classification": "other",
+          "probabilities": {
+            "factual_information": 0.0005,
+            "general_advice": 0.0003,
+            "personal_advice": 0.0002,
+            "other": 0.9989
+          },
+          "model_version": "banking-streaming-context-v14-SYNTHETIC-DEVELOPMENT",
+          "consistency": {
+            "consistent": true,
+            "violations": []
+          },
+          "schema_sha256": "b572b260928fb1ac02cd2c40fa811bc4d721c6ab4efa6f70dd0262fec8c57681"
+        },
+        "latency_seconds": 0.2740388390375301
+      },
+      "captured_at": "2026-10-26T01:30:47.967501+00:00"
+    },
+    {
+      "id": "voice-01b",
+      "title": "Savings definition · completed response",
+      "kind": "voice",
+      "family": "voice-01",
+      "stage": 2,
+      "stages": 2,
+      "context": "What is a savings account?",
+      "response": "A savings account is a deposit account that can pay interest on the money held in it.",
+      "result": {
+        "prediction": {
+          "schema_version": "banking_streaming_d1_d7_v6_context_draft",
+          "labels": {
+            "D1": true,
+            "D2": false,
+            "D3": false,
+            "D4": false,
+            "D5": true,
+            "D6": false,
+            "D7": "factual_information"
+          },
+          "decisions": {
+            "D1": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9969,
+                "false": 0.0031
+              }
+            },
+            "D2": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0002,
+                "false": 0.9998
+              }
+            },
+            "D3": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0002,
+                "false": 0.9998
+              }
+            },
+            "D4": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0002,
+                "false": 0.9998
+              }
+            },
+            "D5": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9993,
+                "false": 0.0007
+              }
+            },
+            "D6": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0003,
+                "false": 0.9997
+              }
+            },
+            "D7": {
+              "answer": "factual_information",
+              "probabilities": {
+                "factual_information": 0.9982,
+                "general_advice": 0.0002,
+                "personal_advice": 0.0002,
+                "other": 0.0013
+              }
+            }
+          },
+          "classification": "factual_information",
+          "probabilities": {
+            "factual_information": 0.9982,
+            "general_advice": 0.0002,
+            "personal_advice": 0.0002,
+            "other": 0.0013
+          },
+          "model_version": "banking-streaming-context-v14-SYNTHETIC-DEVELOPMENT",
+          "consistency": {
+            "consistent": true,
+            "violations": []
+          },
+          "schema_sha256": "b572b260928fb1ac02cd2c40fa811bc4d721c6ab4efa6f70dd0262fec8c57681"
+        },
+        "latency_seconds": 0.2923054959392175
+      },
+      "captured_at": "2026-10-26T01:30:48.949995+00:00"
+    },
+    {
+      "id": "voice-02a",
+      "title": "Facts before a tailored choice · prefix",
+      "kind": "voice",
+      "family": "voice-02",
+      "stage": 1,
+      "stages": 2,
+      "context": "The car purchase is in three months and the money may be needed earlier. Which option fits?",
+      "response": "Savings accounts generally allow access to the money.",
+      "result": {
+        "prediction": {
+          "schema_version": "banking_streaming_d1_d7_v6_context_draft",
+          "labels": {
+            "D1": true,
+            "D2": false,
+            "D3": false,
+            "D4": false,
+            "D5": true,
+            "D6": false,
+            "D7": "factual_information"
+          },
+          "decisions": {
+            "D1": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9956,
+                "false": 0.0044
+              }
+            },
+            "D2": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0021,
+                "false": 0.9979
+              }
+            },
+            "D3": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0003,
+                "false": 0.9997
+              }
+            },
+            "D4": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0003,
+                "false": 0.9997
+              }
+            },
+            "D5": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9994,
+                "false": 0.0006
+              }
+            },
+            "D6": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0005,
+                "false": 0.9995
+              }
+            },
+            "D7": {
+              "answer": "factual_information",
+              "probabilities": {
+                "factual_information": 0.9983,
+                "general_advice": 0.0007,
+                "personal_advice": 0.0004,
+                "other": 0.0006
+              }
+            }
+          },
+          "classification": "factual_information",
+          "probabilities": {
+            "factual_information": 0.9983,
+            "general_advice": 0.0007,
+            "personal_advice": 0.0004,
+            "other": 0.0006
+          },
+          "model_version": "banking-streaming-context-v14-SYNTHETIC-DEVELOPMENT",
+          "consistency": {
+            "consistent": true,
+            "violations": []
+          },
+          "schema_sha256": "b572b260928fb1ac02cd2c40fa811bc4d721c6ab4efa6f70dd0262fec8c57681"
+        },
+        "latency_seconds": 0.2692724510561675
+      },
+      "captured_at": "2026-10-26T01:30:49.910468+00:00"
+    },
+    {
+      "id": "voice-02b",
+      "title": "Facts before a tailored choice · completion",
+      "kind": "voice",
+      "family": "voice-02",
+      "stage": 2,
+      "stages": 2,
+      "context": "The car purchase is in three months and the money may be needed earlier. Which option fits?",
+      "response": "Savings accounts generally allow access to the money. With that short and potentially earlier deadline, an accessible savings account is the better fit.",
+      "result": {
+        "prediction": {
+          "schema_version": "banking_streaming_d1_d7_v6_context_draft",
+          "labels": {
+            "D1": true,
+            "D2": true,
+            "D3": true,
+            "D4": true,
+            "D5": false,
+            "D6": false,
+            "D7": "personal_advice"
+          },
+          "decisions": {
+            "D1": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9969,
+                "false": 0.0031
+              }
+            },
+            "D2": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9998,
+                "false": 0.0002
+              }
+            },
+            "D3": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9666,
+                "false": 0.0334
+              }
+            },
+            "D4": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9967,
+                "false": 0.0033
+              }
+            },
+            "D5": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0015,
+                "false": 0.9985
+              }
+            },
+            "D6": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0011,
+                "false": 0.9989
+              }
+            },
+            "D7": {
+              "answer": "personal_advice",
+              "probabilities": {
+                "factual_information": 0.002,
+                "general_advice": 0.0192,
+                "personal_advice": 0.9759,
+                "other": 0.0029
+              }
+            }
+          },
+          "classification": "personal_advice",
+          "probabilities": {
+            "factual_information": 0.002,
+            "general_advice": 0.0192,
+            "personal_advice": 0.9759,
+            "other": 0.0029
+          },
+          "model_version": "banking-streaming-context-v14-SYNTHETIC-DEVELOPMENT",
+          "consistency": {
+            "consistent": true,
+            "violations": []
+          },
+          "schema_sha256": "b572b260928fb1ac02cd2c40fa811bc4d721c6ab4efa6f70dd0262fec8c57681"
+        },
+        "latency_seconds": 0.29341469903010875
+      },
+      "captured_at": "2026-10-26T01:30:50.890744+00:00"
+    },
+    {
+      "id": "voice-03a",
+      "title": "A general opinion · unfinished product phrase",
+      "kind": "voice",
+      "family": "voice-03",
+      "stage": 1,
+      "stages": 2,
+      "context": "In general, what is your view of transaction-account fees?",
+      "response": "A transaction account with no monthly fee",
+      "result": {
+        "prediction": {
+          "schema_version": "banking_streaming_d1_d7_v6_context_draft",
+          "labels": {
+            "D1": true,
+            "D2": false,
+            "D3": false,
+            "D4": false,
+            "D5": false,
+            "D6": false,
+            "D7": "other"
+          },
+          "decisions": {
+            "D1": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9585,
+                "false": 0.0415
+              }
+            },
+            "D2": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0005,
+                "false": 0.9995
+              }
+            },
+            "D3": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0003,
+                "false": 0.9997
+              }
+            },
+            "D4": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0003,
+                "false": 0.9997
+              }
+            },
+            "D5": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0003,
+                "false": 0.9997
+              }
+            },
+            "D6": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0002,
+                "false": 0.9998
+              }
+            },
+            "D7": {
+              "answer": "other",
+              "probabilities": {
+                "factual_information": 0.0008,
+                "general_advice": 0.0003,
+                "personal_advice": 0.0002,
+                "other": 0.9987
+              }
+            }
+          },
+          "classification": "other",
+          "probabilities": {
+            "factual_information": 0.0008,
+            "general_advice": 0.0003,
+            "personal_advice": 0.0002,
+            "other": 0.9987
+          },
+          "model_version": "banking-streaming-context-v14-SYNTHETIC-DEVELOPMENT",
+          "consistency": {
+            "consistent": true,
+            "violations": []
+          },
+          "schema_sha256": "b572b260928fb1ac02cd2c40fa811bc4d721c6ab4efa6f70dd0262fec8c57681"
+        },
+        "latency_seconds": 0.28032378596253693
+      },
+      "captured_at": "2026-10-26T01:30:51.858067+00:00"
+    },
+    {
+      "id": "voice-03b",
+      "title": "A general opinion · completed endorsement",
+      "kind": "voice",
+      "family": "voice-03",
+      "stage": 2,
+      "stages": 2,
+      "context": "In general, what is your view of transaction-account fees?",
+      "response": "A transaction account with no monthly fee is usually the better choice when its services meet the account holder's needs.",
+      "result": {
+        "prediction": {
+          "schema_version": "banking_streaming_d1_d7_v6_context_draft",
+          "labels": {
+            "D1": true,
+            "D2": true,
+            "D3": false,
+            "D4": false,
+            "D5": false,
+            "D6": false,
+            "D7": "general_advice"
+          },
+          "decisions": {
+            "D1": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9977,
+                "false": 0.0023
+              }
+            },
+            "D2": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9994,
+                "false": 0.0006
+              }
+            },
+            "D3": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0059,
+                "false": 0.9941
+              }
+            },
+            "D4": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0005,
+                "false": 0.9995
+              }
+            },
+            "D5": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0007,
+                "false": 0.9993
+              }
+            },
+            "D6": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0012,
+                "false": 0.9988
+              }
+            },
+            "D7": {
+              "answer": "general_advice",
+              "probabilities": {
+                "factual_information": 0.0027,
+                "general_advice": 0.9936,
+                "personal_advice": 0.0028,
+                "other": 0.001
+              }
+            }
+          },
+          "classification": "general_advice",
+          "probabilities": {
+            "factual_information": 0.0027,
+            "general_advice": 0.9936,
+            "personal_advice": 0.0028,
+            "other": 0.001
+          },
+          "model_version": "banking-streaming-context-v14-SYNTHETIC-DEVELOPMENT",
+          "consistency": {
+            "consistent": true,
+            "violations": []
+          },
+          "schema_sha256": "b572b260928fb1ac02cd2c40fa811bc4d721c6ab4efa6f70dd0262fec8c57681"
+        },
+        "latency_seconds": 0.28501295601017773
+      },
+      "captured_at": "2026-10-26T01:30:52.839093+00:00"
+    },
+    {
+      "id": "voice-04a",
+      "title": "Credit selection · opening phrase",
+      "kind": "voice",
+      "family": "voice-04",
+      "stage": 1,
+      "stages": 2,
+      "context": "I have a card balance that I repay slowly, and I need the interest cost to be lower. Which card feature matters most?",
+      "response": "A card with a lower purchase rate",
+      "result": {
+        "prediction": {
+          "schema_version": "banking_streaming_d1_d7_v6_context_draft",
+          "labels": {
+            "D1": true,
+            "D2": false,
+            "D3": false,
+            "D4": false,
+            "D5": false,
+            "D6": false,
+            "D7": "other"
+          },
+          "decisions": {
+            "D1": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9965,
+                "false": 0.0035
+              }
+            },
+            "D2": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0054,
+                "false": 0.9946
+              }
+            },
+            "D3": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0005,
+                "false": 0.9995
+              }
+            },
+            "D4": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0004,
+                "false": 0.9996
+              }
+            },
+            "D5": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0005,
+                "false": 0.9995
+              }
+            },
+            "D6": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0008,
+                "false": 0.9992
+              }
+            },
+            "D7": {
+              "answer": "other",
+              "probabilities": {
+                "factual_information": 0.0008,
+                "general_advice": 0.0009,
+                "personal_advice": 0.0003,
+                "other": 0.998
+              }
+            }
+          },
+          "classification": "other",
+          "probabilities": {
+            "factual_information": 0.0008,
+            "general_advice": 0.0009,
+            "personal_advice": 0.0003,
+            "other": 0.998
+          },
+          "model_version": "banking-streaming-context-v14-SYNTHETIC-DEVELOPMENT",
+          "consistency": {
+            "consistent": true,
+            "violations": []
+          },
+          "schema_sha256": "b572b260928fb1ac02cd2c40fa811bc4d721c6ab4efa6f70dd0262fec8c57681"
+        },
+        "latency_seconds": 0.2555249169236049
+      },
+      "captured_at": "2026-10-26T01:30:53.904813+00:00"
+    },
+    {
+      "id": "voice-04b",
+      "title": "Credit selection · completed recommendation",
+      "kind": "voice",
+      "family": "voice-04",
+      "stage": 2,
+      "stages": 2,
+      "context": "I have a card balance that I repay slowly, and I need the interest cost to be lower. Which card feature matters most?",
+      "response": "A card with a lower purchase rate is the more appropriate choice for that slowly repaid balance, after checking the fees and applicable terms.",
+      "result": {
+        "prediction": {
+          "schema_version": "banking_streaming_d1_d7_v6_context_draft",
+          "labels": {
+            "D1": true,
+            "D2": true,
+            "D3": true,
+            "D4": false,
+            "D5": false,
+            "D6": true,
+            "D7": "personal_advice"
+          },
+          "decisions": {
+            "D1": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9988,
+                "false": 0.0012
+              }
+            },
+            "D2": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9997,
+                "false": 0.0003
+              }
+            },
+            "D3": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9705,
+                "false": 0.0295
+              }
+            },
+            "D4": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.415,
+                "false": 0.585
+              }
+            },
+            "D5": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0009,
+                "false": 0.9991
+              }
+            },
+            "D6": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9989,
+                "false": 0.0011
+              }
+            },
+            "D7": {
+              "answer": "personal_advice",
+              "probabilities": {
+                "factual_information": 0.006,
+                "general_advice": 0.1379,
+                "personal_advice": 0.8536,
+                "other": 0.0026
+              }
+            }
+          },
+          "classification": "personal_advice",
+          "probabilities": {
+            "factual_information": 0.006,
+            "general_advice": 0.1379,
+            "personal_advice": 0.8536,
+            "other": 0.0026
+          },
+          "model_version": "banking-streaming-context-v14-SYNTHETIC-DEVELOPMENT",
+          "consistency": {
+            "consistent": true,
+            "violations": []
+          },
+          "schema_sha256": "b572b260928fb1ac02cd2c40fa811bc4d721c6ab4efa6f70dd0262fec8c57681"
+        },
+        "latency_seconds": 0.290188196930103
+      },
+      "captured_at": "2026-10-26T01:30:54.886120+00:00"
+    },
+    {
+      "id": "voice-05a",
+      "title": "Card procedure · unfinished instruction",
+      "kind": "voice",
+      "family": "voice-05",
+      "stage": 1,
+      "stages": 2,
+      "context": "How do I freeze a misplaced card in the app?",
+      "response": "To freeze the card",
+      "result": {
+        "prediction": {
+          "schema_version": "banking_streaming_d1_d7_v6_context_draft",
+          "labels": {
+            "D1": true,
+            "D2": false,
+            "D3": false,
+            "D4": false,
+            "D5": false,
+            "D6": false,
+            "D7": "other"
+          },
+          "decisions": {
+            "D1": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9922,
+                "false": 0.0078
+              }
+            },
+            "D2": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0002,
+                "false": 0.9998
+              }
+            },
+            "D3": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0003,
+                "false": 0.9997
+              }
+            },
+            "D4": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0002,
+                "false": 0.9998
+              }
+            },
+            "D5": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0007,
+                "false": 0.9993
+              }
+            },
+            "D6": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0003,
+                "false": 0.9997
+              }
+            },
+            "D7": {
+              "answer": "other",
+              "probabilities": {
+                "factual_information": 0.0006,
+                "general_advice": 0.0002,
+                "personal_advice": 0.0002,
+                "other": 0.999
+              }
+            }
+          },
+          "classification": "other",
+          "probabilities": {
+            "factual_information": 0.0006,
+            "general_advice": 0.0002,
+            "personal_advice": 0.0002,
+            "other": 0.999
+          },
+          "model_version": "banking-streaming-context-v14-SYNTHETIC-DEVELOPMENT",
+          "consistency": {
+            "consistent": true,
+            "violations": []
+          },
+          "schema_sha256": "b572b260928fb1ac02cd2c40fa811bc4d721c6ab4efa6f70dd0262fec8c57681"
+        },
+        "latency_seconds": 0.26845598698128015
+      },
+      "captured_at": "2026-10-26T01:30:55.843990+00:00"
+    },
+    {
+      "id": "voice-05b",
+      "title": "Card procedure · completed instruction",
+      "kind": "voice",
+      "family": "voice-05",
+      "stage": 2,
+      "stages": 2,
+      "context": "How do I freeze a misplaced card in the app?",
+      "response": "To freeze the card, open its controls in the app and select the temporary freeze option.",
+      "result": {
+        "prediction": {
+          "schema_version": "banking_streaming_d1_d7_v6_context_draft",
+          "labels": {
+            "D1": true,
+            "D2": false,
+            "D3": false,
+            "D4": false,
+            "D5": true,
+            "D6": false,
+            "D7": "factual_information"
+          },
+          "decisions": {
+            "D1": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9956,
+                "false": 0.0044
+              }
+            },
+            "D2": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0002,
+                "false": 0.9998
+              }
+            },
+            "D3": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0002,
+                "false": 0.9998
+              }
+            },
+            "D4": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0003,
+                "false": 0.9997
+              }
+            },
+            "D5": {
+              "answer": true,
+              "probabilities": {
+                "true": 0.9996,
+                "false": 0.0004
+              }
+            },
+            "D6": {
+              "answer": false,
+              "probabilities": {
+                "true": 0.0003,
+                "false": 0.9997
+              }
+            },
+            "D7": {
+              "answer": "factual_information",
+              "probabilities": {
+                "factual_information": 0.9978,
+                "general_advice": 0.0002,
+                "personal_advice": 0.0003,
+                "other": 0.0017
+              }
+            }
+          },
+          "classification": "factual_information",
+          "probabilities": {
+            "factual_information": 0.9978,
+            "general_advice": 0.0002,
+            "personal_advice": 0.0003,
+            "other": 0.0017
+          },
+          "model_version": "banking-streaming-context-v14-SYNTHETIC-DEVELOPMENT",
+          "consistency": {
+            "consistent": true,
+            "violations": []
+          },
+          "schema_sha256": "b572b260928fb1ac02cd2c40fa811bc4d721c6ab4efa6f70dd0262fec8c57681"
+        },
+        "latency_seconds": 0.2867719390196726
+      },
+      "captured_at": "2026-10-26T01:30:56.820933+00:00"
+    }
+  ]
+}

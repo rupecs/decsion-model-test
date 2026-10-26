@@ -1,6 +1,6 @@
 {
   "date": "2026-10-26",
-  "cpu_tests_passed": 44,
+  "cpu_tests_passed": 53,
   "cpu_tests_failed": 0,
   "dataset_records": 17467,
   "release_files_byte_identical": 31,
@@ -14,5 +14,20 @@
   "AWS_GPU_validation": "receiving environment prerequisite",
   "independently_approved_records": 0,
   "reference_runtime_core_modules_unchanged": 13,
-  "AWS_job_request_schema_validation": "passed locally against installed botocore without an AWS API call"
+  "AWS_job_request_schema_validation": "passed locally against installed botocore without an AWS API call",
+  "offline_demo": {
+    "prediction_samples": 30,
+    "dataset_records": 17467,
+    "single_turn_predictions": 10,
+    "multi_turn_predictions": 10,
+    "voice_snapshot_predictions": 10,
+    "captured_from_actual_v14_checkpoint": true,
+    "outputs_uncorrected": true,
+    "inference_only_GPU_stopped_verified": true,
+    "existing_storage_preserved": true,
+    "standalone_build_reproducible": true,
+    "browser_preview_and_voice_navigation": "passed",
+    "slide_PNG_export": "1920x1080 verified",
+    "AWS_jobs_submitted": 0
+  }
 }

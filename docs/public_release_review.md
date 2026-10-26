@@ -37,3 +37,11 @@ The SageMaker adaptation is CPU-tested. Docker image building, account/region-sp
 ## Recorded result
 
 44 focused CPU tests passed; the rendered job request also matches the installed AWS service schema without making an API call. The clean replay reproduced all 31 frozen release files without the packaged release or any older dataset. Local screening found no remaining credential/operational-file findings after reviewed false positives; compressed inputs were inspected too. The largest file is 49,120,555 bytes, below GitHub’s 100-MiB per-file limit. The destination rupecs/decsion-model-test was confirmed public and empty, with no existing license selected. No model weights or old Git history are imported. See reports/handover_verification.json and the complete package_manifest.json.
+
+## Offline demo addition
+
+Added self-contained prediction and dataset-label HTML pages with editable UI sources and CPU-only rebuilding. The prediction page preserves 30 genuine captured outputs on newly authored synthetic demonstration inputs, including model errors; no customer submissions were captured. The dataset page joins all 17,467 frozen record inputs, labels and partitions without attaching confidence scores. Network access is disabled by the page CSP; no cloud connection, resource ID, credentials or model weights are embedded.
+
+This later, explicitly authorised inference-only capture used a temporary A40 session. It did not train a model or launch AWS resources. The GPU was stopped and read back as EXITED after capture, and the checkpoint manifest remained unchanged. Existing model/base storage was preserved separately. Local GPU connection files and logs remain excluded from the public repository.
+
+The expanded CPU suite passed 53 tests. A deterministic offline rebuild, complete source-to-display joins and saved-stage checks passed. Browser checks confirmed the two modes, dataset partition filtering, actual voice-stage navigation and a 1920×1080 PNG export. The browser preview used localhost; direct file navigation was not available in the automated browser. Both HTML files contain all their assets and data, with no fetch or external dependency.

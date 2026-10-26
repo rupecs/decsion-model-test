@@ -84,3 +84,7 @@ Do not commit base/adapter/head weights, checkpoints, original workstation outpu
 Before any push, inspect the exact Git diff and staged file inventory; run scripts/review_public_tree.py and inspect every finding. Never push the original workstation folder wholesale. Review compressed seeds/source snapshots too. Preserve an existing user-selected destination license; do not invent a new license or imply model redistribution rights.
 
 Only a new explicit instruction authorises a paid AWS job or deployment. This handover does not launch cloud work. Do not recreate any Runpod resource. Keep changes focused, add meaningful CPU tests for new data/gate/workflow behaviour, and explain what was and was not actually executed.
+
+## Offline demos
+
+`demo/index.html` contains 30 genuine saved v14 model outputs; `demo/dataset.html` contains all frozen dataset labels. Preserve the distinction: dataset annotations have no model confidence, and predictions are not ground truth. All demonstration inputs are authored synthetic cases. Never publish normal customer submissions. Preserve `demo/predictions.json` and its case/checkpoint binding; do not repair model errors. Rebuild with `python scripts/build_offline_demo.py` and run the CPU tests after UI edits. The HTML is self-contained with network connections disabled by CSP. Browsing and rebuilding must never launch inference, training or cloud resources. A future capture requires explicit operator authorisation; the temporary GPU used for the supplied results was stopped.
